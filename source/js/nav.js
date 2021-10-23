@@ -3,6 +3,8 @@
   const nav = document.querySelector('.nav');
   const toggler = nav.querySelector('.nav__button');
 
+  if (!header) return;
+
   nav.classList.remove('nav--nojs');
   nav.classList.add('nav--closed');
   toggler.classList.add('nav__button--show');
