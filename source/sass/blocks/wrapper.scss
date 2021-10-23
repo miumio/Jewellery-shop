@@ -1,0 +1,9 @@
+.wrapper {
+  margin: 0 auto;
+  width: calc(100vw - 164px);
+  max-width: 1920px;
+
+  @media (max-width: $tablet) {
+    width: calc(100vw - 88px);
+  }
+}

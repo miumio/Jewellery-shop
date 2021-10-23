@@ -1,12 +1,89 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jewellery shop">
   <title>Jewellery</title>
+  <link rel="preload" href="fonts/garamond-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/garamond-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/poppins-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
+  <header class="page-header">
+    <div class="page-header__wrapper wrapper">
+      <a href="#" class="page-header__logo">
+        <svg width="66" height="66">
+          <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+        </svg>
+        <h1 class="visually-hidden">Jewellery Shop</h1>
+      </a>
+      <nav class="page-header__nav nav nav--nojs">
+        <button type="button" class="nav__button button" aria-label="Menu">
+          <span class="nav__button-lines nav__button-lines--top"></span>
+          <span class="nav__button-lines nav__button-lines--middle"></span>
+          <span class="nav__button-lines nav__button-lines--bottom"></span>
+        </button>
+        <ul class="nav__list nav__list--catalog">
+          <li class="nav__item">
+            <a href="#" class="nav__link">What's new</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Chokers</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Necklaces</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Rings</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Earrings</a>
+          </li>
+        </ul>
+        <ul class="nav__list nav__list--about">
+          <li class="nav__item">
+            <a href="#" class="nav__link">About CH</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Stores & Hours</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-header__links">
+        <a href="#" class="page-header__link page-header__link--login">
+          <span>Login</span>
+        </a>
+        <a href="#" class="page-header__link page-header__link--cart">
+          <span>Cart</span>
+          <span>0</span>
+          <svg width="20" height="18">
+            <use xlink:href="img/sprite_auto.svg#icon-shop"></use>
+          </svg>
+        </a>
+      </div>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label>
+          <span class="visually-hidden">Search</span>
+          <svg width="14" height="14">
+            <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+          </svg>
+          <input type="search" id="search-field" name="search" placeholder="Type here to search">
+        </label>
+      </form>
+    </div>
+  </header>
+
+  <script src="js/main.js"></script>
 
 </body>
+
 </html>
