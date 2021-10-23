@@ -3,23 +3,23 @@
   const nav = document.querySelector('.nav');
   const toggler = nav.querySelector('.nav__button');
 
-  nav.classList.remove("nav--nojs");
-  nav.classList.add("nav--closed");
-  toggler.classList.add("nav__button--show");
-  header.classList.add("page-header--white");
+  nav.classList.remove('nav--nojs');
+  nav.classList.add('nav--closed');
+  toggler.classList.add('nav__button--show');
+  header.classList.add('page-header--white');
 
-  toggler.addEventListener("click", function () {
+  toggler.addEventListener('click', function () {
     if (
-      nav.classList.contains("nav--closed") &&
-      header.classList.contains("page-header--white")
+      nav.classList.contains('nav--closed') &&
+      header.classList.contains('page-header--white')
     ) {
-      nav.classList.remove("nav--closed");
-      nav.classList.add("nav--opened");
-      header.classList.remove("page-header--white");
+      nav.classList.remove('nav--closed');
+      nav.classList.add('nav--opened');
+      header.classList.remove('page-header--white');
     } else {
-      nav.classList.add("nav--closed");
-      nav.classList.remove("nav--opened");
-      header.classList.add("page-header--white");
+      nav.classList.add('nav--closed');
+      nav.classList.remove('nav--opened');
+      header.classList.add('page-header--white');
     }
   });
 })();
