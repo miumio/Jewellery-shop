@@ -82,7 +82,22 @@
   </div>
 </header>
 
-  <main></main>
+  <main>
+    <section class="intro">
+      <div class="intro__img-wrapper">
+        <picture>
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/intro-tablet@1x.webp 1x, img/intro-tablet@2x.webp 2x">
+          <source media="(max-width: 1023px)" srcset="img/intro-tablet@1x.jpg 1x, img/intro-tablet@2x.jpg 2x">
+          <source type="image/webp" srcset="img/intro-desktop@1x.webp 1x, img/intro-desktop@2x.webp 2x">
+          <img src="img/intro-desktop@1x.jpg" srcset="img/intro-desktop@2x.jpg 2x" class="intro__image" width="1366" height="463" alt="Perfection cover">
+        </picture>
+      </div>
+      <div class="intro__wrapper wrapper">
+        <h2>Perfection</h2>
+        <p>made to be yours</p>
+      </div>
+    </section>
+  </main>
   <footer class="page-footer">
   <div class="page-footer__wrapper wrapper">
     <section class="page-footer__sign-up">
