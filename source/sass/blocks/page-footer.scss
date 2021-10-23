@@ -1,0 +1,49 @@
+.page-footer {
+  padding: 100px 0;
+  color: $white;
+  background-color: $black;
+
+  svg {
+    fill: currentColor;
+  }
+}
+
+.page-footer h2 {
+  margin: 0;
+  font-family: $garamond;
+  font-size: 34px;
+  line-height: 130%;
+}
+
+.page-footer p {
+  margin: 0;
+  text-align: center;
+  color: $grey;
+  font-weight: 400;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-footer__nav {
+  display: flex;
+}
+
+.page-footer__sign-up {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer__sign-up form {
+  margin-top: auto;
+  border-bottom: 1px solid $white;
+}
+
+.page-footer__sign-up input {
+  width: 80%;
+  font-size: 14px;
+  border: 0;
+  background-color: transparent;
+}

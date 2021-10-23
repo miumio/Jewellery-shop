@@ -5,13 +5,16 @@ nav {
 .nav__list {
   @include list-style-reset;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
   @media (max-width: $tablet) {
     display: block;
     margin-bottom: 18px;
+  }
+
+  &--catalog,
+  &--about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   &--catalog {

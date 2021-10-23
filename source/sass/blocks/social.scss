@@ -1,0 +1,29 @@
+.social__list {
+  @include list-style-reset;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+  transition: color $easy;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $gold;
+  }
+}
+
+.social__link--fb svg {
+  margin-left: 2px;
+}
+
+.social__link span {
+  margin-left: 15px;
+}
+
+.social__link--fb span {
+  margin-left: 19px;
+}
