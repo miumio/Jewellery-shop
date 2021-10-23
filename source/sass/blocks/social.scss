@@ -1,5 +1,9 @@
 .social__list {
   @include list-style-reset;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .social__link {
@@ -26,4 +30,22 @@
 
 .social__link--fb span {
   margin-left: 19px;
+}
+
+@media (max-width: $mobile) {
+  .social__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .social__link span {
+    display: none;
+  }
+
+  .social__link svg {
+    transform: scale(150%);
+  }
+
+  .social__list {
+    flex-flow: row wrap;
+  }
 }

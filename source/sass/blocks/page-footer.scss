@@ -1,5 +1,5 @@
 .page-footer {
-  padding: 100px 0;
+  padding: 90px 0;
   color: $white;
   background-color: $black;
 
@@ -12,12 +12,12 @@
   margin: 0;
   font-family: $garamond;
   font-size: 34px;
+  letter-spacing: 0.02em;
   line-height: 130%;
 }
 
 .page-footer p {
   margin: 0;
-  text-align: center;
   color: $grey;
   font-weight: 400;
 }
@@ -25,15 +25,53 @@
 .page-footer__wrapper {
   display: flex;
   flex-wrap: wrap;
-}
 
-.page-footer__nav {
-  display: flex;
+  @media (max-width: $tablet) {
+    padding-right: 7%;
+    justify-content: space-between;
+  }
+
+  @media (max-width: $mobile) {
+    display: block;
+    padding: 0;
+  }
 }
 
 .page-footer__sign-up {
   display: flex;
   flex-direction: column;
+  flex: 3 1 0;
+  max-width: 525px;
+  margin-right: auto;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 65px;
+    min-width: 616px;
+    max-width: none;
+    min-height: 150px;
+  }
+
+  @media (max-width: $mobile) {
+    min-width: auto;
+  }
+}
+
+.page-footer__nav {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-evenly;
+  margin-right: 40px;
+
+  @media (max-width: $tablet) {
+    justify-content: space-between;
+    max-width: 500px;
+  }
+
+  @media (max-width: $mobile) {
+    margin: 0 0 50px;
+    flex-direction: column;
+    max-width: none;
+  }
 }
 
 .page-footer__sign-up form {
@@ -42,8 +80,17 @@
 }
 
 .page-footer__sign-up input {
-  width: 80%;
+  display: flex;
+  flex: 1 1 auto;
   font-size: 14px;
   border: 0;
   background-color: transparent;
+}
+
+.page-footer__social {
+  display: flex;
+}
+
+.page-footer__field {
+  display: flex;
 }

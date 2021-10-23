@@ -7,7 +7,6 @@ nav {
 
   @media (max-width: $tablet) {
     display: block;
-    margin-bottom: 18px;
   }
 
   &--catalog,
@@ -34,9 +33,13 @@ nav {
   }
 }
 
+.nav__list--catalog .nav__item:not(:last-child) {
+  margin-right: 35px;
+}
+
 .nav__link {
   display: block;
-  padding: 18px;
+  line-height: 40px;
   text-decoration: none;
   color: inherit;
   transition: color $easy;
@@ -44,10 +47,6 @@ nav {
   &:hover,
   &:active {
     color: $gold;
-  }
-
-  @media (max-width: $tablet) {
-    padding: 10px 0;
   }
 }
 
