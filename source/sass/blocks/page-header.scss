@@ -123,12 +123,7 @@
     font-size: inherit;
   }
 
-  &:last-child {
-    padding-right: 0;
-  }
-
   &:hover,
-  &:focus,
   &:active {
     color: $gold;
   }
@@ -138,6 +133,12 @@
       position: absolute;
       bottom: 0;
       left: -19px;
+    }
+  }
+
+  &--cart {
+    @media (max-width: $tablet) {
+      margin-right: -16px;
     }
   }
 

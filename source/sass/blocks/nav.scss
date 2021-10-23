@@ -19,6 +19,7 @@ nav {
 
   &--catalog {
     @media (max-width: $tablet) {
+      display: block;
       font-size: 24px;
       line-height: 37px;
     }
@@ -26,9 +27,10 @@ nav {
 
   &--about {
     display: none;
+    margin-bottom: 74px;
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 74px;
+    color: rgba($white, 0.75);
   }
 }
 
@@ -40,7 +42,6 @@ nav {
   transition: color $easy;
 
   &:hover,
-  &:focus,
   &:active {
     color: $gold;
   }

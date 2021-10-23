@@ -238,15 +238,16 @@ body {
   @media (max-width: 1023px) {
     .page-header__link {
       font-size: inherit; } }
-  .page-header__link:last-child {
-    padding-right: 0; }
-  .page-header__link:hover, .page-header__link:focus, .page-header__link:active {
+  .page-header__link:hover, .page-header__link:active {
     color: #a87b62; }
   @media (max-width: 1023px) {
     .page-header__link--login {
       position: absolute;
       bottom: 0;
       left: -19px; } }
+  @media (max-width: 1023px) {
+    .page-header__link--cart {
+      margin-right: -16px; } }
   @media (max-width: 1023px) {
     .page-header__link--cart span {
       display: none; } }
@@ -288,13 +289,15 @@ nav {
             justify-content: center; }
   @media (max-width: 1023px) {
     .nav__list--catalog {
+      display: block;
       font-size: 24px;
       line-height: 37px; } }
   .nav__list--about {
     display: none;
+    margin-bottom: 74px;
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 74px; }
+    color: rgba(255, 255, 255, 0.75); }
 
 .nav__link {
   display: block;
@@ -303,7 +306,7 @@ nav {
   color: inherit;
   -webkit-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out; }
-  .nav__link:hover, .nav__link:focus, .nav__link:active {
+  .nav__link:hover, .nav__link:active {
     color: #a87b62; }
   @media (max-width: 1023px) {
     .nav__link {
