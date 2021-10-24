@@ -33,8 +33,8 @@
         <p>made to be yours</p>
       </div>
     </section>
-    <section class="news section">
-      <div class="news__wrapper wrapper">
+    <div class="wrapper">
+      <section class="news section">
         <h2>New In</h2>
         <include src="source/html/link.html">
           {
@@ -143,10 +143,8 @@
             </ul>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="blog section">
-      <div class="blog__wrapper wrapper">
+      </section>
+      <section class="blog section">
         <h2>Blog</h2>
         <include src="source/html/link.html">
           {
@@ -200,7 +198,8 @@
                   <source media="(max-width: 1023px"
                     srcset="img/blog-trends-tablet@1x.webp 1x, img/blog-trends-tablet@2x.webp 2x">
                   <!-- 1x: 570px; 1140px -->
-                  <source type="image/webp" srcset="img/blog-trends-desktop@1x.webp 1x, img/blog-trends-desktop@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/blog-trends-desktop@1x.webp 1x, img/blog-trends-desktop@2x.webp 2x">
                   <img src="img/blog-trends-desktop@1x.jpg" srcset="img/blog-trends-desktop@2x.jpg 2x" width="285"
                     height="300" alt="Blog cover">
                 </picture>
@@ -231,7 +230,8 @@
                   <source media="(max-width: 1023px"
                     srcset="img/blog-power-tablet@1x.webp 1x, img/blog-power-tablet@2x.webp 2x">
                   <!-- 1x: 285px; 570px -->
-                  <source type="image/webp" srcset="img/blog-power-desktop@1x.webp 1x, img/blog-power-desktop@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/blog-power-desktop@1x.webp 1x, img/blog-power-desktop@2x.webp 2x">
                   <img src="img/blog-power-desktop@1x.jpg" srcset="img/blog-power-desktop@2x.jpg 2x" width="285"
                     height="300" alt="Blog cover">
                 </picture>
@@ -248,8 +248,8 @@
             </article>
           </li>
         </ul>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
   <include src="source/html/footer.html"></include>
 
