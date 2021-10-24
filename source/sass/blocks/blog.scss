@@ -1,0 +1,8 @@
+.blog__list {
+  @include list-style-reset;
+
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}

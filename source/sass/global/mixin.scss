@@ -3,3 +3,11 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin title {
+  margin: 0;
+  font-family: $garamond;
+  font-size: 34px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+}

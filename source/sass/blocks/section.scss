@@ -9,3 +9,7 @@
     margin-bottom: 70px;
   }
 }
+
+.section h2 {
+  @include title;
+}
