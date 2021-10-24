@@ -1,5 +1,6 @@
 .slider {
   position: relative;
+  overflow: hidden;
 }
 
 .slider__control {
@@ -19,11 +20,15 @@
   @include list-style-reset;
 
   display: flex;
-  column-gap: 30px;
+  column-gap: 6%;
 }
 
 .slider__item {
   flex: 1 1 270px;
+
+  @media (max-width: $tablet) {
+    min-width: 47%;
+  }
 }
 
 .slider__link {

@@ -1,3 +1,11 @@
 .section {
   margin-bottom: 130px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 70px;
+  }
 }
