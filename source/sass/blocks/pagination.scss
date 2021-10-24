@@ -12,8 +12,13 @@
 .pagination__link {
   color: $grey;
   text-decoration: none;
+  transition: color $easy;
 
   &--active {
     color: inherit;
+  }
+
+  &:hover {
+    color: $gold;
   }
 }

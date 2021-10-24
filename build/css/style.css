@@ -700,6 +700,10 @@ body {
 
 .pagination__link {
   color: #9b9997;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out; }
   .pagination__link--active {
     color: inherit; }
+  .pagination__link:hover {
+    color: #a87b62; }
