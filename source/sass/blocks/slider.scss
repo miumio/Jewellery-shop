@@ -1,0 +1,32 @@
+.slider {
+  position: relative;
+}
+
+.slider__control {
+  position: absolute;
+  top: -50px;
+
+  &--prev {
+    left: 0;
+  }
+
+  &--next {
+    right: 0;
+  }
+}
+
+.slider__list {
+  @include list-style-reset;
+
+  display: flex;
+  column-gap: 30px;
+}
+
+.slider__item {
+  flex: 1 1 270px;
+}
+
+.slider__link {
+  color: inherit;
+  text-decoration: none;
+}

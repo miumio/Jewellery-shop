@@ -1,6 +1,7 @@
 .page-footer {
   padding: 90px 0;
   color: $white;
+  text-align: left;
   background-color: $black;
 
   svg {
@@ -58,8 +59,8 @@
 
 .page-footer__nav {
   display: flex;
-  flex: 1 1 auto;
   justify-content: space-evenly;
+  flex: 1 1 auto;
   margin-right: 40px;
 
   @media (max-width: $tablet) {

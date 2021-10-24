@@ -1,9 +1,10 @@
-nav {
-  flex: 1 1 auto;
-}
+// nav {
+//   flex: 1 1 auto;
+// }
 
 .nav__list {
   @include list-style-reset;
+  text-align: left;
 
   @media (max-width: $tablet) {
     display: block;
