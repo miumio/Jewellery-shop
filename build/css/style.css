@@ -662,7 +662,9 @@ body {
 .product-card h3 {
   margin: 25px 0 0;
   font-size: 16px;
-  font-weight: 500; }
+  font-weight: 500;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out; }
   @media (max-width: 767px) {
     .product-card h3 {
       margin-top: 20px; } }
@@ -671,6 +673,16 @@ body {
   font-size: 14px;
   line-height: 18px;
   font-weight: 700; }
+
+.product-card:hover h3,
+.product-card:active h3,
+.product-card:focus h3 {
+  color: #a87b62; }
+
+.product-card:hover span,
+.product-card:active span,
+.product-card:focus span {
+  text-decoration: underline; }
 
 .pagination__list {
   margin: 0;
