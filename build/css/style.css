@@ -838,3 +838,41 @@ body {
   @media (max-width: 767px) {
     .blog__txt {
       max-width: none; } }
+
+.questions__list {
+  margin: 60px 5% 0;
+  padding: 50px 35px;
+  text-align: left;
+  border: 1px solid #a87b62; }
+
+.questions__question {
+  position: relative;
+  margin-bottom: 49px;
+  padding-right: 50px;
+  font-size: 18px; }
+  .questions__question::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    border-right: 1px solid #a87b62;
+    border-bottom: 1px solid #a87b62;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+
+.questions__answer {
+  margin-top: -45px;
+  margin-left: 5px;
+  font-weight: 400; }
+  @media (max-width: 1023px) {
+    .questions__answer {
+      margin-left: 0; } }
+  .questions__answer:not(:last-child) {
+    margin-bottom: 49px; }
+
+.questions__question--open + dd {
+  display: block; }
