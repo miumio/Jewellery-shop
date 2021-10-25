@@ -1,5 +1,5 @@
-<article class="blog__blog-card blog-card">
-  <div class="blog-card__img-wrapper">
+<article class="blog__card">
+  <div class="blog__img">
     <picture>
       <!-- 1x: 290px; 256px -->
       <source type="image/webp" media="(max-width: 767px"
@@ -17,10 +17,10 @@
         height="{{ imgHeight }}" alt="Blog {{ title }} cover">
     </picture>
   </div>
-  <div class="blog-card__txt-wrapper">
+  <div class="blog__txt">
     <h3>{{ title }}</h3>
     <p>{{ text }}</p>
-    <include src="source/html/link.html">
+    <include src="source/html/components/link.html">
       {
       "text": "Read Article"
       }

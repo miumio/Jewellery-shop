@@ -15,19 +15,18 @@
 </head>
 
 <body>
-  <include src="source/html/header.html"></include>
+  <include src="source/html/components/header.html">
+  </include>
   <main>
-    <include src="source/html/intro.html">
-      {
+    <include src="source/html/components/intro.html" locals='{
       "title": "Perfection",
       "text": "made to be yours",
       "img": "intro"
-      }
-    </include>
+      }'></include>
     <div class="wrapper">
       <section class="news section">
         <h2>New In</h2>
-        <include src="source/html/link.html">
+        <include src="source/html/components/link.html">
           {
           "text": "Shop Now"
           }
@@ -38,7 +37,7 @@
           <ul class="slider__list">
             <li class="slider__item">
               <a href="#" class="slider__link">
-                <include src="source/html/product-card.html">
+                <include src="source/html/components/product-card.html">
                   {
                   "title": "Necklace with amethyst",
                   "price": "145",
@@ -49,7 +48,7 @@
             </li>
             <li class="slider__item">
               <a href="#" class="slider__link">
-                <include src="source/html/product-card.html">
+                <include src="source/html/components/product-card.html">
                   {
                   "title": "Layered choker",
                   "price": "115",
@@ -60,7 +59,7 @@
             </li>
             <li class="slider__item">
               <a href="#" class="slider__link">
-                <include src="source/html/product-card.html">
+                <include src="source/html/components/product-card.html">
                   {
                   "title": "Gold chain",
                   "price": "215",
@@ -71,7 +70,7 @@
             </li>
             <li class="slider__item">
               <a href="#" class="slider__link">
-                <include src="source/html/product-card.html">
+                <include src="source/html/components/product-card.html">
                   {
                   "title": "Galaxy earrings",
                   "price": "95",
@@ -98,45 +97,45 @@
       </section>
       <section class="blog section">
         <h2>Blog</h2>
-        <include src="source/html/link.html">
+        <include src="source/html/components/link.html">
           {
           "text": "Read All"
           }
         </include>
         <ul class="blog__list">
           <li class="blog__item">
-            <include src="source/html/blog-card.html">
+            <include src="source/html/components/blog-card.html">
               {
-                "title": "How to care for your jewellery",
-                "text": "September 30, 2019",
-                "img": "blog-care",
-                "imgWidth": "285",
-                "imgWidth2x": "570",
-                "imgHeight": "300"
+              "title": "How to care for your jewellery",
+              "text": "September 30, 2019",
+              "img": "blog-care",
+              "imgWidth": "285",
+              "imgWidth2x": "570",
+              "imgHeight": "300"
               }
             </include>
           </li>
           <li class="blog__item blog__item--big">
-            <include src="source/html/blog-card.html">
+            <include src="source/html/components/blog-card.html">
               {
-                "title": "AW 19 trends",
-                "text": "September 16, 2019",
-                "img": "blog-trends",
-                "imgWidth": "570",
-                "imgWidth2x": "1140",
-                "imgHeight": "630"
+              "title": "AW 19 trends",
+              "text": "September 16, 2019",
+              "img": "blog-trends",
+              "imgWidth": "570",
+              "imgWidth2x": "1140",
+              "imgHeight": "630"
               }
             </include>
           </li>
           <li class="blog__item">
-            <include src="source/html/blog-card.html">
+            <include src="source/html/components/blog-card.html">
               {
-                "title": "Power of crystals",
-                "text": "September 23, 2019",
-                "img": "blog-power",
-                "imgWidth": "285",
-                "imgWidth2x": "570",
-                "imgHeight": "300"
+              "title": "Power of crystals",
+              "text": "September 23, 2019",
+              "img": "blog-power",
+              "imgWidth": "285",
+              "imgWidth2x": "570",
+              "imgHeight": "300"
               }
             </include>
           </li>
@@ -144,7 +143,7 @@
       </section>
     </div>
   </main>
-  <include src="source/html/footer.html"></include>
+  <include src="source/html/components/footer.html"></include>
 
   <script src="js/main.js"></script>
 

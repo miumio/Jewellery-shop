@@ -76,10 +76,11 @@ gulp.task("sprite", function () {
     .pipe(gulp.dest("build/img"));
 });
 
+
 gulp.task("html", function () {
-  return gulp.src("source/html/index.html")
+  return gulp.src("source/html/*.html")
     .pipe(posthtml([
-      include()
+      include({ encoding: 'utf8' })
     ]))
     .pipe(gulp.dest("build"));
 });
