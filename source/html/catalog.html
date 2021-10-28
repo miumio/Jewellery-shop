@@ -121,24 +121,26 @@
                 <div class="filter__controls">
                   <div class="filter__scale">
                     <div class="filter__bar"></div>
-                    <button type="button" aria-label="Min value"></button>
-                    <button type="button" aria-label="Max value"></button>
                   </div>
+                  <button type="button" aria-label="Min value"></button>
+                  <button type="button" aria-label="Max value"></button>
                 </div>
-                <div class="filter__price">
+                <div class="filter__price-inputs">
                   <label>
                     <span class="visually-hidden">Type min value</span>
+                    <span>$</span>
                     <input type="number" name="minprice" value="55" min="0">
                   </label>
                   <label>
+                    <span>$</span>
                     <span class="visually-hidden">Type max value</span>
                     <input type="number" name="maxprice" value="155" min="0" max="10000000">
                   </label>
                 </div>
               </div>
             </fieldset>
-            <button type="submit">Apply</button>
-            <button type="reset">Clear All</button>
+            <button class="filter__button button" type="submit">Apply</button>
+            <button class="filter__button filter__button--white button" type="reset">Clear All</button>
           </form>
         </div>
       </section>
