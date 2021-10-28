@@ -6,23 +6,12 @@
 }
 
 .questions__question {
+  @include corner;
+
   position: relative;
   margin-bottom: 49px;
   padding-right: 50px;
   font-size: 18px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 15px;
-    height: 15px;
-    border-right: 1px solid $gold;
-    border-bottom: 1px solid $gold;
-    transform-origin: 0 0;
-    transform: rotate(45deg);
-  }
 }
 
 .questions__answer {

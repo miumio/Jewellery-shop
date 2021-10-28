@@ -912,3 +912,99 @@ body {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover; }
+
+.catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.catalog__filter-link {
+  display: none; }
+
+.catalog__filter {
+  min-width: 200px; }
+
+.filter {
+  font-size: 14px;
+  text-align: left; }
+
+.filter fieldset {
+  margin: 0;
+  padding: 25px;
+  border: 1px solid #a87b62;
+  border-bottom: none; }
+
+.filter legend {
+  position: relative;
+  margin: 0 0 30px;
+  padding: 0;
+  width: 100%;
+  font-size: 16px;
+  float: left; }
+  .filter legend::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    border-right: 1px solid #a87b62;
+    border-bottom: 1px solid #a87b62;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+
+.filter ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 5px; }
+
+.filter li {
+  margin-bottom: 5px; }
+
+.filter label {
+  display: block; }
+
+.filter__input + span {
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #a87b62;
+  background-color: #ffffff; }
+
+.filter__input:checked + span {
+  background-color: #a87b62; }
+
+.filter__input:disabled ~ span {
+  opacity: 0.4; }
+
+.filter__input:focus + span {
+  outline: 2px solid #a87b62;
+  outline-offset: 1px; }
+
+.filter__controls {
+  position: relative;
+  padding: 20px;
+  outline: 1px solid red; }
+
+.filter__scale button {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #a87b62;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer; }
+
+.filter__scale {
+  height: 2px;
+  background-color: #9b9997; }
+
+.filter__bar {
+  width: 50%;
+  height: 2px;
+  background-color: #a87b62; }

@@ -11,3 +11,18 @@
   line-height: 130%;
   letter-spacing: 0.03em;
 }
+
+@mixin corner {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    border-right: 1px solid $gold;
+    border-bottom: 1px solid $gold;
+    transform-origin: 0 0;
+    transform: rotate(45deg);
+  }
+}

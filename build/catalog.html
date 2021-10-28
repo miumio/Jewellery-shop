@@ -98,36 +98,37 @@
   <main>
     <div class="wrapper">
       <section class="catalog">
+        <a href="#" class="catalog__filter-link">Filter</a>
         <div class="catalog__filter filter">
-          <h2 class="visuaally-hidden">Filter</h2>
+          <h2 class="visually-hidden">Filter</h2>
           <form action="http://echo.htmlacademy.ru" method="get">
             <fieldset>
               <legend>Product</legend>
               <ul>
                 <li>
                   <label>
-                    <input type="checkbox" name="necklaces" checked="">
+                    <input class="visually-hidden filter__input" type="checkbox" name="necklaces" checked="">
                     <span></span>
                     <span>Necklaces</span>
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input type="checkbox" name="chockers" checked="">
+                    <input class="visually-hidden filter__input" type="checkbox" name="chockers" checked="">
                     <span></span>
                     <span>Chockers</span>
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input type="checkbox" name="rings">
+                    <input class="visually-hidden filter__input" type="checkbox" name="rings">
                     <span></span>
                     <span>Rings</span>
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input type="checkbox" name="earrings" checked="">
+                    <input class="visually-hidden filter__input" type="checkbox" name="earrings" checked="">
                     <span></span>
                     <span>Earring</span>
                   </label>
@@ -139,28 +140,28 @@
               <ul>
                 <li>
                   <label>
-                    <input type="checkbox" name="material1" checked="">
+                    <input class="visually-hidden filter__input" type="checkbox" name="material1" checked="">
                     <span></span>
                     <span>Material1</span>
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input type="checkbox" name="material2">
+                    <input class="visually-hidden filter__input" type="checkbox" name="material2">
                     <span></span>
                     <span>Material2</span>
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input type="checkbox" name="material3" checked="">
+                    <input class="visually-hidden filter__input" type="checkbox" name="material3" checked="">
                     <span></span>
                     <span>Material3</span>
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input type="checkbox" name="material4" checked="">
+                    <input class="visually-hidden filter__input" type="checkbox" name="material4" checked="">
                     <span></span>
                     <span>Material4</span>
                   </label>
@@ -172,14 +173,14 @@
               <ul>
                 <li>
                   <label>
-                    <input type="checkbox" name="collection1" checked="">
+                    <input class="visually-hidden filter__input" type="checkbox" name="collection1" checked="">
                     <span></span>
                     <span>collection1</span>
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input type="checkbox" name="collection2">
+                    <input class="visually-hidden filter__input" type="checkbox" name="collection2" disabled="">
                     <span></span>
                     <span>collection2</span>
                   </label>
@@ -198,16 +199,18 @@
                 </div>
                 <div class="filter__price">
                   <label>
-                    <span class="vissually-hidden">Type min value</span>
+                    <span class="visually-hidden">Type min value</span>
                     <input type="number" name="minprice" value="55" min="0">
                   </label>
                   <label>
-                    <span class="vissually-hidden">Type max value</span>
+                    <span class="visually-hidden">Type max value</span>
                     <input type="number" name="maxprice" value="155" min="0" max="10000000">
                   </label>
                 </div>
               </div>
             </fieldset>
+            <button type="submit">Apply</button>
+            <button type="reset">Clear All</button>
           </form>
         </div>
       </section>
