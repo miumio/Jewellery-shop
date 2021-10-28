@@ -1,0 +1,85 @@
+.filter {
+  font-size: 14px;
+  text-align: left;
+}
+
+.filter fieldset {
+  margin: 0;
+  padding: 25px;
+  border: 1px solid $gold;
+  border-bottom: none;
+}
+
+.filter legend {
+  @include corner;
+
+  position: relative;
+  margin: 0 0 30px;
+  padding: 0;
+  width: 100%;
+  font-size: 16px;
+  float: left;
+}
+
+.filter ul {
+  @include list-style-reset;
+  margin-left: 5px;
+}
+
+.filter li {
+  margin-bottom: 5px;
+}
+
+.filter label {
+  display: block;
+}
+
+.filter__input + span {
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $gold;
+  background-color: $white;
+}
+
+.filter__input:checked + span {
+  background-color: $gold;
+}
+
+.filter__input:disabled ~ span {
+  opacity: 0.4;
+}
+
+.filter__input:focus + span {
+  outline: 2px solid $gold;
+  outline-offset: 1px;
+}
+
+.filter__controls {
+  position: relative;
+  padding: 20px;
+  outline: 1px solid red;
+}
+
+.filter__scale button {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: $gold;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.filter__scale {
+  height: 2px;
+  background-color: $grey;
+}
+
+.filter__bar {
+  width: 50%;
+  height: 2px;
+  background-color: $gold;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CH Jewellery shop">
+  <title>CH Jewellery</title>
+  <link rel="preload" href="fonts/garamond-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/garamond-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/poppins-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <include src="source/html/components/header.html">
+    {
+    "pageTitle": "CH Jewellery catalog",
+    "title": "All jewellerry",
+    "text": "Discover picks of fashion's finest trends in our jewellery catalog",
+    "img": "catalog-intro"
+    }
+  </include>
+  <main>
+    <div class="wrapper">
+      <section class="catalog">
+        <a href="#" class="catalog__filter-link">Filter</a>
+        <div class="catalog__filter filter">
+          <h2 class="visually-hidden">Filter</h2>
+          <form action="http://echo.htmlacademy.ru" method="get">
+            <fieldset>
+              <legend>Product</legend>
+              <ul>
+                <li>
+                  <label>
+                    <input class="visually-hidden filter__input" type="checkbox" name="necklaces" checked>
+                    <span></span>
+                    <span>Necklaces</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="visually-hidden filter__input" type="checkbox" name="chockers" checked>
+                    <span></span>
+                    <span>Chockers</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="visually-hidden filter__input" type="checkbox" name="rings">
+                    <span></span>
+                    <span>Rings</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="visually-hidden filter__input" type="checkbox" name="earrings" checked>
+                    <span></span>
+                    <span>Earring</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Material</legend>
+              <ul>
+                <li>
+                  <label>
+                    <input class="visually-hidden filter__input" type="checkbox" name="material1" checked>
+                    <span></span>
+                    <span>Material1</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="visually-hidden filter__input" type="checkbox" name="material2">
+                    <span></span>
+                    <span>Material2</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="visually-hidden filter__input" type="checkbox" name="material3" checked>
+                    <span></span>
+                    <span>Material3</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="visually-hidden filter__input" type="checkbox" name="material4" checked>
+                    <span></span>
+                    <span>Material4</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Collection</legend>
+              <ul>
+                <li>
+                  <label>
+                    <input class="visually-hidden filter__input" type="checkbox" name="collection1" checked>
+                    <span></span>
+                    <span>collection1</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="visually-hidden filter__input" type="checkbox" name="collection2" disabled>
+                    <span></span>
+                    <span>collection2</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Price</legend>
+              <div class="filter__range">
+                <div class="filter__controls">
+                  <div class="filter__scale">
+                    <div class="filter__bar"></div>
+                    <button type="button" aria-label="Min value"></button>
+                    <button type="button" aria-label="Max value"></button>
+                  </div>
+                </div>
+                <div class="filter__price">
+                  <label>
+                    <span class="visually-hidden">Type min value</span>
+                    <input type="number" name="minprice" value="55" min="0">
+                  </label>
+                  <label>
+                    <span class="visually-hidden">Type max value</span>
+                    <input type="number" name="maxprice" value="155" min="0" max="10000000">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <button type="submit">Apply</button>
+            <button type="reset">Clear All</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

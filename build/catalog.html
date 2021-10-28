@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CH Jewellery shop">
+  <title>CH Jewellery</title>
+  <link rel="preload" href="fonts/garamond-italic.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/garamond-700.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/poppins-500.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="page-header">
+  <div class="page-header__wrapper wrapper">
+    <a href="index.html" class="page-header__logo">
+      <svg width="66" height="66">
+        <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <nav class="page-header__nav nav nav--nojs">
+      <button type="button" class="nav__button button" aria-label="Menu">
+        <span class="nav__button-lines nav__button-lines--top"></span>
+        <span class="nav__button-lines nav__button-lines--middle"></span>
+        <span class="nav__button-lines nav__button-lines--bottom"></span>
+      </button>
+      <ul class="nav__list nav__list--catalog">
+        <li class="nav__item">
+          <a href="#" class="nav__link">What's new</a>
+        </li>
+        <li class="nav__item">
+          <a href="catalog.html" class="nav__link">Chokers</a>
+        </li>
+        <li class="nav__item">
+          <a href="catalog.html" class="nav__link">Necklaces</a>
+        </li>
+        <li class="nav__item">
+          <a href="catalog.html" class="nav__link">Rings</a>
+        </li>
+        <li class="nav__item">
+          <a href="catalog.html" class="nav__link">Earrings</a>
+        </li>
+      </ul>
+      <ul class="nav__list nav__list--about">
+        <li class="nav__item">
+          <a href="#" class="nav__link">About CH</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Stores & Hours</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="page-header__links">
+      <a href="#" class="page-header__link page-header__link--login">
+        <span>Login</span>
+      </a>
+      <a href="#" class="page-header__link page-header__link--cart">
+        <span>Cart</span>
+        <span>0</span>
+        <svg width="20" height="18">
+          <use xlink:href="img/sprite_auto.svg#icon-shop"></use>
+        </svg>
+      </a>
+    </div>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <label>
+        <span class="visually-hidden">Search</span>
+        <svg width="14" height="14">
+          <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+        </svg>
+        <input type="search" id="search-field" name="search" placeholder="Type here to search">
+      </label>
+    </form>
+  </div>
+  <section class="page-header__intro intro">
+    <h1 class="visually-hidden">CH Jewellery catalog</h1>
+    <div class="intro__img-wrapper">
+      <picture>
+        <source type="image/webp" media="(max-width: 1023px)" srcset="img/catalog-intro-tablet@1x.webp 1x, img/catalog-intro-tablet@2x.webp 2x">
+        <source media="(max-width: 1023px)" srcset="img/catalog-intro-tablet@1x.jpg 1x, img/catalog-intro-tablet@2x.jpg 2x">
+        <source type="image/webp" srcset="img/catalog-intro-desktop@1x.webp 1x, img/catalog-intro-desktop@2x.webp 2x"><img src="img/catalog-intro-desktop@1x.jpg" srcset="img/catalog-intro-desktop@2x.jpg 2x" class="intro__image" width="1366" height="463" alt="Perfection cover">
+      </picture>
+    </div>
+    <div class="intro__wrapper wrapper">
+      <h2>All jewellerry</h2>
+      <p>Discover picks of fashion&#039;s finest trends in our jewellery catalog</p>
+    </div>
+  </section>
+</header>
+
+  <main>
+    <div class="wrapper">
+      <section class="catalog">
+        <a href="#" class="catalog__filter-link">Filter</a>
+        <div class="catalog__filter filter">
+          <h2 class="visually-hidden">Filter</h2>
+          <form action="http://echo.htmlacademy.ru" method="get">
+            <fieldset>
+              <legend>Product</legend>
+              <ul>
+                <li>
+                  <label>
+                    <input class="visually-hidden filter__input" type="checkbox" name="necklaces" checked="">
+                    <span></span>
+                    <span>Necklaces</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="visually-hidden filter__input" type="checkbox" name="chockers" checked="">
+                    <span></span>
+                    <span>Chockers</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="visually-hidden filter__input" type="checkbox" name="rings">
+                    <span></span>
+                    <span>Rings</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="visually-hidden filter__input" type="checkbox" name="earrings" checked="">
+                    <span></span>
+                    <span>Earring</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Material</legend>
+              <ul>
+                <li>
+                  <label>
+                    <input class="visually-hidden filter__input" type="checkbox" name="material1" checked="">
+                    <span></span>
+                    <span>Material1</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="visually-hidden filter__input" type="checkbox" name="material2">
+                    <span></span>
+                    <span>Material2</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="visually-hidden filter__input" type="checkbox" name="material3" checked="">
+                    <span></span>
+                    <span>Material3</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="visually-hidden filter__input" type="checkbox" name="material4" checked="">
+                    <span></span>
+                    <span>Material4</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Collection</legend>
+              <ul>
+                <li>
+                  <label>
+                    <input class="visually-hidden filter__input" type="checkbox" name="collection1" checked="">
+                    <span></span>
+                    <span>collection1</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="visually-hidden filter__input" type="checkbox" name="collection2" disabled="">
+                    <span></span>
+                    <span>collection2</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Price</legend>
+              <div class="filter__range">
+                <div class="filter__controls">
+                  <div class="filter__scale">
+                    <div class="filter__bar"></div>
+                    <button type="button" aria-label="Min value"></button>
+                    <button type="button" aria-label="Max value"></button>
+                  </div>
+                </div>
+                <div class="filter__price">
+                  <label>
+                    <span class="visually-hidden">Type min value</span>
+                    <input type="number" name="minprice" value="55" min="0">
+                  </label>
+                  <label>
+                    <span class="visually-hidden">Type max value</span>
+                    <input type="number" name="maxprice" value="155" min="0" max="10000000">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <button type="submit">Apply</button>
+            <button type="reset">Clear All</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

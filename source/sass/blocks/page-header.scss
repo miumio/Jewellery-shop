@@ -13,7 +13,7 @@
 
   &--white {
     @media (max-width: $tablet) {
-      color: $black;
+      color: $basic-black;
       background-color: $white;
     }
   }
@@ -21,6 +21,7 @@
 
 .page-header__wrapper {
   position: relative;
+  margin-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

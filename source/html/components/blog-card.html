@@ -1,15 +1,15 @@
-<article class="blog__blog-card blog-card">
-  <div class="blog-card__img-wrapper">
+<article class="blog__card">
+  <div class="blog__img">
     <picture>
       <!-- 1x: 290px; 256px -->
-      <source type="image/webp" media="(max-width: 767px"
+      <source type="image/webp" media="(max-width: 767px)"
         srcset="img/{{ img }}-mobile@1x.webp 1x, img/{{ img }}-mobile@2x.webp 2x">
-      <source media="(max-width: 767px"
+      <source media="(max-width: 767px)"
         srcset="img/{{ img }}-mobile@1x.webp 1x, img/{{ img }}-mobile@2x.webp 2x">
       <!-- 1x: 339px; 678px -->
-      <source type="image/webp" media="(max-width: 1023px"
+      <source type="image/webp" media="(max-width: 1023px)"
         srcset="img/{{ img }}-tablet@1x.webp 1x, img/{{ img }}-tablet@2x.webp 2x">
-      <source media="(max-width: 1023px"
+      <source media="(max-width: 1023px)"
         srcset="img/{{ img }}-tablet@1x.webp 1x, img/{{ img }}-tablet@2x.webp 2x">
       <!-- 1x: {{ imgWidth }}px; {{ imgWidth2x }}px -->
       <source type="image/webp" srcset="img/{{ img }}-desktop@1x.webp 1x, img/{{ img }}-desktop@2x.webp 2x">
@@ -17,10 +17,10 @@
         height="{{ imgHeight }}" alt="Blog {{ title }} cover">
     </picture>
   </div>
-  <div class="blog-card__txt-wrapper">
+  <div class="blog__txt">
     <h3>{{ title }}</h3>
     <p>{{ text }}</p>
-    <include src="source/html/link.html">
+    <include src="source/html/components/link.html">
       {
       "text": "Read Article"
       }
