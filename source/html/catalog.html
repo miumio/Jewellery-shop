@@ -121,25 +121,172 @@
                 <div class="filter__controls">
                   <div class="filter__scale">
                     <div class="filter__bar"></div>
-                    <button type="button" aria-label="Min value"></button>
-                    <button type="button" aria-label="Max value"></button>
                   </div>
+                  <button type="button" aria-label="Min value"></button>
+                  <button type="button" aria-label="Max value"></button>
                 </div>
-                <div class="filter__price">
+                <div class="filter__price-inputs">
                   <label>
                     <span class="visually-hidden">Type min value</span>
+                    <span>$</span>
                     <input type="number" name="minprice" value="55" min="0">
                   </label>
                   <label>
+                    <span>$</span>
                     <span class="visually-hidden">Type max value</span>
                     <input type="number" name="maxprice" value="155" min="0" max="10000000">
                   </label>
                 </div>
               </div>
             </fieldset>
-            <button type="submit">Apply</button>
-            <button type="reset">Clear All</button>
+            <button class="filter__button button" type="submit">Apply</button>
+            <button class="filter__button filter__button--white button" type="reset">Clear All</button>
           </form>
+        </div>
+        <div class="catalog-inner">
+          <ul class="catalog__list">
+            <li>
+              <include src="source/html/components/product-card.html">
+                {
+                "title": "Double pearl earrings",
+                "price": "115",
+                "img": "double-pearl-earrings",
+                "link": "#"
+              }
+              </include>
+            </li>
+            <li>
+              <include src="source/html/components/product-card.html">
+                {
+                "title": "Chocker with gold bead",
+                "price": "55",
+                "img": "black-choker-gold-bead",
+                "link": "#"
+              }
+              </include>
+            </li>
+            <li>
+              <include src="source/html/components/product-card.html">
+                {
+                "title": "Gold layered necklace",
+                "price": "155",
+                "img": "gold-layered-necklace",
+                "link": "#"
+              }
+              </include>
+            </li>
+            <li>
+              <include src="source/html/components/product-card.html">
+                {
+                "title": "Blue gemstone pendant",
+                "price": "105",
+                "img": "blue-gemstone-pendant",
+                "link": "#"
+              }
+              </include>
+            </li>
+            <li>
+              <include src="source/html/components/product-card.html">
+                {
+                "title": "Boho earrings",
+                "price": "75",
+                "img": "boho-earrings",
+                "link": "#"
+              }
+              </include>
+            </li>
+            <li>
+              <include src="source/html/components/product-card.html">
+                {
+                "title": "Gold bird necklace",
+                "price": "135",
+                "img": "bird-necklace",
+                "link": "#"
+              }
+              </include>
+            </li>
+            <li>
+              <include src="source/html/components/product-card.html">
+                {
+                "title": "Black leather chocker",
+                "price": "85",
+                "img": "black-leather-choker-necklace",
+                "link": "#"
+              }
+              </include>
+            </li>
+            <li>
+              <include src="source/html/components/product-card.html">
+                {
+                "title": "Necklace with amethyst",
+                "price": "145",
+                "img": "purple-gemstone-necklace",
+                "link": "#"
+              }
+              </include>
+            </li>
+            <li>
+              <include src="source/html/components/product-card.html">
+                {
+                "title": "Elephant earrings",
+                "price": "95",
+                "img": "elephant-earrings",
+                "link": "#"
+              }
+              </include>
+            </li>
+            <li>
+              <include src="source/html/components/product-card.html">
+                {
+                "title": "Threader necklace",
+                "price": "115",
+                "img": "threader-necklace-closeup",
+                "link": "#"
+              }
+              </include>
+            </li>
+            <li>
+              <include src="source/html/components/product-card.html">
+                {
+                "title": "Origami crane necklace",
+                "price": "105",
+                "img": "origami-crane-necklace",
+                "link": "#"
+              }
+              </include>
+            </li>
+            <li>
+              <include src="source/html/components/product-card.html">
+                {
+                "title": "Marbl earrings",
+                "price": "95",
+                "img": "marble-earrings",
+                "link": "#"
+              }
+              </include>
+            </li>
+          </ul>
+          <div class="catalog__pagination pagination">
+            <button class="catalog__button catalog__button--prev button">Previous</button>
+            <button class="catalog__button catalog__button--next button">Next</button>
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <a href="#" class="pagination__link pagination__link--active">1</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">2</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">3</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">4</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">5</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </div>
