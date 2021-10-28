@@ -1,5 +1,6 @@
 .catalog {
   display: flex;
+  column-gap: 50px;
 }
 
 .catalog__filter-link {
@@ -8,4 +9,12 @@
 
 .catalog__filter {
   min-width: 200px;
+}
+
+.catalog__list {
+  @include list-style-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
 }

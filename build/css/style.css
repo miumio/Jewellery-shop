@@ -673,7 +673,7 @@ body {
     .slider__item {
       min-width: 47%; } }
 
-.slider__link {
+.product-card {
   color: inherit;
   text-decoration: none; }
 
@@ -917,13 +917,29 @@ body {
 .catalog {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px; }
 
 .catalog__filter-link {
   display: none; }
 
 .catalog__filter {
   min-width: 200px; }
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px; }
 
 .filter {
   font-size: 14px;

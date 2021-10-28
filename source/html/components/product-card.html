@@ -1,18 +1,20 @@
-<article class="slider__product-card product-card">
-  <picture>
-    <source type="image/webp" media="(max-width: 767px)"
-      srcset="img/catalog/{{ img }}-mobile@1x.webp 1x, img/catalog/{{ img }}-mobile@2x.webp 2x">
-    <source media="(max-width: 767px)"
-      srcset="img/catalog/{{ img }}-mobile@1x.jpg 1x, img/catalog/{{ img }}-mobile@2x.jpg 2x">
-    <source type="image/webp" media="(max-width: 1023px)"
-      srcset="img/catalog/{{ img }}-tablet@1x.webp 1x, img/catalog/{{ img }}-tablet@2x.webp 2x">
-    <source media="(max-width: 1023px)"
-      srcset="img/catalog/{{ img }}-tablet@1x.jpg 1x, img/catalog/{{ img }}-tablet@2x.jpg 2x">
-    <source type="image/webp"
-      srcset="img/catalog/{{ img }}-desktop@1x.webp 1x, img/catalog/{{ img }}-desktop@2x.webp 2x">
-    <img src="img/catalog/{{ img }}-desktop@1x.jpg" srcset="img/catalog/{{ img }}-desktop@2x.jpg 2x" width="270"
-      height="284" alt="{{ title }}">
-  </picture>
-  <h3>{{ title }}</h3>
-  <span>$ {{ price }}</span>
-</article>
+<a href="{{ link }}" class="product-card">
+  <article>
+    <picture>
+      <source type="image/webp" media="(max-width: 767px)"
+        srcset="img/catalog/{{ img }}-mobile@1x.webp 1x, img/catalog/{{ img }}-mobile@2x.webp 2x">
+      <source media="(max-width: 767px)"
+        srcset="img/catalog/{{ img }}-mobile@1x.jpg 1x, img/catalog/{{ img }}-mobile@2x.jpg 2x">
+      <source type="image/webp" media="(max-width: 1023px)"
+        srcset="img/catalog/{{ img }}-tablet@1x.webp 1x, img/catalog/{{ img }}-tablet@2x.webp 2x">
+      <source media="(max-width: 1023px)"
+        srcset="img/catalog/{{ img }}-tablet@1x.jpg 1x, img/catalog/{{ img }}-tablet@2x.jpg 2x">
+      <source type="image/webp"
+        srcset="img/catalog/{{ img }}-desktop@1x.webp 1x, img/catalog/{{ img }}-desktop@2x.webp 2x">
+      <img src="img/catalog/{{ img }}-desktop@1x.jpg" srcset="img/catalog/{{ img }}-desktop@2x.jpg 2x" width="270"
+        height="272" alt="{{ title }}">
+    </picture>
+    <h3>{{ title }}</h3>
+    <span>$ {{ price }}</span>
+  </article>
+</a>
