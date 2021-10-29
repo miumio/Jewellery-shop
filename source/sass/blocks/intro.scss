@@ -1,12 +1,18 @@
 .intro {
   position: relative;
+
   font-family: $garamond;
+  color: $white;
   font-size: 38px;
   line-height: 130%;
-  color: $white;
+  font-weight: 400;
 
   @media (max-width: $mobile) {
     font-size: 34px;
+  }
+
+  &--catalog {
+    font-size: 22px;
   }
 }
 
@@ -24,16 +30,17 @@
 .intro p {
   margin: 0;
   font-style: italic;
-  font-weight: 400;
 }
 
 .intro__img-wrapper {
+  min-height: 261px;
   background-color: $gold;
-}
+  overflow: hidden;
 
-.intro__img-wrapper img {
-  object-fit: cover;
-  height: 100%;
+  img {
+    min-height: 261px;
+    object-fit: cover;
+  }
 }
 
 .intro__txt {
@@ -44,6 +51,7 @@
   right: 0;
 
   display: flex;
+  padding: 0 50px;
   flex-direction: column;
   justify-content: center;
 }

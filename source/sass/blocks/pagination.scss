@@ -1,5 +1,6 @@
 .pagination__list {
   @include list-style-reset;
+  margin: 0 100px;
 
   display: flex;
   justify-content: center;

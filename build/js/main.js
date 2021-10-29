@@ -1,4 +1,10 @@
 (function () {
+  const link = document.querySelector('.catalog__filter-link');
+
+  link.classList.add('catalog__filter-link--show')
+})();
+
+(function () {
   const header = document.querySelector('.page-header');
   const nav = document.querySelector('.nav');
   const toggler = nav.querySelector('.nav__button');
