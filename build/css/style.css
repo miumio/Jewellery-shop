@@ -942,7 +942,26 @@ body {
   font-size: 14px;
   text-align: left; }
 
-.filter__button {
+.filter h4 {
+  position: relative;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500; }
+  .filter h4::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    border-right: 1px solid #a87b62;
+    border-bottom: 1px solid #a87b62;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+
+.filter form > button {
   display: block;
   margin-bottom: 25px;
   padding: 20px;
@@ -951,11 +970,12 @@ body {
   font-weight: 500;
   color: #ffffff;
   background-color: #a87b62;
+  border: none;
   -webkit-transition: opacity 0.3s ease-out;
   transition: opacity 0.3s ease-out; }
-  .filter__button:hover {
+  .filter form > button:hover {
     opacity: 0.7; }
-  .filter__button--white {
+  .filter form > button:last-of-type {
     color: #1d1613;
     background-color: #ffffff;
     border: 1px solid #a87b62; }
@@ -963,7 +983,7 @@ body {
 .filter fieldset {
   position: relative;
   margin: 0;
-  padding: 0;
+  padding: 28px 25px;
   display: block;
   width: 100%;
   min-height: 68px;
@@ -983,9 +1003,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-left: 35px;
-  margin-top: 50px;
-  margin-bottom: 30px; }
+  margin-top: 15px; }
 
 .filter li {
   margin-bottom: 5px; }
@@ -1025,6 +1043,7 @@ body {
 
 .filter__controls {
   position: relative;
+  margin-top: 35px;
   margin-bottom: 10px;
   padding: 6px 0; }
 
@@ -1084,9 +1103,3 @@ body {
   margin: 0 0 35px 0;
   padding: 28px 25px;
   border: 1px solid #a87b62; }
-
-.filter__price-wrapper h4 {
-  margin: 0;
-  margin-bottom: 30px;
-  font-size: 16px;
-  font-weight: 500; }
