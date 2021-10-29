@@ -3,10 +3,6 @@
   text-align: left;
 }
 
-.filter form {
-  border-top: 1px solid $gold;
-}
-
 .filter__button {
   display: block;
   margin-bottom: 25px;
@@ -25,37 +21,36 @@
   &--white {
     color: $basic-black;
     background-color: $white;
-    border: 1px solid $gold;
+    border: $gold-line;
   }
 }
 
 .filter fieldset {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   margin: 0;
-  padding: 25px;
-  border: 1px solid $gold;
-  border-top: none;
-
-  &:last-of-type {
-    margin-bottom: 35px;
-  }
+  padding: 0;
+  display: block;
+  width: 100%;
+  min-height: 68px;
+  border: $gold-line;
+  border-bottom: none;
 }
 
 .filter legend {
-  @include corner;
-
-  position: relative;
-  margin: 0 0 30px;
-  padding: 0;
+  position: absolute;
+  margin: 0;
+  padding: 0 25px;
   width: 100%;
-  font-size: 16px;
-  float: left;
+  top: 15px;
+  left: 0;
+  line-height: 2em;
 }
 
 .filter ul {
   @include list-style-reset;
-  margin-left: 5px;
+  margin-left: 35px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .filter li {
@@ -68,7 +63,7 @@
   vertical-align: middle;
   width: 15px;
   height: 15px;
-  border: 1px solid $gold;
+  border: $gold-line;
   background-color: $white;
 }
 
@@ -141,13 +136,22 @@
     border-radius: 3px;
   }
 
-  input[type="number"] {
-    -moz-appearance: textfield;
-  }
-
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+    appearance: none;
     margin: 0;
   }
+}
+
+.filter__price-wrapper {
+  margin: 0 0 35px 0;
+  padding: 28px 25px;
+  border: $gold-line;
+}
+
+.filter__price-wrapper h4 {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 500;
 }

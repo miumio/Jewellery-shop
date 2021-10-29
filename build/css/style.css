@@ -945,9 +945,6 @@ body {
   font-size: 14px;
   text-align: left; }
 
-.filter form {
-  border-top: 1px solid #a87b62; }
-
 .filter__button {
   display: block;
   margin-bottom: 25px;
@@ -967,46 +964,31 @@ body {
     border: 1px solid #a87b62; }
 
 .filter fieldset {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  position: relative;
   margin: 0;
-  padding: 25px;
+  padding: 0;
+  display: block;
+  width: 100%;
+  min-height: 68px;
   border: 1px solid #a87b62;
-  border-top: none; }
-  .filter fieldset:last-of-type {
-    margin-bottom: 35px; }
+  border-bottom: none; }
 
 .filter legend {
-  position: relative;
-  margin: 0 0 30px;
-  padding: 0;
+  position: absolute;
+  margin: 0;
+  padding: 0 25px;
   width: 100%;
-  font-size: 16px;
-  float: left; }
-  .filter legend::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 15px;
-    height: 15px;
-    border-right: 1px solid #a87b62;
-    border-bottom: 1px solid #a87b62;
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg); }
+  top: 15px;
+  left: 0;
+  line-height: 2em; }
 
 .filter ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-left: 5px; }
+  margin-left: 35px;
+  margin-top: 50px;
+  margin-bottom: 30px; }
 
 .filter li {
   margin-bottom: 5px; }
@@ -1057,7 +1039,7 @@ body {
 
 .filter__scale {
   height: 2px;
-  background-color: #F0EAE4; }
+  background-color: #f0eae4; }
 
 .filter__bar {
   position: absolute;
@@ -1081,9 +1063,19 @@ body {
     height: 36px;
     border: none;
     border-radius: 3px; }
-  .filter__price-inputs input[type="number"] {
-    -moz-appearance: textfield; }
   .filter__price-inputs input::-webkit-outer-spin-button,
   .filter__price-inputs input::-webkit-inner-spin-button {
     -webkit-appearance: none;
+            appearance: none;
     margin: 0; }
+
+.filter__price-wrapper {
+  margin: 0 0 35px 0;
+  padding: 28px 25px;
+  border: 1px solid #a87b62; }
+
+.filter__price-wrapper h4 {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 500; }
