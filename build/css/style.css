@@ -990,7 +990,21 @@ body {
 .filter li {
   margin-bottom: 5px; }
 
-.filter__input + span {
+.filter input[type="radio"],
+.filter input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.filter input + span {
   margin-right: 10px;
   display: inline-block;
   vertical-align: middle;
@@ -999,13 +1013,13 @@ body {
   border: 1px solid #a87b62;
   background-color: #ffffff; }
 
-.filter__input:checked + span {
+.filter input:checked + span {
   background-color: #a87b62; }
 
-.filter__input:disabled ~ span {
+.filter input:disabled ~ span {
   opacity: 0.4; }
 
-.filter__input:focus + span {
+.filter input:focus + span {
   outline: 2px solid #a87b62;
   outline-offset: 1px; }
 

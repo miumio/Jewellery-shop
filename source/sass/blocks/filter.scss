@@ -57,7 +57,21 @@
   margin-bottom: 5px;
 }
 
-.filter__input + span {
+.filter input[type="radio"],
+.filter input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.filter input + span {
   margin-right: 10px;
   display: inline-block;
   vertical-align: middle;
@@ -67,15 +81,15 @@
   background-color: $white;
 }
 
-.filter__input:checked + span {
+.filter input:checked + span {
   background-color: $gold;
 }
 
-.filter__input:disabled ~ span {
+.filter input:disabled ~ span {
   opacity: 0.4;
 }
 
-.filter__input:focus + span {
+.filter input:focus + span {
   outline: 2px solid $gold;
   outline-offset: 1px;
 }
