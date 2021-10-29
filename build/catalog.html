@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="page-header section">
   <div class="page-header__wrapper wrapper">
     <a href="index.html" class="page-header__logo">
       <svg width="66" height="66">
@@ -107,28 +107,28 @@
               <ul>
                 <li>
                   <label>
-                    <input class="visually-hidden filter__input" type="checkbox" name="necklaces" checked="">
+                    <input type="checkbox" name="necklaces" checked="">
                     <span></span>
                     <span>Necklaces</span>
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input class="visually-hidden filter__input" type="checkbox" name="chockers" checked="">
+                    <input type="checkbox" name="chockers" checked="">
                     <span></span>
                     <span>Chockers</span>
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input class="visually-hidden filter__input" type="checkbox" name="rings">
+                    <input type="checkbox" name="rings">
                     <span></span>
                     <span>Rings</span>
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input class="visually-hidden filter__input" type="checkbox" name="earrings" checked="">
+                    <input type="checkbox" name="earrings" checked="">
                     <span></span>
                     <span>Earring</span>
                   </label>
@@ -140,30 +140,16 @@
               <ul>
                 <li>
                   <label>
-                    <input class="visually-hidden filter__input" type="checkbox" name="material1" checked="">
+                    <input type="checkbox" name="material1" checked="">
                     <span></span>
-                    <span>Material1</span>
+                    <span>Gold</span>
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input class="visually-hidden filter__input" type="checkbox" name="material2">
+                    <input type="checkbox" name="material2">
                     <span></span>
-                    <span>Material2</span>
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input class="visually-hidden filter__input" type="checkbox" name="material3" checked="">
-                    <span></span>
-                    <span>Material3</span>
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input class="visually-hidden filter__input" type="checkbox" name="material4" checked="">
-                    <span></span>
-                    <span>Material4</span>
+                    <span>Silver</span>
                   </label>
                 </li>
               </ul>
@@ -173,22 +159,22 @@
               <ul>
                 <li>
                   <label>
-                    <input class="visually-hidden filter__input" type="checkbox" name="collection1" checked="">
+                    <input type="checkbox" name="collection1" checked="">
                     <span></span>
-                    <span>collection1</span>
+                    <span>Pink Flamingo</span>
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input class="visually-hidden filter__input" type="checkbox" name="collection2" disabled="">
+                    <input type="checkbox" name="collection2">
                     <span></span>
-                    <span>collection2</span>
+                    <span>Dreams</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
-              <legend>Price</legend>
+            <div class="filter__price-wrapper">
+              <h4>Price</h4>
               <div class="filter__range">
                 <div class="filter__controls">
                   <div class="filter__scale">
@@ -210,7 +196,7 @@
                   </label>
                 </div>
               </div>
-            </fieldset>
+            </div>
             <button class="filter__button button" type="submit">Apply</button>
             <button class="filter__button filter__button--white button" type="reset">Clear All</button>
           </form>
