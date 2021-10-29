@@ -1,10 +1,7 @@
 .page-header {
-  margin-bottom: 10px;
   padding-top: 26px;
 
   @media (max-width: $tablet) {
-    margin-bottom: 0;
-    padding-bottom: 57px;
     font-size: 18px;
     line-height: 24px;
     color: $white;

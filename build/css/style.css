@@ -131,12 +131,9 @@ body {
       width: calc(100vw - 30px); } }
 
 .page-header {
-  margin-bottom: 10px;
   padding-top: 26px; }
   @media (max-width: 1023px) {
     .page-header {
-      margin-bottom: 0;
-      padding-bottom: 57px;
       font-size: 18px;
       line-height: 24px;
       color: #ffffff;
