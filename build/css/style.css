@@ -942,7 +942,33 @@ body {
   min-width: 210px; }
   @media (max-width: 1023px) {
     .catalog__filter {
-      display: none; } }
+      max-height: 0;
+      opacity: 0;
+      -webkit-transform: translateX(-200%);
+              transform: translateX(-200%);
+      -webkit-transition: opacity 0.3s ease-out;
+      transition: opacity 0.3s ease-out; } }
+  @media (max-width: 1023px) {
+    .catalog__filter--show {
+      position: fixed;
+      top: 27px;
+      left: -19px;
+      bottom: 89px;
+      right: 60%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      max-height: none;
+      opacity: 1;
+      -webkit-transform: translateX(0);
+              transform: translateX(0); } }
 
 .catalog__list {
   margin: 0;
@@ -974,7 +1000,10 @@ body {
 
 .filter {
   font-size: 14px;
-  text-align: left; }
+  text-align: left;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 5px 32px rgba(155, 153, 151, 0.5);
+          box-shadow: 0px 5px 32px rgba(155, 153, 151, 0.5); }
 
 .filter h4 {
   position: relative;
@@ -995,6 +1024,40 @@ body {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg); }
 
+.filter form {
+  position: relative;
+  width: 100%;
+  overflow: scroll; }
+
+@media (max-width: 1023px) {
+  .filter__button {
+    position: fixed;
+    top: -26px;
+    right: -29px;
+    z-index: 10000;
+    padding: 10px; }
+    .filter__button span {
+      position: relative;
+      display: block;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: #1d1613; }
+      .filter__button span::before, .filter__button span::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        content: "";
+        width: 15px;
+        height: 3px;
+        background-color: #ffffff; }
+      .filter__button span::after {
+        -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+                transform: translateX(-50%) translateY(-50%) rotate(45deg); }
+      .filter__button span::before {
+        -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+                transform: translateX(-50%) translateY(-50%) rotate(-45deg); } }
+
 .filter form > button {
   display: block;
   margin-bottom: 25px;
@@ -1013,16 +1076,25 @@ body {
     color: #1d1613;
     background-color: #ffffff;
     border: 1px solid #a87b62; }
+  @media (max-width: 1023px) {
+    .filter form > button {
+      margin: 0 auto 25px;
+      width: calc(100% - 80px); } }
 
 .filter fieldset {
   position: relative;
+  display: block;
   margin: 0;
   padding: 28px 25px;
-  display: block;
   width: 100%;
   min-height: 68px;
   border: 1px solid #a87b62;
   border-bottom: none; }
+  @media (max-width: 1023px) {
+    .filter fieldset {
+      padding: 30px 40px;
+      border: 0;
+      border-bottom: 1px solid #a87b62; } }
 
 .filter legend {
   position: absolute;
@@ -1057,9 +1129,9 @@ body {
   overflow: hidden; }
 
 .filter input + span {
-  margin-right: 10px;
   display: inline-block;
   vertical-align: middle;
+  margin-right: 10px;
   width: 15px;
   height: 15px;
   border: 1px solid #a87b62;
@@ -1074,6 +1146,17 @@ body {
 .filter input:focus + span {
   outline: 2px solid #a87b62;
   outline-offset: 1px; }
+
+.filter__price-wrapper {
+  margin: 0 0 35px 0;
+  padding: 28px 25px;
+  border: 1px solid #a87b62; }
+  @media (max-width: 1023px) {
+    .filter__price-wrapper {
+      padding: 30px 40px;
+      border-left: 0;
+      border-right: 0;
+      border-top: 0; } }
 
 .filter__controls {
   position: relative;
@@ -1132,8 +1215,3 @@ body {
     -webkit-appearance: none;
             appearance: none;
     margin: 0; }
-
-.filter__price-wrapper {
-  margin: 0 0 35px 0;
-  padding: 28px 25px;
-  border: 1px solid #a87b62; }
