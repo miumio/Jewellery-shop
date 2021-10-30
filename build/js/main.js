@@ -3,6 +3,8 @@
   const filter = document.querySelector('.catalog__filter');
   const closeButton = document.querySelector('.filter__button');
 
+  if (!link) return;
+
   link.classList.add('catalog__filter-link--show');
 
   link.addEventListener('click', function (evt) {
@@ -20,8 +22,12 @@
 
 (function () {
   const container = document.querySelector('.accordion');
+
+  if (!container) return;
+
   const acc = container.querySelectorAll('h4');
   const ul = container.querySelectorAll('ul');
+
 
   ul.forEach((el) => {
     el.style.display = 'none';
