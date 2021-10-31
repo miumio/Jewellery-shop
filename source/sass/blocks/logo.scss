@@ -1,16 +1,9 @@
 .logo {
-  svg {
-    fill: $gold;
-  }
+  // color: $gold;
 
   &:hover,
   &:focus,
   &:active {
     transform: scale(110%);
-  }
-
-  a {
-    display: block;
-    height: 66px;
   }
 }

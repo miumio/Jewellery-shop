@@ -2,17 +2,9 @@
   padding-top: 26px;
 
   @media (max-width: $tablet) {
+    padding-top: 0;
     font-size: 18px;
     line-height: 24px;
-    color: $white;
-    background-color: $gold;
-  }
-
-  &--white {
-    @media (max-width: $tablet) {
-      color: $basic-black;
-      background-color: $white;
-    }
   }
 }
 
