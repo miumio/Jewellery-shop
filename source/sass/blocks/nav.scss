@@ -22,6 +22,7 @@ nav {
 
   @media (max-width: $tablet) {
     display: flex;
+    max-width: 40px;
   }
 }
 
@@ -62,6 +63,8 @@ nav {
   @media (max-width: $tablet) {
     display: flex;
     justify-content: flex-end;
+    max-width: 40px;
+
   }
 }
 
@@ -107,12 +110,13 @@ nav {
 
 .nav__button-lines {
   display: block;
-  width: 100%;
+  width: 24px;
   height: 2px;
   background: $basic-black;
 }
 
 @media (max-width: $tablet) {
+
   .nav__button--show {
     @media (max-width: $tablet) {
       display: flex;
@@ -120,7 +124,7 @@ nav {
       justify-content: space-between;
 
       padding: 10px;
-      width: 44px;
+      width: 38px;
       height: 38px;
     }
   }
