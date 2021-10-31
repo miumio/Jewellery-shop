@@ -1,67 +1,141 @@
 <header class="page-header section">
-  <div class="page-header__wrapper wrapper">
-    <a href="index.html" class="page-header__logo">
-      <svg width="66" height="66">
-        <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
-      </svg>
-    </a>
-    <nav class="page-header__nav nav nav--nojs">
-      <button type="button" class="nav__button button" aria-label="Menu">
-        <span class="nav__button-lines nav__button-lines--top"></span>
-        <span class="nav__button-lines nav__button-lines--middle"></span>
-        <span class="nav__button-lines nav__button-lines--bottom"></span>
-      </button>
-      <ul class="nav__list nav__list--catalog">
+  <nav class="page-header__nav nav nav--nojs">
+    <div class="nav__wrapper wrapper">
+      <ul class="nav__list">
         <li class="nav__item">
+          <button type="button" class="nav__button button" aria-label="Menu">
+            <span class="nav__button-lines nav__button-lines--top"></span>
+            <span class="nav__button-lines nav__button-lines--middle"></span>
+            <span class="nav__button-lines nav__button-lines--bottom"></span>
+          </button>
+        </li>
+        <li class="nav__item search">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <label>
+              <span class="visually-hidden">Search</span>
+              <svg width="14" height="14">
+                <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+              </svg>
+              <input type="search" id="search-field" name="search" placeholder="Type here to search">
+            </label>
+          </form>
+        </li>
+        <li class="nav__item nav__item--logo logo">
+          <a href="index.html">
+            <svg width="66" height="66">
+              <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <span>Login</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <span>Cart </span>
+            <span>0</span>
+            <svg width="20" height="18">
+              <use xlink:href="img/sprite_auto.svg#icon-shop"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <ul class="nav__list nav__list--menu menu">
+        <li class="menu__item">
           <a href="#" class="nav__link">What's new</a>
         </li>
-        <li class="nav__item">
+        <li class="menu__item">
           <a href="catalog.html" class="nav__link">Chokers</a>
         </li>
-        <li class="nav__item">
+        <li class="menu__item">
           <a href="catalog.html" class="nav__link">Necklaces</a>
         </li>
-        <li class="nav__item">
+        <li class="menu__item">
           <a href="catalog.html" class="nav__link">Rings</a>
         </li>
-        <li class="nav__item">
+        <li class="menu__item">
           <a href="catalog.html" class="nav__link">Earrings</a>
         </li>
+        <li class="menu__item">
+          <ul class="nav__list menu__about">
+            <li class="menu__item">
+              <a href="#" class="nav__link">About CH</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="nav__link">Stores & Hours</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="nav__link">Contact Us</a>
+            </li>
+          </ul>
+        </li>
       </ul>
-      <ul class="nav__list nav__list--about">
-        <li class="nav__item">
-          <a href="#" class="nav__link">About CH</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Stores & Hours</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Contact Us</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="page-header__links">
-      <a href="#" class="page-header__link page-header__link--login">
-        <span>Login</span>
-      </a>
-      <a href="#" class="page-header__link page-header__link--cart">
-        <span>Cart</span>
-        <span>0</span>
-        <svg width="20" height="18">
-          <use xlink:href="img/sprite_auto.svg#icon-shop"></use>
-        </svg>
-      </a>
     </div>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <label>
-        <span class="visually-hidden">Search</span>
-        <svg width="14" height="14">
-          <use xlink:href="img/sprite_auto.svg#icon-search"></use>
-        </svg>
-        <input type="search" id="search-field" name="search" placeholder="Type here to search">
-      </label>
-    </form>
+  </nav>
+
+
+
+
+
+  <!-- <nav class="page-header__nav nav nav--nojs">
+    <button type="button" class="nav__button button" aria-label="Menu">
+      <span class="nav__button-lines nav__button-lines--top"></span>
+      <span class="nav__button-lines nav__button-lines--middle"></span>
+      <span class="nav__button-lines nav__button-lines--bottom"></span>
+    </button>
+    <ul class="nav__list nav__list--catalog">
+      <li class="nav__item">
+        <a href="#" class="nav__link">What's new</a>
+      </li>
+      <li class="nav__item">
+        <a href="catalog.html" class="nav__link">Chokers</a>
+      </li>
+      <li class="nav__item">
+        <a href="catalog.html" class="nav__link">Necklaces</a>
+      </li>
+      <li class="nav__item">
+        <a href="catalog.html" class="nav__link">Rings</a>
+      </li>
+      <li class="nav__item">
+        <a href="catalog.html" class="nav__link">Earrings</a>
+      </li>
+    </ul>
+    <ul class="nav__list nav__list--about">
+      <li class="nav__item">
+        <a href="#" class="nav__link">About CH</a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">Stores & Hours</a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="page-header__links">
+    <a href="#" class="page-header__link page-header__link--login">
+      <span>Login</span>
+    </a>
+    <a href="#" class="page-header__link page-header__link--cart">
+      <span>Cart</span>
+      <span>0</span>
+      <svg width="20" height="18">
+        <use xlink:href="img/sprite_auto.svg#icon-shop"></use>
+      </svg>
+    </a>
   </div>
+  <form action="https://echo.htmlacademy.ru" method="post">
+    <label>
+      <span class="visually-hidden">Search</span>
+      <svg width="14" height="14">
+        <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+      </svg>
+      <input type="search" id="search-field" name="search" placeholder="Type here to search">
+    </label>
+  </form>
+  </div> -->
   <section class="page-header__intro intro {{ mod }}">
     <h1 class="visually-hidden">{{ pageTitle }}</h1>
     <div class="intro__img-wrapper">
