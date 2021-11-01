@@ -79,7 +79,7 @@
 (function () {
 
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
+  slidesPerView: 2,
   spaceBetween: 30,
   navigation: {
       nextEl: ".swiper-button-next",
@@ -92,5 +92,11 @@ var swiper = new Swiper(".mySwiper", {
       return '<span class="' + className + '">' + (index + 1) + "</span>";
     },
   },
+  breakpoints: {
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+  }
 });
 })();
