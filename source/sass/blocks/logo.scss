@@ -1,0 +1,9 @@
+.logo {
+  // color: $gold;
+
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(110%);
+  }
+}
