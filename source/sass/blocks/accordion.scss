@@ -1,0 +1,10 @@
+.accordion__title {
+  @include corner;
+
+  position: relative;
+
+  &--close::after {
+    transform-origin: 20% 50%;
+    transform: rotate(225deg);
+  }
+}

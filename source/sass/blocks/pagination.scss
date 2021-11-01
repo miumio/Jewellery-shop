@@ -1,15 +1,14 @@
 .pagination__list {
   @include list-style-reset;
+  margin: 0 100px;
 
   display: flex;
   justify-content: center;
 }
 
-.pagination__item {
-  margin: 0 10px;
-}
-
 .pagination__link {
+  padding: 6px;
+
   color: $grey;
   text-decoration: none;
   transition: color $easy;

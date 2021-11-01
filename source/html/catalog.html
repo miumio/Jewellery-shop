@@ -18,266 +18,271 @@
   <include src="source/html/components/header.html">
     {
     "pageTitle": "CH Jewellery catalog",
-    "title": "All jewellerry",
+    "title": "All jewellery",
     "text": "Discover picks of fashion's finest trends in our jewellery catalog",
-    "img": "catalog-intro"
+    "img": "catalog-intro",
+    "mainMod": "page-header--catalog",
+    "mod": "intro--catalog"
     }
   </include>
-  <main>
-    <div class="wrapper">
-      <section class="catalog">
-        <a href="#" class="catalog__filter-link">Filter</a>
-        <div class="catalog__filter filter">
-          <h2 class="visually-hidden">Filter</h2>
-          <form action="http://echo.htmlacademy.ru" method="get">
-            <fieldset>
-              <legend>Product</legend>
-              <ul>
-                <li>
-                  <label>
-                    <input type="checkbox" name="necklaces" checked>
-                    <span></span>
-                    <span>Necklaces</span>
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" name="chockers" checked>
-                    <span></span>
-                    <span>Chockers</span>
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" name="rings">
-                    <span></span>
-                    <span>Rings</span>
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" name="earrings" checked>
-                    <span></span>
-                    <span>Earring</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend>Material</legend>
-              <ul>
-                <li>
-                  <label>
-                    <input type="checkbox" name="material1" checked>
-                    <span></span>
-                    <span>Gold</span>
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" name="material2">
-                    <span></span>
-                    <span>Silver</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend>Collection</legend>
-              <ul>
-                <li>
-                  <label>
-                    <input type="checkbox" name="collection1" checked>
-                    <span></span>
-                    <span>Pink Flamingo</span>
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" name="collection2">
-                    <span></span>
-                    <span>Dreams</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <div class="filter__price-wrapper">
-              <h4>Price</h4>
-              <div class="filter__range">
-                <div class="filter__controls">
-                  <div class="filter__scale">
-                    <div class="filter__bar"></div>
-                  </div>
-                  <button type="button" aria-label="Min value"></button>
-                  <button type="button" aria-label="Max value"></button>
-                </div>
-                <div class="filter__price-inputs">
-                  <label>
-                    <span class="visually-hidden">Type min value</span>
-                    <span>$</span>
-                    <input type="number" name="minprice" value="55" min="0">
-                  </label>
-                  <label>
-                    <span>$</span>
-                    <span class="visually-hidden">Type max value</span>
-                    <input type="number" name="maxprice" value="155" min="0" max="10000000">
-                  </label>
-                </div>
-              </div>
-            </div>
-            <button class="filter__button button" type="submit">Apply</button>
-            <button class="filter__button filter__button--white button" type="reset">Clear All</button>
-          </form>
-        </div>
-        <div class="catalog-inner">
-          <ul class="catalog__list">
-            <li>
-              <include src="source/html/components/product-card.html">
-                {
-                "title": "Double pearl earrings",
-                "price": "115",
-                "img": "double-pearl-earrings",
-                "link": "#"
-              }
-              </include>
-            </li>
-            <li>
-              <include src="source/html/components/product-card.html">
-                {
-                "title": "Chocker with gold bead",
-                "price": "55",
-                "img": "black-choker-gold-bead",
-                "link": "#"
-              }
-              </include>
-            </li>
-            <li>
-              <include src="source/html/components/product-card.html">
-                {
-                "title": "Gold layered necklace",
-                "price": "155",
-                "img": "gold-layered-necklace",
-                "link": "#"
-              }
-              </include>
-            </li>
-            <li>
-              <include src="source/html/components/product-card.html">
-                {
-                "title": "Blue gemstone pendant",
-                "price": "105",
-                "img": "blue-gemstone-pendant",
-                "link": "#"
-              }
-              </include>
-            </li>
-            <li>
-              <include src="source/html/components/product-card.html">
-                {
-                "title": "Boho earrings",
-                "price": "75",
-                "img": "boho-earrings",
-                "link": "#"
-              }
-              </include>
-            </li>
-            <li>
-              <include src="source/html/components/product-card.html">
-                {
-                "title": "Gold bird necklace",
-                "price": "135",
-                "img": "bird-necklace",
-                "link": "#"
-              }
-              </include>
-            </li>
-            <li>
-              <include src="source/html/components/product-card.html">
-                {
-                "title": "Black leather chocker",
-                "price": "85",
-                "img": "black-leather-choker-necklace",
-                "link": "#"
-              }
-              </include>
-            </li>
-            <li>
-              <include src="source/html/components/product-card.html">
-                {
-                "title": "Necklace with amethyst",
-                "price": "145",
-                "img": "purple-gemstone-necklace",
-                "link": "#"
-              }
-              </include>
-            </li>
-            <li>
-              <include src="source/html/components/product-card.html">
-                {
-                "title": "Elephant earrings",
-                "price": "95",
-                "img": "elephant-earrings",
-                "link": "#"
-              }
-              </include>
-            </li>
-            <li>
-              <include src="source/html/components/product-card.html">
-                {
-                "title": "Threader necklace",
-                "price": "115",
-                "img": "threader-necklace-closeup",
-                "link": "#"
-              }
-              </include>
-            </li>
-            <li>
-              <include src="source/html/components/product-card.html">
-                {
-                "title": "Origami crane necklace",
-                "price": "105",
-                "img": "origami-crane-necklace",
-                "link": "#"
-              }
-              </include>
-            </li>
-            <li>
-              <include src="source/html/components/product-card.html">
-                {
-                "title": "Marbl earrings",
-                "price": "95",
-                "img": "marble-earrings",
-                "link": "#"
-              }
-              </include>
-            </li>
-          </ul>
-          <div class="catalog__pagination pagination">
-            <button class="catalog__button catalog__button--prev button">Previous</button>
-            <button class="catalog__button catalog__button--next button">Next</button>
-            <ul class="pagination__list">
-              <li class="pagination__item">
-                <a href="#" class="pagination__link pagination__link--active">1</a>
+  <main class="wrapper">
+    <section class="catalog">
+      <a href="#" class="catalog__filter-link">Filter</a>
+      <div class="catalog__filter filter accordion">
+        <h2 class="visually-hidden">Filter</h2>
+        <button class="filter__button button" type="button" aria-label="Close">
+          <span></span>
+        </button>
+        <form action="http://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <h4>Product</h4>
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" name="necklaces" checked>
+                  <span></span>
+                  <span>Necklaces</span>
+                </label>
               </li>
-              <li class="pagination__item">
-                <a href="#" class="pagination__link">2</a>
+              <li>
+                <label>
+                  <input type="checkbox" name="chockers" checked>
+                  <span></span>
+                  <span>Chokers</span>
+                </label>
               </li>
-              <li class="pagination__item">
-                <a href="#" class="pagination__link">3</a>
+              <li>
+                <label>
+                  <input type="checkbox" name="rings">
+                  <span></span>
+                  <span>Rings</span>
+                </label>
               </li>
-              <li class="pagination__item">
-                <a href="#" class="pagination__link">4</a>
-              </li>
-              <li class="pagination__item">
-                <a href="#" class="pagination__link">5</a>
+              <li>
+                <label>
+                  <input type="checkbox" name="earrings" checked>
+                  <span></span>
+                  <span>Earrings</span>
+                </label>
               </li>
             </ul>
+          </fieldset>
+          <fieldset>
+            <h4>Material</h4>
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" name="material1" checked>
+                  <span></span>
+                  <span>Gold</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="material2">
+                  <span></span>
+                  <span>Silver</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <h4>Collection</h4>
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" name="collection1" checked>
+                  <span></span>
+                  <span>Pink Flamingo</span>
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="collection2">
+                  <span></span>
+                  <span>Dreams</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="filter__price-wrapper">
+            <h4>Price</h4>
+            <div class="filter__range">
+              <div class="filter__controls">
+                <div class="filter__scale">
+                  <div class="filter__bar"></div>
+                </div>
+                <button type="button" aria-label="Min value"></button>
+                <button type="button" aria-label="Max value"></button>
+              </div>
+              <div class="filter__price-inputs">
+                <label>
+                  <span class="visually-hidden">Type min value</span>
+                  <span>$</span>
+                  <input type="number" name="minprice" value="55" min="0">
+                </label>
+                <label>
+                  <span>$</span>
+                  <span class="visually-hidden">Type max value</span>
+                  <input type="number" name="maxprice" value="155" min="0" max="10000000">
+                </label>
+              </div>
+            </div>
           </div>
+          <button type="submit">Apply</button>
+          <button type="reset">Clear All</button>
+        </form>
+      </div>
+      <div class="catalog-inner">
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <include src="source/html/components/product-card.html">
+              {
+              "title": "Double pearl earrings",
+              "price": "115",
+              "img": "double-pearl-earrings",
+              "link": "#"
+              }
+            </include>
+          </li>
+          <li class="catalog__item">
+            <include src="source/html/components/product-card.html">
+              {
+              "title": "Chocker with gold bead",
+              "price": "55",
+              "img": "black-choker-gold-bead",
+              "link": "#"
+              }
+            </include>
+          </li>
+          <li class="catalog__item">
+            <include src="source/html/components/product-card.html">
+              {
+              "title": "Gold layered necklace",
+              "price": "155",
+              "img": "gold-layered-necklace",
+              "link": "#"
+              }
+            </include>
+          </li>
+          <li class="catalog__item">
+            <include src="source/html/components/product-card.html">
+              {
+              "title": "Blue gemstone pendant",
+              "price": "105",
+              "img": "blue-gemstone-pendant",
+              "link": "#"
+              }
+            </include>
+          </li>
+          <li class="catalog__item">
+            <include src="source/html/components/product-card.html">
+              {
+              "title": "Boho earrings",
+              "price": "75",
+              "img": "boho-earrings",
+              "link": "#"
+              }
+            </include>
+          </li>
+          <li class="catalog__item">
+            <include src="source/html/components/product-card.html">
+              {
+              "title": "Gold bird necklace",
+              "price": "135",
+              "img": "bird-necklace",
+              "link": "#"
+              }
+            </include>
+          </li>
+          <li class="catalog__item">
+            <include src="source/html/components/product-card.html">
+              {
+              "title": "Black leather chocker",
+              "price": "85",
+              "img": "black-leather-choker-necklace",
+              "link": "#"
+              }
+            </include>
+          </li>
+          <li class="catalog__item">
+            <include src="source/html/components/product-card.html">
+              {
+              "title": "Necklace with amethyst",
+              "price": "145",
+              "img": "purple-gemstone-necklace",
+              "link": "#"
+              }
+            </include>
+          </li>
+          <li class="catalog__item">
+            <include src="source/html/components/product-card.html">
+              {
+              "title": "Elephant earrings",
+              "price": "95",
+              "img": "elephant-earrings",
+              "link": "#"
+              }
+            </include>
+          </li>
+          <li class="catalog__item">
+            <include src="source/html/components/product-card.html">
+              {
+              "title": "Threader necklace",
+              "price": "115",
+              "img": "threader-necklace-closeup",
+              "link": "#"
+              }
+            </include>
+          </li>
+          <li class="catalog__item">
+            <include src="source/html/components/product-card.html">
+              {
+              "title": "Origami crane necklace",
+              "price": "105",
+              "img": "origami-crane-necklace",
+              "link": "#"
+              }
+            </include>
+          </li>
+          <li class="catalog__item">
+            <include src="source/html/components/product-card.html">
+              {
+              "title": "Marbl earrings",
+              "price": "95",
+              "img": "marble-earrings",
+              "link": "#"
+              }
+            </include>
+          </li>
+        </ul>
+        <div class="catalog__pagination pagination">
+          <button class="catalog__button catalog__button--prev button">Previous</button>
+          <button class="catalog__button catalog__button--next button">Next</button>
+          <ul class="pagination__list">
+            <li class="pagination__item">
+              <a href="#" class="pagination__link pagination__link--active">1</a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link">2</a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link">3</a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link">4</a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link">5</a>
+            </li>
+          </ul>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
-  <script src="js/main.js"></script>
+  <include src="source/html/components/footer.html"></include>
+
+  <script src="js/main.js" type="module"></script>
 </body>
 
 </html>

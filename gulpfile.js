@@ -88,7 +88,8 @@ gulp.task("html", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/*.ico"
+    "source/*.ico",
+    "source/js/vendor.js",
   ], {
     base: "source"
   })
@@ -100,7 +101,7 @@ gulp.task("clean", function () {
 });
 
 gulp.task("scripts", function () {
-  return gulp.src("source/js/*.js")
+  return gulp.src(["source/js/*.js", "!source/js/vendor.js"])
     .pipe(concat("main.js"))
     .pipe(gulp.dest("build/js/"));
 });
