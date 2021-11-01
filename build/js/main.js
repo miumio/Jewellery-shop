@@ -1,4 +1,38 @@
 (function () {
+  const container = document.querySelector('.accordion');
+
+  if (!container) return;
+
+  const acc = container.querySelectorAll('h4');
+  const ul = container.querySelectorAll('ul');
+
+  Array.from(acc).slice(1, -1).forEach((el) => {
+    el.classList.add('accordion__title--close');
+  })
+
+
+  Array.from(ul).slice(1).forEach((el) => {
+    el.style.display = 'none';
+  });
+
+  acc.forEach((el) => {
+    el.classList.add('accordion__title');
+
+    el.addEventListener('click', function() {
+
+      let panel = this.nextElementSibling;
+      if (panel.style.display === 'none') {
+        panel.style.display = 'block';
+        el.classList.remove('accordion__title--close');
+      } else {
+        panel.style.display = 'none';
+        el.classList.add('accordion__title--close');
+      }
+    });
+  });
+})();
+
+(function () {
   const link = document.querySelector('.catalog__filter-link');
   const filter = document.querySelector('.catalog__filter');
   const closeButton = document.querySelector('.filter__button');
@@ -15,35 +49,9 @@
     }
   })
 
-  closeButton.addEventListener('click', function (el) {
+  closeButton.addEventListener('click', function () {
     filter.classList.remove('catalog__filter--show');
   })
-})();
-
-(function () {
-  const container = document.querySelector('.accordion');
-
-  if (!container) return;
-
-  const acc = container.querySelectorAll('h4');
-  const ul = container.querySelectorAll('ul');
-
-
-  Array.from(ul).slice(1).forEach((el) => {
-    el.style.display = 'none';
-  });
-
-  acc.forEach((el) => {
-    el.addEventListener('click', function() {
-      this.classList.toggle('active');
-      let panel = this.nextElementSibling;
-      if (panel.style.display === 'none') {
-        panel.style.display = 'block';
-      } else {
-        panel.style.display = 'none';
-      }
-    });
-  });
 })();
 
 (function () {
@@ -77,31 +85,31 @@
 })();
 
 (function () {
-  if (!("Swiper" in window)) return;
+  if (!('Swiper' in window)) return;
 
   let swiperParams = {
     renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + "</span>";
+      return '<span class="' + className + '">' + (index + 1) + '</span>';
     },
   };
 
   if (window.innerWidth < 768) {
     swiperParams = {
-      type: "custom",
+      type: 'custom',
       renderCustom: (sw, ind, tot) => `${ind} of ${tot}`,
     };
   }
 
-  var swiper = new Swiper(".mySwiper", {
+  var swiper = new Swiper('.mySwiper', {
     slidesPerView: 2,
     spaceBetween: 30,
     loop: true,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
     pagination: {
-      el: ".swiper-pagination",
+      el: '.swiper-pagination',
       clickable: true,
       ...swiperParams,
     },
