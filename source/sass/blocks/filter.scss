@@ -4,14 +4,11 @@
 
   @media (max-width: $tablet) {
     background-color: $white;
-    box-shadow: 0px 5px 32px rgba($grey, 0.5);
+    box-shadow: 0 5px 32px rgba($grey, 0.5);
   }
 }
 
 .filter h4 {
-  @include corner;
-
-  position: relative;
   margin: 0;
 
   font-size: 16px;
@@ -26,7 +23,6 @@
 }
 
 @media (max-width: $tablet) {
-
   .filter__button {
     position: fixed;
     top: -26px;

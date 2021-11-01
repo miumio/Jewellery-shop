@@ -15,33 +15,7 @@
     }
   })
 
-  closeButton.addEventListener('click', function (el) {
+  closeButton.addEventListener('click', function () {
     filter.classList.remove('catalog__filter--show');
   })
-})();
-
-(function () {
-  const container = document.querySelector('.accordion');
-
-  if (!container) return;
-
-  const acc = container.querySelectorAll('h4');
-  const ul = container.querySelectorAll('ul');
-
-
-  ul.forEach((el) => {
-    el.style.display = 'none';
-  });
-
-  acc.forEach((el) => {
-    el.addEventListener('click', function() {
-      this.classList.toggle('active');
-      let panel = this.nextElementSibling;
-      if (panel.style.display === 'block') {
-        panel.style.display = 'none';
-      } else {
-        panel.style.display = 'block';
-      }
-    });
-  });
 })();
