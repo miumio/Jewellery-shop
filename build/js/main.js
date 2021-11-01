@@ -50,10 +50,12 @@
   const body = document.querySelector('body');
 
   const header = document.querySelector('.page-header');
+
+  if (!header) return;
+
   const nav = header.querySelector('.nav');
   const toggler = nav.querySelector('.nav__button');
 
-  if (!header) return;
 
   nav.classList.remove('nav--nojs');
   nav.classList.add('nav--closed');
@@ -72,4 +74,23 @@
       body.style.overflow = 'scroll';
     }
   });
+})();
+
+(function () {
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+});
 })();

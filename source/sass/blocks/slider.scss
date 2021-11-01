@@ -20,13 +20,14 @@
   @include list-style-reset;
 
   display: flex;
-  column-gap: 6%;
+  column-gap: 4%;
 }
 
 .slider__item {
-  flex: 1 1 270px;
+  flex: 1 0 22%;
 
   @media (max-width: $tablet) {
     min-width: 47%;
   }
 }
+

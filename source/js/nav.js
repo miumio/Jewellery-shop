@@ -2,10 +2,12 @@
   const body = document.querySelector('body');
 
   const header = document.querySelector('.page-header');
+
+  if (!header) return;
+
   const nav = header.querySelector('.nav');
   const toggler = nav.querySelector('.nav__button');
 
-  if (!header) return;
 
   nav.classList.remove('nav--nojs');
   nav.classList.add('nav--closed');

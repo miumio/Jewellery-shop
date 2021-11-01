@@ -25,7 +25,109 @@
   </include>
   <main>
     <div class="wrapper">
-      <section class="news section">
+      <div class="swiper mySwiper">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <a href="#" class="product-card">
+              <article>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/catalog/double-pearl-earrings-mobile@1x.webp 1x, img/catalog/double-pearl-earrings-mobile@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="img/catalog/double-pearl-earrings-mobile@1x.jpg 1x, img/catalog/double-pearl-earrings-mobile@2x.jpg 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/catalog/double-pearl-earrings-tablet@1x.webp 1x, img/catalog/double-pearl-earrings-tablet@2x.webp 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="img/catalog/double-pearl-earrings-tablet@1x.jpg 1x, img/catalog/double-pearl-earrings-tablet@2x.jpg 2x">
+                  <source type="image/webp"
+                    srcset="img/catalog/double-pearl-earrings-desktop@1x.webp 1x, img/catalog/double-pearl-earrings-desktop@2x.webp 2x">
+                  <img src="img/catalog/double-pearl-earrings-desktop@1x.jpg"
+                    srcset="img/catalog/double-pearl-earrings-desktop@2x.jpg 2x" width="270" height="272"
+                    alt="Double pearl earrings">
+                </picture>
+                <h3>Double pearl earrings</h3>
+                <span>$ 115</span>
+              </article>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <include src="source/html/components/product-card.html">
+              {
+              "title": "Double pearl earrings",
+              "price": "115",
+              "img": "double-pearl-earrings",
+              "link": "#"
+              }
+            </include>
+          </li>
+          <li class="swiper-slide">
+            <include src="source/html/components/product-card.html">
+              {
+              "title": "Chocker with gold bead",
+              "price": "55",
+              "img": "black-choker-gold-bead",
+              "link": "#"
+              }
+            </include>
+          </li>
+          <li class="swiper-slide">
+            <include src="source/html/components/product-card.html">
+              {
+              "title": "Gold layered necklace",
+              "price": "155",
+              "img": "gold-layered-necklace",
+              "link": "#"
+              }
+            </include>
+          </li>
+          <li class="swiper-slide">
+            <include src="source/html/components/product-card.html">
+              {
+              "title": "Blue gemstone pendant",
+              "price": "105",
+              "img": "blue-gemstone-pendant",
+              "link": "#"
+              }
+            </include>
+          </li>
+          <li class="swiper-slide">
+            <include src="source/html/components/product-card.html">
+              {
+              "title": "Boho earrings",
+              "price": "75",
+              "img": "boho-earrings",
+              "link": "#"
+              }
+            </include>
+          </li>
+          <li class="swiper-slide">
+            <include src="source/html/components/product-card.html">
+              {
+              "title": "Gold bird necklace",
+              "price": "135",
+              "img": "bird-necklace",
+              "link": "#"
+              }
+            </include>
+          </li>
+          <li class="swiper-slide">
+            <include src="source/html/components/product-card.html">
+              {
+              "title": "Black leather chocker",
+              "price": "85",
+              "img": "black-leather-choker-necklace",
+              "link": "#"
+              }
+            </include>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+      </div>
+
+      <!-- <section class="news section">
         <h2>New In</h2>
         <include src="source/html/components/link.html">
           {
@@ -36,6 +138,46 @@
           <button type="button" class="slider__control slider__control--prev button">&#10229;</button>
           <button type="button" class="slider__control slider__control--next button">&#10230;</button>
           <ul class="slider__list">
+            <li class="slider__item">
+              <include src="source/html/components/slider-product-card.html">
+                {
+                "title": "Necklace with amethyst",
+                "price": "145",
+                "img": "purple-gemstone-necklace-main",
+                "link": "#"
+                }
+              </include>
+            </li>
+            <li class="slider__item">
+              <include src="source/html/components/slider-product-card.html">
+                {
+                "title": "Layered choker",
+                "price": "115",
+                "img": "choker-necklace",
+                "link": "#"
+                }
+              </include>
+            </li>
+            <li class="slider__item">
+              <include src="source/html/components/slider-product-card.html">
+                {
+                "title": "Gold chain",
+                "price": "215",
+                "img": "gold-necklace",
+                "link": "#"
+                }
+              </include>
+            </li>
+            <li class="slider__item">
+              <include src="source/html/components/slider-product-card.html">
+                {
+                "title": "Galaxy earrings",
+                "price": "95",
+                "img": "galaxy-earrings",
+                "link": "#"
+                }
+              </include>
+            </li>
             <li class="slider__item">
               <include src="source/html/components/slider-product-card.html">
                 {
@@ -91,7 +233,7 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
       <section class="blog section">
         <h2>Blog</h2>
         <include src="source/html/components/link.html">
@@ -274,7 +416,8 @@
   </main>
   <include src="source/html/components/footer.html"></include>
 
-  <!-- <script src="js/main.js"></script> -->
+  <script src="js/main.js" type="module"></script>
+  <script src="js/vendor.js"></script>
 
 </body>
 
