@@ -1,6 +1,19 @@
 (function () {
   if (!("Swiper" in window)) return;
 
+  let swiperParams = {
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  };
+
+  if (window.innerWidth < 768) {
+    swiperParams = {
+      type: "custom",
+      renderCustom: (sw, ind, tot) => `${ind} of ${tot}`,
+    };
+  }
+
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 2,
     spaceBetween: 30,
@@ -12,15 +25,7 @@
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
-      // renderBullet: function (index, className) {
-      //   return '<span class="' + className + '">' + (index + 1) + "</span>";
-      // },
-      dynamicBullets: true,
-      dynamicMainBullets: 3,
-      type: 'custom',
-      renderCustom: (swiper, current, total) => {
-        return `<span>${current} of ${total}</span>`
-      }
+      ...swiperParams,
     },
     breakpoints: {
       1024: {
