@@ -29,7 +29,7 @@
   const ul = container.querySelectorAll('ul');
 
 
-  ul.forEach((el) => {
+  Array.from(ul).slice(1).forEach((el) => {
     el.style.display = 'none';
   });
 
@@ -37,10 +37,10 @@
     el.addEventListener('click', function() {
       this.classList.toggle('active');
       let panel = this.nextElementSibling;
-      if (panel.style.display === 'block') {
-        panel.style.display = 'none';
-      } else {
+      if (panel.style.display === 'none') {
         panel.style.display = 'block';
+      } else {
+        panel.style.display = 'none';
       }
     });
   });
@@ -77,10 +77,12 @@
 })();
 
 (function () {
+if (!('Swiper' in window)) return;
 
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 2,
   spaceBetween: 30,
+  loop: true,
   navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
