@@ -2,7 +2,7 @@
   margin-bottom: 80px;
 
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 250px 1fr;
   gap: 50px;
 
   @media (max-width: $tablet) {
@@ -63,11 +63,12 @@
 .catalog__list {
   @include list-style-reset;
 
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
+  column-gap: 30px;
+  row-gap: 36px;
 
   @media (max-width: $mobile) {
     margin-bottom: 50px;
