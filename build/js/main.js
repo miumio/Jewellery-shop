@@ -4,16 +4,6 @@
   if (!container) return;
 
   const acc = container.querySelectorAll('h4');
-  const ul = container.querySelectorAll('ul');
-
-  Array.from(acc).slice(1, -1).forEach((el) => {
-    el.classList.add('accordion__title--close');
-  })
-
-
-  Array.from(ul).slice(1).forEach((el) => {
-    el.style.display = 'none';
-  });
 
   acc.forEach((el) => {
     el.classList.add('accordion__title');
