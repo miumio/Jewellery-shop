@@ -12,6 +12,10 @@ nav {
   align-items: center;
 }
 
+.nav__footer-list {
+  @include list-style-reset;
+}
+
 .nav__item {
   display: flex;
   flex: 1;
