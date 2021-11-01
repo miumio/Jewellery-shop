@@ -11,17 +11,23 @@
 .search form {
   display: flex;
   flex: 1;
+  align-items: flex-start;
 }
 
 .search label {
   display: flex;
   align-items: center;
   flex: 1;
+
+  margin-top: 26px;
+
+  @media (max-width: $tablet) {
+    margin-top: 0;
+  }
 }
 
-
 .search svg {
-  margin-right: 15px;
+  margin-right: 10px;
 
   @media (max-width: $tablet) {
     position: absolute;
@@ -32,6 +38,8 @@
 
 .search input {
   padding: 5px;
+  min-width: 170px;
+
   font-size: inherit;
   color: inherit;
   font-weight: 500;
@@ -51,8 +59,14 @@
 }
 
 .search input::placeholder {
+  font-family: $poppins;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
 
   @media (max-width: $tablet) {
-    color: $white;
+    opacity: 0;
   }
 }

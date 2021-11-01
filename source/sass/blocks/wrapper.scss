@@ -1,12 +1,12 @@
 .wrapper {
   margin: 0 auto;
   width: calc(100vw - 196px);
-  max-width: 1920px;
+  max-width: 1520px;
 
   @media (max-width: $tablet) {
     // width: calc(100vw - 88px);
     width: calc(100vw - 30px);
-    max-width: 750px;
+    // max-width: 750px;
   }
 
   // @media (max-width: $mobile) {

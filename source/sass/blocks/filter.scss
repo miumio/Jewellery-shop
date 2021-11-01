@@ -69,7 +69,6 @@
   }
 }
 
-
 .filter form > button {
   display: block;
   margin-bottom: 25px;
@@ -105,7 +104,7 @@
   display: block;
 
   margin: 0;
-  padding: 28px 25px;
+  padding: 22px 20px 17px 25px;
   width: 100%;
   min-height: 68px;
 
@@ -134,14 +133,14 @@
 .filter ul {
   @include list-style-reset;
 
-  margin-top: 15px;
+  margin: 18px 9px 0;
 
   overflow: hidden;
   transition: max-height $easy;
 }
 
 .filter li {
-  margin-bottom: 5px;
+  margin-bottom: 9px;
 }
 
 .filter input[type="radio"],
@@ -163,7 +162,7 @@
   display: inline-block;
   vertical-align: middle;
 
-  margin-right: 10px;
+  margin-right: 6px;
   width: 15px;
   height: 15px;
 
@@ -186,7 +185,7 @@
 
 .filter__price-wrapper {
   margin: 0 0 35px 0;
-  padding: 28px 25px;
+  padding: 20px 19px 20px 24px;
   border: $gold-line;
 
   @media (max-width: $tablet) {
@@ -201,8 +200,7 @@
 .filter__controls {
   position: relative;
 
-  margin-top: 35px;
-  margin-bottom: 10px;
+  margin-top: 18px;
   padding: 6px 0;
 }
 
@@ -221,11 +219,11 @@
   transition: scale $easy;
 
   &:first-of-type {
-    left: 20%;
+    left: 22%;
   }
 
   &:last-of-type {
-    right: 30%;
+    right: 19%;
   }
 
   &:hover {
@@ -240,22 +238,40 @@
 
 .filter__bar {
   position: absolute;
-  left: 20%;
+  left: 22%;
 
-  width: 50%;
+  width: 51%;
   height: 2px;
 
   background-color: $gold;
 }
 
 .filter__price-inputs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  height: 29px;
+
+  label {
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  label:first-child {
+    left: 19%;
+  }
+
+  label:last-child {
+    right: 13%;
+  }
 
   input {
-    width: 45px;
-    height: 36px;
+    margin-left: 5px;
+    width: 30px;
+    height: 29px;
+
     border: none;
     border-radius: 3px;
   }

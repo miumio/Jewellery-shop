@@ -69,6 +69,7 @@
     } else {
       nav.classList.add('nav--closed');
       nav.classList.remove('nav--opened');
+      body.style.overflow = 'scroll';
     }
   });
 })();

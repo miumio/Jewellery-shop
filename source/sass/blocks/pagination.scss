@@ -6,11 +6,9 @@
   justify-content: center;
 }
 
-.pagination__item {
-  margin: 0 10px;
-}
-
 .pagination__link {
+  padding: 6px;
+
   color: $grey;
   text-decoration: none;
   transition: color $easy;
