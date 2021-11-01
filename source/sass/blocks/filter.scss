@@ -1,0 +1,284 @@
+.filter {
+  font-size: 14px;
+  text-align: left;
+
+  @media (max-width: $tablet) {
+    background-color: $white;
+    box-shadow: 0px 5px 32px rgba($grey, 0.5);
+  }
+}
+
+.filter h4 {
+  @include corner;
+
+  position: relative;
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.filter form {
+  position: relative;
+
+  width: 100%;
+  overflow: scroll;
+}
+
+@media (max-width: $tablet) {
+
+  .filter__button {
+    position: fixed;
+    top: -26px;
+    right: -29px;
+    z-index: 10000;
+
+    padding: 10px;
+
+    span {
+      position: relative;
+
+      display: block;
+      width: 32px;
+      height: 32px;
+
+      border-radius: 50%;
+      background-color: $basic-black;
+
+      &::before,
+      &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        content: "";
+
+        width: 15px;
+        height: 3px;
+
+        background-color: $white;
+      }
+
+      &::after {
+        transform: translateX(-50%) translateY(-50%) rotate(45deg);
+      }
+
+      &::before {
+        transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+      }
+    }
+  }
+}
+
+.filter form > button {
+  display: block;
+  margin-bottom: 25px;
+  padding: 20px;
+  width: 100%;
+
+  font-size: 16px;
+  font-weight: 500;
+  color: $white;
+
+  background-color: $gold;
+  border: none;
+  transition: opacity $easy;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:last-of-type {
+    color: $basic-black;
+    background-color: $white;
+    border: $gold-line;
+  }
+
+  @media (max-width: $tablet) {
+    margin: 0 auto 25px;
+    width: calc(100% - 80px);
+  }
+}
+
+.filter fieldset {
+  position: relative;
+  display: block;
+
+  margin: 0;
+  padding: 22px 20px 17px 25px;
+  width: 100%;
+  min-height: 68px;
+
+  border: $gold-line;
+  border-bottom: none;
+
+  @media (max-width: $tablet) {
+    padding: 30px 40px;
+    border: 0;
+    border-bottom: $gold-line;
+  }
+}
+
+.filter legend {
+  position: absolute;
+
+  margin: 0;
+  padding: 0 25px;
+  width: 100%;
+  top: 15px;
+  left: 0;
+
+  line-height: 2em;
+}
+
+.filter ul {
+  @include list-style-reset;
+
+  margin: 18px 9px 0;
+
+  overflow: hidden;
+  transition: max-height $easy;
+}
+
+.filter li {
+  margin-bottom: 9px;
+}
+
+.filter input[type="radio"],
+.filter input[type="checkbox"] {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.filter input + span {
+  display: inline-block;
+  vertical-align: middle;
+
+  margin-right: 6px;
+  width: 15px;
+  height: 15px;
+
+  border: $gold-line;
+  background-color: $white;
+}
+
+.filter input:checked + span {
+  background-color: $gold;
+}
+
+.filter input:disabled ~ span {
+  opacity: 0.4;
+}
+
+.filter input:focus + span {
+  outline: 2px solid $gold;
+  outline-offset: 1px;
+}
+
+.filter__price-wrapper {
+  margin: 0 0 35px 0;
+  padding: 20px 19px 20px 24px;
+  border: $gold-line;
+
+  @media (max-width: $tablet) {
+    padding: 30px 40px;
+
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+  }
+}
+
+.filter__controls {
+  position: relative;
+
+  margin-top: 18px;
+  padding: 6px 0;
+}
+
+.filter__controls button {
+  position: absolute;
+  bottom: 0;
+  display: block;
+
+  width: 15px;
+  height: 15px;
+
+  background-color: $gold;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: scale $easy;
+
+  &:first-of-type {
+    left: 22%;
+  }
+
+  &:last-of-type {
+    right: 19%;
+  }
+
+  &:hover {
+    transform: scale(110%);
+  }
+}
+
+.filter__scale {
+  height: 2px;
+  background-color: $grey-bar;
+}
+
+.filter__bar {
+  position: absolute;
+  left: 22%;
+
+  width: 51%;
+  height: 2px;
+
+  background-color: $gold;
+}
+
+.filter__price-inputs {
+  position: relative;
+  height: 29px;
+
+  label {
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  label:first-child {
+    left: 19%;
+  }
+
+  label:last-child {
+    right: 13%;
+  }
+
+  input {
+    margin-left: 5px;
+    width: 30px;
+    height: 29px;
+
+    border: none;
+    border-radius: 3px;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+}

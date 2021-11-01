@@ -1,11 +1,18 @@
 .intro {
+  position: relative;
+
   font-family: $garamond;
+  color: $white;
   font-size: 38px;
   line-height: 130%;
-  color: $white;
+  font-weight: 400;
 
   @media (max-width: $mobile) {
     font-size: 34px;
+  }
+
+  &--catalog {
+    font-size: 22px;
   }
 }
 
@@ -20,27 +27,35 @@
   }
 }
 
+.intro--catalog h2 {
+  font-size: 34px;
+}
+
 .intro p {
   margin: 0;
   font-style: italic;
-  font-weight: 400;
 }
 
 .intro__img-wrapper {
+  min-height: 261px;
   background-color: $gold;
-  height: 463px;
+  overflow: hidden;
+
+  img {
+    min-height: 261px;
+    object-fit: cover;
+  }
 }
 
-.intro__img-wrapper img {
-  object-fit: cover;
-  height: 100%;
-}
+.intro__txt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 
-.intro__wrapper {
   display: flex;
+  padding: 0 50px;
   flex-direction: column;
   justify-content: center;
-  margin-top: -463px;
-  padding: 30px 0;
-  min-height: 463px;
 }
