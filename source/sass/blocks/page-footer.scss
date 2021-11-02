@@ -42,8 +42,9 @@
   display: flex;
   flex-direction: column;
   flex: 3 1 0;
-  max-width: 525px;
+
   margin-right: auto;
+  max-width: 525px;
 
   @media (max-width: $tablet) {
     margin-bottom: 65px;
@@ -83,6 +84,7 @@
 .page-footer__sign-up input {
   display: flex;
   flex: 1 1 auto;
+
   font-size: 14px;
   border: 0;
   background-color: transparent;

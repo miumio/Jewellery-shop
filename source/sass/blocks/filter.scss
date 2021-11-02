@@ -15,6 +15,10 @@
   font-weight: 500;
 }
 
+.filter label {
+  cursor: pointer;
+}
+
 .filter form {
   position: relative;
 
@@ -114,17 +118,6 @@
   }
 }
 
-.filter legend {
-  position: absolute;
-
-  margin: 0;
-  padding: 0 25px;
-  width: 100%;
-  top: 15px;
-  left: 0;
-
-  line-height: 2em;
-}
 
 .filter ul {
   @include list-style-reset;

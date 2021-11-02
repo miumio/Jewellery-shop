@@ -5,11 +5,12 @@
 .instagram__list {
   @include list-style-reset;
 
-  margin-top: 70px;
   display: grid;
   grid-template-columns: 20% 34% 20% 20%;
   column-gap: 2%;
   row-gap: 27px;
+
+  margin-top: 70px;
 
   @media (max-width: $mobile) {
     margin-top: 50px;

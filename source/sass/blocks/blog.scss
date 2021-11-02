@@ -55,6 +55,7 @@
   @include title;
 
   margin-bottom: 50px;
+
   font-weight: 600;
   font-size: 26px;
   line-height: 130%;
@@ -77,13 +78,15 @@
 }
 
 .blog__txt {
-  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex: 1 1 0;
+
   max-width: 50%;
+  padding: 20px;
+
   background-color: $basic;
 
   @media (max-width: $mobile) {

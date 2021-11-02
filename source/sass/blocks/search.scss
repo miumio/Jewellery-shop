@@ -59,12 +59,13 @@
 }
 
 .search input::placeholder {
+  display: flex;
+  align-items: center;
+
   font-family: $poppins;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  display: flex;
-  align-items: center;
 
   @media (max-width: $tablet) {
     opacity: 0;
