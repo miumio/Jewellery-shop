@@ -35,34 +35,31 @@
       </include>
       <ul class="swiper-wrapper">
         <li class="swiper-slide">
-          <a href="#" class="product-card">
-            <article>
-              <picture>
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/catalog/double-pearl-earrings-mobile@1x.webp 1x, img/catalog/double-pearl-earrings-mobile@2x.webp 2x">
-                <source media="(max-width: 767px)"
-                  srcset="img/catalog/double-pearl-earrings-mobile@1x.jpg 1x, img/catalog/double-pearl-earrings-mobile@2x.jpg 2x">
-                <source type="image/webp" media="(max-width: 1023px)"
-                  srcset="img/catalog/double-pearl-earrings-tablet@1x.webp 1x, img/catalog/double-pearl-earrings-tablet@2x.webp 2x">
-                <source media="(max-width: 1023px)"
-                  srcset="img/catalog/double-pearl-earrings-tablet@1x.jpg 1x, img/catalog/double-pearl-earrings-tablet@2x.jpg 2x">
-                <source type="image/webp"
-                  srcset="img/catalog/double-pearl-earrings-desktop@1x.webp 1x, img/catalog/double-pearl-earrings-desktop@2x.webp 2x">
-                <img src="img/catalog/double-pearl-earrings-desktop@1x.jpg"
-                  srcset="img/catalog/double-pearl-earrings-desktop@2x.jpg 2x" width="270" height="272"
-                  alt="Double pearl earrings">
-              </picture>
-              <h3>Double pearl earrings</h3>
-              <span>$ 115</span>
-            </article>
-          </a>
+          <include src="source/html/components/product-card.html">
+            {
+            "title": "Necklace with amethyst",
+            "price": "145",
+            "img": "purple-gemstone-necklace",
+            "link": "#"
+            }
+          </include>
         </li>
         <li class="swiper-slide">
           <include src="source/html/components/product-card.html">
             {
-            "title": "Double pearl earrings",
+            "title": "Layered choker",
             "price": "115",
-            "img": "double-pearl-earrings",
+            "img": "choker-necklace",
+            "link": "#"
+            }
+          </include>
+      </li>
+        <li class="swiper-slide">
+          <include src="source/html/components/product-card.html">
+            {
+            "title": "Gold chain",
+            "price": "215",
+            "img": "gold-necklace",
             "link": "#"
             }
           </include>
@@ -70,19 +67,9 @@
         <li class="swiper-slide">
           <include src="source/html/components/product-card.html">
             {
-            "title": "Chocker with gold bead",
-            "price": "55",
-            "img": "black-choker-gold-bead",
-            "link": "#"
-            }
-          </include>
-        </li>
-        <li class="swiper-slide">
-          <include src="source/html/components/product-card.html">
-            {
-            "title": "Gold layered necklace",
-            "price": "155",
-            "img": "gold-layered-necklace",
+            "title": "Galaxy earrings",
+            "price": "95",
+            "img": "galaxy-earrings",
             "link": "#"
             }
           </include>
@@ -323,6 +310,7 @@
     </section>
   </main>
   <include src="source/html/components/footer.html"></include>
+
   <section class="modal login">
     <include src="source/html/components/login.html"></include>
   </section>
