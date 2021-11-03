@@ -7,6 +7,10 @@
   svg {
     fill: currentColor;
   }
+
+  @media (max-width: $tablet) {
+    padding: 51px 0;
+  }
 }
 
 .page-footer h2 {
@@ -15,6 +19,10 @@
   font-size: 34px;
   letter-spacing: 0.02em;
   line-height: 130%;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 7px;
+  }
 }
 
 .page-footer p {
@@ -29,7 +37,7 @@
   flex-wrap: wrap;
 
   @media (max-width: $tablet) {
-    padding-right: 7%;
+    padding-right: 14%;
     justify-content: space-between;
   }
 
@@ -47,10 +55,10 @@
   max-width: 500px;
 
   @media (max-width: $tablet) {
-    margin-bottom: 65px;
-    min-width: 616px;
+    margin-bottom: 21px;
+    min-width: 506px;
     max-width: none;
-    min-height: 150px;
+    min-height: 163px;
   }
 
   @media (max-width: $mobile) {
@@ -88,7 +96,7 @@
 
   @media (max-width: $tablet) {
     justify-content: space-between;
-    max-width: 500px;
+    max-width: 403px;
   }
 
   @media (max-width: $mobile) {

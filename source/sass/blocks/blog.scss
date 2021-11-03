@@ -9,7 +9,7 @@
   @media (max-width: $tablet) {
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 50px;
   }
 }
 
@@ -82,7 +82,6 @@
 .blog__txt {
   display: flex;
   flex-direction: column;
-  // justify-content: space-evenly;
   align-items: center;
   flex: 1 1 0;
 
@@ -93,6 +92,7 @@
   background-color: $basic;
 
   @media (max-width: $mobile) {
+    padding: 67px 78px 52px;
     max-width: none;
   }
 }

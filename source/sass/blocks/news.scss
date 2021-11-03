@@ -1,5 +1,9 @@
 .news {
   margin-bottom: 112px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 64px;
+  }
 }
 
 .news__swiper {

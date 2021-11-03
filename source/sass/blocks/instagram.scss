@@ -1,9 +1,17 @@
 .instagram {
   margin-bottom: 130px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 79px;
+  }
 }
 
 .instagram h2 {
   margin-bottom: 30px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 19px;
+  }
 }
 
 .instagram span {

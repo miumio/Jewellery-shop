@@ -43,6 +43,10 @@
   display: flex;
   transition-property: transform;
   box-sizing: content-box;
+
+  @media (max-width: $tablet) {
+    margin: 50px 0 62px;
+  }
 }
 
 .swiper-android .swiper-slide,
@@ -163,7 +167,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+  color: $gold;
+
+  @media (max-width: $tablet) {
+    top: 6%;
+  }
 }
 
 .swiper-button-prev.swiper-button-disabled,

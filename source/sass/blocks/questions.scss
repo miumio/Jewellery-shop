@@ -1,27 +1,47 @@
 .questions {
   margin-bottom: 109px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 73px;
+  }
+}
+
+.questions h2 {
+  margin-bottom: 46px;
 }
 
 .questions__list {
   @include list-style-reset;
 
-  margin: 48px 8.5% 0;
+  margin: 58px 8.5% 0;
 
   text-align: left;
   border: $gold-line;
   border-bottom: 0;
+
+  @media (max-width: $tablet) {
+    margin: 0;
+  }
 }
 
 .questions__item {
   padding: 40px 44px 32px;
   border-bottom: $gold-line;
+
+  @media (max-width: $tablet) {
+    padding: 40px 45px 43px 50px;
+  }
 }
 
 .questions h4 {
-  margin: 0 0 10px;
+  margin: 0;
 
   font-weight: 500;
   font-size: 18px;
+
+    // @media (max-width: $tablet) {
+    //   margin-bottom: 26px;
+    // }
 }
 
 .questions p {
@@ -32,7 +52,8 @@
   font-weight: 400;
 
   @media (max-width: $tablet) {
-    margin-left: 0;
+    margin: 26px 0 0;
+    width: 91%;
   }
 
   &:not(:last-child) {
