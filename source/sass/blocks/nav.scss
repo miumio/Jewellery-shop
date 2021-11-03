@@ -129,10 +129,18 @@ nav {
     }
   }
 
+
   @media (max-width: $tablet) {
     padding: 30px;
     // font-size: 24px;
     // line-height: 36px;
+  }
+
+  &--login {
+    @media (max-width: $tablet) {
+      padding: 25px 30px;
+      font-size: 18px;
+    }
   }
 
   @media (max-width: $mobile) {
