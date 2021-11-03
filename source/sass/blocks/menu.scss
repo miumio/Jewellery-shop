@@ -1,6 +1,11 @@
 .menu {
   font-size: 16px;
   line-height: 24px;
+
+  @media (max-width: $tablet) {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .menu__list {
@@ -12,6 +17,7 @@
 
   @media (max-width: $tablet) {
     flex-direction: column;
+    margin-top: 35px;
   }
 }
 
@@ -20,5 +26,14 @@
 
   @media (max-width: $tablet) {
     display: flex;
+
+    margin-top: 10px;
+
+    font-size: 18px;
+    opacity: 0.75;
   }
+}
+
+.menu__link {
+  padding: 11px 30px;
 }

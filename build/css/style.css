@@ -421,7 +421,7 @@ nav {
     .search svg {
       position: absolute;
       bottom: 13px;
-      left: 20px; } }
+      left: 12px; } }
 
 .search input {
   padding: 5px;
@@ -508,6 +508,10 @@ nav {
 .menu {
   font-size: 16px;
   line-height: 24px; }
+  @media (max-width: 1023px) {
+    .menu {
+      font-size: 24px;
+      line-height: 36px; } }
 
 .menu__list {
   margin: 0;
@@ -527,7 +531,8 @@ nav {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; } }
+              flex-direction: column;
+      margin-top: 35px; } }
 
 .menu__about {
   display: none; }
@@ -535,7 +540,13 @@ nav {
     .menu__about {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; } }
+      display: flex;
+      margin-top: 10px;
+      font-size: 18px;
+      opacity: 0.75; } }
+
+.menu__link {
+  padding: 11px 30px; }
 
 .social__list {
   margin: 0;
