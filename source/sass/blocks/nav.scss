@@ -50,6 +50,10 @@ nav {
     margin: 10px 30px 0;
     min-width: 500px;
   }
+
+  @media (max-width: $mobile) {
+    min-width: auto;
+  }
 }
 
 .nav__logo {

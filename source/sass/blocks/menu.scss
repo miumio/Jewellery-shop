@@ -36,5 +36,7 @@
 }
 
 .menu__link {
-  padding: 11px 30px;
+  @media (max-width: $tablet) {
+    padding: 11px 30px;
+  }
 }
