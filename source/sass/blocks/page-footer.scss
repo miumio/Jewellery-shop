@@ -25,6 +25,7 @@
 
 .page-footer__wrapper {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 
   @media (max-width: $tablet) {
@@ -41,10 +42,9 @@
 .page-footer__sign-up {
   display: flex;
   flex-direction: column;
-  flex: 3 1 0;
+  flex: 1 1 0;
 
-  margin-right: auto;
-  max-width: 525px;
+  max-width: 500px;
 
   @media (max-width: $tablet) {
     margin-bottom: 65px;
@@ -58,11 +58,33 @@
   }
 }
 
+.page-footer__sign-up form {
+  margin-top: auto;
+  margin-bottom: 15px;
+  border-bottom: 1px solid $white;
+}
+
+.page-footer__sign-up input {
+  display: flex;
+  flex: 1 1 auto;
+
+  padding: 10px 0;
+
+  font: inherit;
+  color: $white;
+  font-size: 14px;
+
+  border: 0;
+  background-color: transparent;
+}
+
 .page-footer__nav {
   display: flex;
-  justify-content: space-evenly;
-  flex: 1 1 auto;
-  margin-right: 40px;
+  justify-content: space-between;
+  flex: 1 1 0;
+
+  margin-left: -15px;
+  max-width: 390px;
 
   @media (max-width: $tablet) {
     justify-content: space-between;
@@ -76,24 +98,29 @@
   }
 }
 
-.page-footer__sign-up form {
-  margin-top: auto;
-  border-bottom: 1px solid $white;
-}
-
-.page-footer__sign-up input {
-  display: flex;
-  flex: 1 1 auto;
-
-  font-size: 14px;
-  border: 0;
-  background-color: transparent;
-}
-
 .page-footer__social {
   display: flex;
 }
 
 .page-footer__field {
   display: flex;
+}
+
+.page-footer button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font: inherit;
+  color: inherit;
+
+  padding: 0;
+  min-width: 100px;
+
+  border: none;
+  background-color: transparent;
+}
+
+.page-footer__link {
+  padding: 8px 16px;
 }
