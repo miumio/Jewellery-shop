@@ -11,6 +11,11 @@
     flex-direction: column;
     row-gap: 50px;
   }
+
+  @media (max-width: $mobile) {
+    margin-top: 51px;
+    row-gap: 40px;
+  }
 }
 
 .blog__item {
@@ -91,9 +96,15 @@
 
   background-color: $basic;
 
-  @media (max-width: $mobile) {
+  @media (max-width: $tablet) {
     padding: 67px 78px 52px;
     max-width: none;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 43px 55px 31px;
+    max-width: none;
+    min-height: 256px;
   }
 }
 

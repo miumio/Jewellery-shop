@@ -36,15 +36,9 @@
   font-style: italic;
 }
 
-.intro__img-wrapper {
-  min-height: 261px;
-  background-color: $gold;
-  overflow: hidden;
-
-  img {
-    min-height: 261px;
+.intro__img-wrapper img {
+    height: 463px;
     object-fit: cover;
-  }
 }
 
 .intro__txt {

@@ -11,6 +11,10 @@
   @media (max-width: $tablet) {
     padding: 51px 0;
   }
+
+  @media (max-width: $tablet) {
+    padding: 51px 0 58px;
+  }
 }
 
 .page-footer h2 {
@@ -23,12 +27,21 @@
   @media (max-width: $tablet) {
     margin-bottom: 7px;
   }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 10px;
+    padding-right: 50px;
+  }
 }
 
 .page-footer p {
   margin: 0;
   color: $grey;
   font-weight: 400;
+
+  @media (max-width: $mobile) {
+    padding-right: 50px;
+  }
 }
 
 .page-footer__wrapper {
@@ -62,6 +75,7 @@
   }
 
   @media (max-width: $mobile) {
+    min-height: 231px;
     min-width: auto;
   }
 }
@@ -97,11 +111,14 @@
   @media (max-width: $tablet) {
     justify-content: space-between;
     max-width: 403px;
+    margin: 0 0 50px;
   }
 
   @media (max-width: $mobile) {
-    margin: 0 0 50px;
+    margin: 0 0 33px;
     flex-direction: column;
+
+    min-height: 354px;
     max-width: none;
   }
 }
@@ -131,4 +148,8 @@
 
 .page-footer__link {
   padding: 8px 16px;
+
+  @media (max-width: $mobile) {
+    padding: 8px 0;
+  }
 }

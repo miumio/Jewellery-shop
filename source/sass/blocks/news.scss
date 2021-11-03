@@ -4,6 +4,10 @@
   @media (max-width: $tablet) {
     margin-bottom: 64px;
   }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 52px;
+  }
 }
 
 .news__swiper {

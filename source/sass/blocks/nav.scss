@@ -3,6 +3,12 @@ nav {
   line-height: 21px;
 }
 
+.nav__wrapper {
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
+}
+
 .nav__list {
   @include list-style-reset;
   text-align: left;
@@ -45,12 +51,15 @@ nav {
 .nav__logo {
   justify-content: center;
   margin: 0 auto;
-  min-width: 300px;
   color: $gold;
   transition: transform $easy;
 
   @media (max-width: $tablet) {
     color: inherit;
+  }
+
+  @media (max-width: $mobile) {
+    transform: scale(80%);
   }
 }
 
@@ -119,6 +128,10 @@ nav {
   @media (max-width: $tablet) {
     padding: 30px;
   }
+
+  @media (max-width: $mobile) {
+    padding: 13px;
+  }
 }
 
 .nav__button-lines {
@@ -128,8 +141,8 @@ nav {
   background: $basic-black;
 }
 
-@media (max-width: $tablet) {
-  .nav__button--show {
+.nav__button--show {
+  @media (max-width: $tablet) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -138,6 +151,15 @@ nav {
     width: 84px;
     height: 78px;
   }
+
+  @media (max-width: $mobile) {
+    padding: 13px;
+    width: 55px;
+    height: 44px;
+  }
+}
+
+@media (max-width: $tablet) {
 
   .nav--nojs {
     color: $white;
