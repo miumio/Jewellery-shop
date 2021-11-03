@@ -45,7 +45,7 @@
           </a>
         </li>
         <li class="nav__item nav__links">
-          <a href="login.html" class="nav__link" target="blank">
+          <a href="login.html" class="nav__link nav__link--login" target="blank">
             <span>Login</span>
           </a>
           <a href="#" class="nav__link nav__link--shop">
@@ -569,6 +569,42 @@
   </div>
 </footer>
 
+
+  <section class="modal login">
+    <div class="login__form">
+  <div class="login__img-wrapper">
+    <picture>
+      <!-- 1x: 270px; 2x: 540px -->
+      <source type="image/webp" media="(max-width: 767px)" srcset="img/modal-bg-mobile@1x.webp 1x, img/modal-bg-mobile@2x.webp 2x">
+      <source media="(max-width: 767px)" srcset="img/modal-bg-mobile@1x.jpg 1x, img/modal-bg-mobile@2x.jpg 2x">
+      <!-- 1x: 442px; 2x: 884px -->
+      <source type="image/webp" media="(max-width: 1023px)" srcset="img/modal-bg-tablet@1x.webp 1x, img/modal-bg-tablet@2x.webp 2x">
+      <source media="(max-width: 1023px)" srcset="img/modal-bg-tablet@1x.jpg 1x, img/modal-bg-tablet@2x.jpg 2x">
+      <!-- 1x: 430px; 2x: 860px -->
+      <source type="image/webp" srcset="img/modal-bg-desktop@1x.webp 1x, img/modal-bg-desktop@2x.webp 2x">
+      <img src="img/modal-bg-desktop@1x.jpg" srcset="img/modal-bg-desktop@2x.jpg 2x" width="430" height="138" alt="jewellery">
+    </picture>
+  </div>
+  <h2>Log In</h2>
+  <form action="https://echo.htmlacademy.ru" method="post">
+    <label>
+      <input type="email" name="email" id="email-data" placeholder="Your E-mail" required="">
+    </label>
+    <label>
+      <input type="password" name="password" id="password-data" placeholder="password">
+    </label>
+    <a href="#">Forgot your password?</a>
+    <button>log In</button>
+  </form>
+  <p>Don't have an account? <a href="#" class="login__sign-link">Sign up</a></p>
+  <button class="login__close-button" aria-label="Close">
+    <svg width="14" height="14">
+      <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+    </svg>
+  </button>
+</div>
+
+  </section>
 
   <script src="js/main.js" type="module"></script>
 </body>

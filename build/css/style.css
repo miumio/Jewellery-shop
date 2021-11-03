@@ -1688,12 +1688,28 @@ button.swiper-pagination-bullet {
   text-decoration: none; }
 
 .login__close-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 10px;
-  width: 34px;
-  height: 34px;
-  border: 0;
-  background-color: transparent;
-  cursor: pointer; }
+  display: none; }
+  .login__close-button--show {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    padding: 10px;
+    width: 34px;
+    height: 34px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer; }
+
+.modal {
+  display: none;
+  background-color: #ffffff;
+  z-index: 10000; }
+  .modal--show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: grid;
+    place-items: center; }
