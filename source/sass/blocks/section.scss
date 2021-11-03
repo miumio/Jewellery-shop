@@ -1,5 +1,5 @@
 .section {
-  margin-bottom: 130px;
+  margin-bottom: 120px;
 
   @media (max-width: $tablet) {
     margin-bottom: 80px;
@@ -12,4 +12,6 @@
 
 .section h2 {
   @include title;
+
+  margin-bottom: 20px;
 }

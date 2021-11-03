@@ -26,7 +26,7 @@
 @media (min-width: 1024px) {
   .blog__item--big .blog__txt {
     position: absolute;
-    top: 50%;
+    top: 52%;
     left: 50%;
     bottom: 0;
     right: 0;
@@ -54,7 +54,7 @@
 .blog__card h3 {
   @include title;
 
-  margin-bottom: 50px;
+  margin-bottom: auto;
 
   font-weight: 600;
   font-size: 26px;
@@ -63,8 +63,10 @@
 }
 
 .blog__card p {
-  margin: 0 0 25px;
+  margin: 0 0 10px;
   order: -1;
+
+  font-size: 14px;
   color: $grey;
 }
 
@@ -80,16 +82,21 @@
 .blog__txt {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: space-evenly;
   align-items: center;
   flex: 1 1 0;
 
   max-width: 50%;
-  padding: 20px;
+  min-height: 300px;
+  padding: 67px 50px 52px;
 
   background-color: $basic;
 
   @media (max-width: $mobile) {
     max-width: none;
   }
+}
+
+.blog__card .link {
+  margin: auto 0;
 }

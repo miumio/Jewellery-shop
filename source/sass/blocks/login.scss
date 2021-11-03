@@ -8,7 +8,9 @@
   color: $grey;
 }
 
-.login h2 {
+.login h1 {
+  @include title;
+
   margin-bottom: 45px;
   color: $basic-black;
 }

@@ -1,11 +1,11 @@
-.guestions {
-  line-height: 130%;
+.questions {
+  margin-bottom: 109px;
 }
 
 .questions__list {
   @include list-style-reset;
 
-  margin: 60px 5% 0;
+  margin: 48px 8.5% 0;
 
   text-align: left;
   border: $gold-line;
@@ -13,20 +13,22 @@
 }
 
 .questions__item {
-  padding: 50px 28px;
+  padding: 40px 44px 32px;
   border-bottom: $gold-line;
 }
 
 .questions h4 {
-  margin: 0;
+  margin: 0 0 10px;
 
   font-weight: 500;
   font-size: 18px;
 }
 
 .questions p {
-  margin: 0;
-  margin-left: 5px;
+  margin: 0 0 10px 5px;
+  width: 58%;
+
+  line-height: 130%;
   font-weight: 400;
 
   @media (max-width: $tablet) {
