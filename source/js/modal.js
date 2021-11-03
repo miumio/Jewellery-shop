@@ -4,6 +4,7 @@
   const body = document.querySelector('body');
   const email = modal.querySelector('#email-data');
   const closeButton = modal.querySelector('.login__close-button');
+  const form = modal.querySelector('form');
 
   let isStorageSupport = true;
 
@@ -20,7 +21,7 @@
           closeButton.focus();
         }
       },
-      true
+      true,
     );
   };
 
@@ -37,19 +38,34 @@
     modal.classList.remove('modal--show');
   };
 
-  link.addEventListener('click', (evt) => {
-    evt.preventDefault();
-    showPopup();
-  });
+  link.addEventListener(
+    'click',
+    (evt) => {
+      evt.preventDefault();
+      showPopup();
+    },
+    { once: true },
+  );
 
   closeButton.addEventListener('click', closePopup);
 
-  window.addEventListener('keydown', function (evt) {
-    if (evt.keyCode === 27) {
-      if (modal.classList.contains('modal--show')) {
-        evt.preventDefault();
-        closePopup();
+  window.addEventListener(
+    'keydown',
+    function (evt) {
+      if (evt.keyCode === 27) {
+        if (modal.classList.contains('modal--show')) {
+          evt.preventDefault();
+          closePopup();
+        }
       }
+    },
+    { once: true },
+  );
+
+  form.addEventListener('submit', function () {
+    if (isStorageSupport) {
+      localStorage.setItem('email', email.value);
     }
+    closePopup();
   });
 })();

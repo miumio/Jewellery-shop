@@ -13,9 +13,13 @@
     if (filter) {
       filter.classList.add('catalog__filter--show');
     }
-  })
+  });
 
-  closeButton.addEventListener('click', function () {
-    filter.classList.remove('catalog__filter--show');
-  })
+  closeButton.addEventListener(
+    'click',
+    function () {
+      filter.classList.remove('catalog__filter--show');
+    },
+    { once: true },
+  );
 })();
