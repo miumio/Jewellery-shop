@@ -9,6 +9,10 @@
 
   &--catalog {
     margin-bottom: 80px;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 50px;
+    }
   }
 }
 

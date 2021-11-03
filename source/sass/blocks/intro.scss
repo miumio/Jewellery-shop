@@ -16,6 +16,15 @@
   }
 }
 
+.intro img {
+  height: 463px;
+}
+
+.intro--catalog img {
+  height: 261px;
+}
+
+
 .intro h2 {
   @include title;
 
@@ -37,7 +46,6 @@
 }
 
 .intro__img-wrapper img {
-    height: 463px;
     object-fit: cover;
 }
 

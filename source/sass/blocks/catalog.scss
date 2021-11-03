@@ -7,6 +7,7 @@
 
   @media (max-width: $tablet) {
     display: block;
+    margin-bottom: 68px;
   }
 
   @media (max-width: $mobile) {
@@ -17,7 +18,7 @@
 .catalog__filter-link {
   display: none;
 
-  padding: 28px 0;
+  padding: 22px 0;
   margin-bottom: 50px;
 
   color: $white;
