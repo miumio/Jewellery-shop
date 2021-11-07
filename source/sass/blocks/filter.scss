@@ -126,7 +126,7 @@
   display: block;
 
   margin-bottom: 25px;
-  padding: 20px;
+  padding: 24px 20px;
 
   font-size: 16px;
   font-weight: 500;
@@ -173,7 +173,7 @@
 .filter ul {
   @include list-style-reset;
 
-  margin: 18px 9px 0;
+  margin: 18px 4px 0;
 
   overflow: hidden;
   transition: max-height $easy;
@@ -225,7 +225,7 @@
 
 .filter__price-wrapper {
   margin: 0 0 35px 0;
-  padding: 20px 19px 20px 24px;
+  padding: 20px 19px 14px 24px;
   border: $gold-line;
 
   @media (max-width: $tablet) {

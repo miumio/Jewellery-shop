@@ -29,6 +29,10 @@
     }
   }
 
+  @media (max-width: $mobile) {
+    font-size: 34px;
+  }
+
   &--catalog {
     min-height: 261px;
     font-size: 22px;
@@ -46,10 +50,13 @@
         background-image: url("../img/catalog-intro-tablet@2x.jpg");
       }
     }
-  }
 
-  @media (max-width: $mobile) {
-    font-size: 34px;
+    @media (max-width: $mobile) {
+      padding: 52px 0 57px;
+
+      font-size: 22px;
+      line-height: 26px;
+    }
   }
 }
 

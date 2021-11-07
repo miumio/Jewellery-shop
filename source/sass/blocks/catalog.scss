@@ -11,7 +11,7 @@
   }
 
   @media (max-width: $mobile) {
-    margin-bottom: 70px;
+    margin-bottom: 60px;
   }
 }
 
@@ -24,6 +24,10 @@
   color: $white;
   text-decoration: none;
   background-color: $gold;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 38px;
+  }
 
   &--show {
     @media (max-width: $tablet) {
@@ -43,8 +47,10 @@
   margin-bottom: 70px;
 
   @media (max-width: $mobile) {
-    margin-bottom: 50px;
     grid-template-columns: 1fr 1fr;
+    row-gap: 27px;
+
+    margin-bottom: 37px;
   }
 }
 
