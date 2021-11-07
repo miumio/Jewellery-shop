@@ -1,7 +1,5 @@
 .modal {
   display: none;
-  background-color: $white;
-  z-index: 10000;
 
   &--show {
     position: fixed;
@@ -12,5 +10,16 @@
 
     display: grid;
     place-items: center;
+
+    background-color: $white;
+    z-index: 10000;
   }
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }

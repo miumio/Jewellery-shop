@@ -1744,7 +1744,8 @@ button.swiper-pagination-bullet {
   margin: auto;
   padding-bottom: 45px;
   width: 430px;
-  background-color: #f0eae4; }
+  background-color: #f0eae4;
+  z-index: 1000; }
   @media (max-width: 1023px) {
     .login__form {
       width: 442px; } }
@@ -1824,9 +1825,7 @@ button.swiper-pagination-bullet {
     cursor: pointer; }
 
 .modal {
-  display: none;
-  background-color: #ffffff;
-  z-index: 10000; }
+  display: none; }
   .modal--show {
     position: fixed;
     top: 0;
@@ -1834,7 +1833,16 @@ button.swiper-pagination-bullet {
     bottom: 0;
     right: 0;
     display: grid;
-    place-items: center; }
+    place-items: center;
+    background-color: #ffffff;
+    z-index: 10000; }
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
 
 .page-footer {
   padding: 90px 0;

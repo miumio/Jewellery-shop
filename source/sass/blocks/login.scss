@@ -32,6 +32,8 @@
   width: 430px;
   background-color: $basic;
 
+  z-index: 1000;
+
   @media (max-width: $tablet) {
     width: 442px;
   }

@@ -76,6 +76,7 @@
   const email = modal.querySelector('#email-data');
   const closeButton = modal.querySelector('.login__close-button');
   const form = modal.querySelector('form');
+  const overlay = modal.querySelector('.modal__overlay');
 
   let isStorageSupport = true;
 
@@ -131,6 +132,8 @@
     }
     closePopup();
   });
+
+  overlay.addEventListener('click', closePopup);
 })();
 
 (function () {
