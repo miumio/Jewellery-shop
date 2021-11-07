@@ -29,8 +29,13 @@ nav {
   display: flex;
   flex: 1;
 
+
   @media (max-width: $tablet) {
     align-items: center;
+  }
+
+  @media (max-width: $mobile) {
+    min-width: 70px;
   }
 }
 
@@ -52,7 +57,7 @@ nav {
   }
 
   @media (max-width: $mobile) {
-    min-width: auto;
+    min-width: 280px;
   }
 }
 
@@ -61,10 +66,6 @@ nav {
   margin: 0 auto;
   color: $gold;
   transition: transform $easy;
-
-  @media (max-width: $tablet) {
-    color: inherit;
-  }
 
   @media (max-width: $mobile) {
     transform: scale(80%);
@@ -142,10 +143,9 @@ nav {
   @media (max-width: $tablet) {
     margin: 0;
     min-width: 100%;
+
     order: 5;
     border-top: none;
-
-    overflow-y: scroll;
   }
 }
 
@@ -193,6 +193,10 @@ nav {
     background-color: $gold;
 
     z-index: 10;
+  }
+
+  .nav--opened .nav__logo {
+    color: $white;
   }
 
   .nav--opened .nav__button-lines {
