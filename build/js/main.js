@@ -3,7 +3,7 @@
 
   if (!container) return;
 
-  const acc = container.querySelectorAll('h4');
+  const acc = container.querySelectorAll('h3');
 
   acc.forEach((el) => {
     el.classList.add('accordion__title');

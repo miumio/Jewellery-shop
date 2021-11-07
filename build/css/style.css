@@ -910,12 +910,12 @@ nav {
     .questions__item {
       padding: 16px 18px 16px 23px; } }
 
-.questions h4 {
+.questions h3 {
   margin: 0;
   font-weight: 500;
   font-size: 18px; }
   @media (max-width: 767px) {
-    .questions h4 {
+    .questions h3 {
       padding-right: 46px;
       font-size: 16px;
       line-height: 140%; } }
@@ -1091,7 +1091,7 @@ nav {
       -webkit-box-shadow: 0 5px 32px rgba(155, 153, 151, 0.5);
               box-shadow: 0 5px 32px rgba(155, 153, 151, 0.5); } }
 
-.filter h4 {
+.filter h3 {
   margin: 0;
   font-size: 16px;
   font-weight: 500; }
@@ -1655,7 +1655,7 @@ button.swiper-pagination-bullet {
   height: 100vh;
   color: #9b9997; }
 
-.login h1 {
+.login h2 {
   margin: 0;
   font-family: "Cormorant Garamond", "Times New Roman", "Times", serif;
   font-size: 34px;
