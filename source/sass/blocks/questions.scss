@@ -10,18 +10,10 @@
   }
 }
 
-.questions h2 {
-  margin-bottom: 46px;
-
-  @media (max-width: $mobile) {
-    margin-bottom: 27px;
-  }
-}
-
 .questions__list {
   @include list-style-reset;
 
-  margin: 58px 8.5% 0;
+  margin: 48px 8.5% 0;
 
   text-align: left;
   border: $gold-line;
@@ -33,7 +25,7 @@
 }
 
 .questions__item {
-  padding: 40px 44px 32px;
+  padding: 38px 44px 43px;
   border-bottom: $gold-line;
 
   @media (max-width: $tablet) {
@@ -60,7 +52,7 @@
 }
 
 .questions p {
-  margin: 0 0 10px 5px;
+  margin: 10px 0 5px 5px;
   width: 58%;
 
   line-height: 130%;

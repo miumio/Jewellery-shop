@@ -104,6 +104,10 @@
   background-color: transparent;
 }
 
+.page-footer__sign-up input::placeholder {
+  font-size: 14px;
+}
+
 .page-footer__nav {
   display: flex;
   justify-content: space-between;
@@ -144,6 +148,7 @@
   font: inherit;
   color: inherit;
 
+  margin-right: -20px;
   padding: 0 20px;
   min-width: 100px;
 
@@ -151,8 +156,12 @@
   background-color: transparent;
 }
 
+.page-footer button span:first-of-type {
+  margin-right: 17px;
+}
+
 .page-footer__link {
-  padding: 8px 16px;
+  padding: 6px 16px 11px;
 
   @media (max-width: $mobile) {
     padding: 8px 0;
