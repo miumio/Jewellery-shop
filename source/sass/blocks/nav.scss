@@ -108,7 +108,6 @@ nav {
     }
   }
 
-
   @media (max-width: $tablet) {
     padding: 30px;
   }
@@ -150,7 +149,6 @@ nav {
   }
 }
 
-
 .nav__button-lines {
   display: block;
   width: 24px;
@@ -158,21 +156,23 @@ nav {
   background: $basic-black;
 }
 
-.nav__button--show {
-  @media (max-width: $tablet) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.nav__button {
+  &--show {
+    @media (max-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
-    padding: 30px;
-    width: 84px;
-    height: 78px;
-  }
+      padding: 30px;
+      width: 84px;
+      height: 78px;
+    }
 
-  @media (max-width: $mobile) {
-    padding: 13px;
-    width: 55px;
-    height: 44px;
+    @media (max-width: $mobile) {
+      padding: 13px;
+      width: 55px;
+      height: 44px;
+    }
   }
 }
 
