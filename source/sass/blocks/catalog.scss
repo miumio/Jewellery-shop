@@ -32,42 +32,6 @@
   }
 }
 
-.catalog__filter {
-  min-width: 210px;
-
-  @media (max-width: $tablet) {
-    max-height: 0;
-    opacity: 0;
-    transform: translateX(-200%);
-    transition: opacity $easy;
-  }
-
-  &--show {
-    @media (max-width: $tablet) {
-      position: fixed;
-      top: 27px;
-      left: -19px;
-      bottom: 89px;
-      right: 60%;
-
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-
-      max-height: none;
-      opacity: 1;
-      transform: translateX(0);
-    }
-
-    @media (max-width: $mobile) {
-      top: 76px;
-      right: 25px;
-      bottom: 60px;
-      left: 25px;
-    }
-  }
-}
-
 .catalog__list {
   @include list-style-reset;
 

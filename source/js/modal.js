@@ -21,7 +21,7 @@
           closeButton.focus();
         }
       },
-      true,
+      true
     );
   };
 
@@ -38,29 +38,21 @@
     modal.classList.remove('modal--show');
   };
 
-  link.addEventListener(
-    'click',
-    (evt) => {
-      evt.preventDefault();
-      showPopup();
-    },
-    { once: true },
-  );
+  link.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    showPopup();
+  });
 
   closeButton.addEventListener('click', closePopup);
 
-  window.addEventListener(
-    'keydown',
-    function (evt) {
-      if (evt.keyCode === 27) {
-        if (modal.classList.contains('modal--show')) {
-          evt.preventDefault();
-          closePopup();
-        }
+  window.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 27) {
+      if (modal.classList.contains('modal--show')) {
+        evt.preventDefault();
+        closePopup();
       }
-    },
-    { once: true },
-  );
+    }
+  });
 
   form.addEventListener('submit', function () {
     if (isStorageSupport) {

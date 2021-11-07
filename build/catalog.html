@@ -107,111 +107,114 @@
   <main class="wrapper">
     <section class="catalog">
       <a href="#" class="catalog__filter-link">Filter</a>
-      <div class="catalog__filter filter accordion">
+      <section class="catalog__filter filter accordion">
         <h2 class="visually-hidden">Filter</h2>
-        <button class="filter__button button" type="button" aria-label="Close">
+        <button class="filter__close-button button" type="button" aria-label="Close">
           <span></span>
         </button>
-        <form action="http://echo.htmlacademy.ru" method="get">
-          <fieldset>
-            <h3>Product</h3>
-            <ul>
-              <li>
-                <label>
-                  <input type="checkbox" name="necklaces" checked="">
-                  <span></span>
-                  <span>Necklaces</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="chockers" checked="">
-                  <span></span>
-                  <span>Chokers</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="rings">
-                  <span></span>
-                  <span>Rings</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="earrings" checked="">
-                  <span></span>
-                  <span>Earrings</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <h3>Material</h3>
-            <ul>
-              <li>
-                <label>
-                  <input type="checkbox" name="material1" checked="">
-                  <span></span>
-                  <span>Gold</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="material2">
-                  <span></span>
-                  <span>Silver</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <h3>Collection</h3>
-            <ul>
-              <li>
-                <label>
-                  <input type="checkbox" name="collection1" checked="">
-                  <span></span>
-                  <span>Pink Flamingo</span>
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="collection2">
-                  <span></span>
-                  <span>Dreams</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <div class="filter__price-wrapper">
-            <h3>Price</h3>
-            <div class="filter__range">
-              <div class="filter__controls">
-                <div class="filter__scale">
-                  <div class="filter__bar"></div>
+        <div class="filter__form">
+          <form action="http://echo.htmlacademy.ru" method="get">
+            <fieldset>
+              <h3>Product</h3>
+              <ul>
+                <li>
+                  <label>
+                    <input type="checkbox" name="necklaces" checked="">
+                    <span></span>
+                    <span>Necklaces</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="chockers" checked="">
+                    <span></span>
+                    <span>Chokers</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="rings">
+                    <span></span>
+                    <span>Rings</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="earrings" checked="">
+                    <span></span>
+                    <span>Earrings</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <h3>Material</h3>
+              <ul>
+                <li>
+                  <label>
+                    <input type="checkbox" name="material1" checked="">
+                    <span></span>
+                    <span>Gold</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="material2">
+                    <span></span>
+                    <span>Silver</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <h3>Collection</h3>
+              <ul>
+                <li>
+                  <label>
+                    <input type="checkbox" name="collection1" checked="">
+                    <span></span>
+                    <span>Pink Flamingo</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="collection2">
+                    <span></span>
+                    <span>Dreams</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <div class="filter__price-wrapper">
+              <h3>Price</h3>
+              <div class="filter__range">
+                <div class="filter__controls">
+                  <div class="filter__scale">
+                    <div class="filter__bar"></div>
+                  </div>
+                  <button type="button" aria-label="Min value"></button>
+                  <button type="button" aria-label="Max value"></button>
                 </div>
-                <button type="button" aria-label="Min value"></button>
-                <button type="button" aria-label="Max value"></button>
-              </div>
-              <div class="filter__price-inputs">
-                <label>
-                  <span class="visually-hidden">Type min value</span>
-                  <span>$</span>
-                  <input type="number" name="minprice" value="55" min="0">
-                </label>
-                <label>
-                  <span>$</span>
-                  <span class="visually-hidden">Type max value</span>
-                  <input type="number" name="maxprice" value="155" min="0" max="10000000">
-                </label>
+                <div class="filter__price-inputs">
+                  <label>
+                    <span class="visually-hidden">Type min value</span>
+                    <span>$</span>
+                    <input type="number" name="minprice" value="55" min="0">
+                  </label>
+                  <label>
+                    <span>$</span>
+                    <span class="visually-hidden">Type max value</span>
+                    <input type="number" name="maxprice" value="155" min="0" max="10000000">
+                  </label>
+                </div>
               </div>
             </div>
-          </div>
-          <button type="submit">Apply</button>
-          <button type="reset">Clear All</button>
-        </form>
-      </div>
+            <button type="submit">Apply</button>
+            <button type="reset">Clear All</button>
+          </form>
+        </div>
+        <div class="filter__overlay"></div>
+      </section>
       <div class="catalog-inner">
         <ul class="catalog__list">
           <li class="catalog__item">
