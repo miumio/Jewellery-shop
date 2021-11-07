@@ -581,7 +581,15 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 6px 0; }
+  padding: 6px 0 12px; }
+  @media (max-width: 1023px) {
+    .social__list {
+      display: block;
+      padding: 6px; } }
+
+@media (max-width: 1023px) {
+  .social__item {
+    margin-bottom: 18px; } }
 
 .social__link {
   display: -webkit-box;
@@ -887,6 +895,9 @@ nav {
 
 .blog__item--big .blog__txt {
   padding-bottom: 64px; }
+  @media (max-width: 1023px) {
+    .blog__item--big .blog__txt {
+      padding: 84px 37px 51px; } }
 
 @media (min-width: 1024px) {
   .blog__item--big .blog__txt {
@@ -915,7 +926,7 @@ nav {
   border-bottom: 0; }
   @media (max-width: 1023px) {
     .questions__list {
-      margin: 0; } }
+      margin: 48px 0 0; } }
 
 .questions__item {
   padding: 38px 44px 43px;
@@ -984,6 +995,9 @@ nav {
           column-gap: 2%;
   row-gap: 27px;
   margin-top: 60px; }
+  @media (max-width: 1023px) {
+    .instagram__list {
+      row-gap: 15px; } }
   @media (max-width: 767px) {
     .instagram__list {
       margin-top: 50px;
@@ -1495,10 +1509,6 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   color: #a87b62; }
-  @media (max-width: 1023px) {
-    .swiper-button-prev,
-    .swiper-button-next {
-      top: 6%; } }
   @media (max-width: 767px) {
     .swiper-button-prev,
     .swiper-button-next {
@@ -1838,7 +1848,7 @@ button.swiper-pagination-bullet {
       flex-wrap: wrap; }
   @media (max-width: 1023px) {
     .page-footer__wrapper {
-      padding-right: 14%;
+      padding-right: 13%;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; } }
@@ -1865,7 +1875,7 @@ button.swiper-pagination-bullet {
       margin-bottom: 21px;
       min-width: 506px;
       max-width: none;
-      min-height: 163px; } }
+      min-height: 165px; } }
   @media (max-width: 767px) {
     .page-footer__sign-up {
       min-height: 231px;
@@ -1926,7 +1936,6 @@ button.swiper-pagination-bullet {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      max-width: 403px;
       margin: 0 0 50px; } }
   @media (max-width: 767px) {
     .page-footer__nav {
@@ -1971,6 +1980,9 @@ button.swiper-pagination-bullet {
 
 .page-footer__link {
   padding: 6px 16px 11px; }
+  @media (max-width: 1023px) {
+    .page-footer__link {
+      margin-left: -15px; } }
   @media (max-width: 767px) {
     .page-footer__link {
       padding: 8px 0; } }

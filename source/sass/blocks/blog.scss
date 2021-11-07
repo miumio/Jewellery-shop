@@ -107,6 +107,10 @@
 
 .blog__item--big .blog__txt {
   padding-bottom: 64px;
+
+  @media (max-width: $tablet) {
+    padding: 84px 37px 51px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -118,4 +122,3 @@
     right: 0;
   }
 }
-

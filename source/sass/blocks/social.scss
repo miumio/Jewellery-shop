@@ -5,7 +5,18 @@
   flex-direction: column;
   justify-content: space-between;
 
-  padding: 6px 0;
+  padding: 6px 0 12px;
+
+  @media (max-width: $tablet) {
+    display: block;
+    padding: 6px;
+  }
+}
+
+.social__item {
+  @media (max-width: $tablet) {
+    margin-bottom: 18px;
+  }
 }
 
 .social__link {

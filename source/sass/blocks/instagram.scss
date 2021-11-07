@@ -32,6 +32,10 @@
 
   margin-top: 60px;
 
+  @media (max-width: $tablet) {
+    row-gap: 15px;
+  }
+
   @media (max-width: $mobile) {
     margin-top: 50px;
     grid-template-columns: 1fr 1fr;

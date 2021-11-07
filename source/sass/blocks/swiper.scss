@@ -171,10 +171,6 @@
   justify-content: center;
   color: $gold;
 
-  @media (max-width: $tablet) {
-    top: 6%;
-  }
-
   @media (max-width: $mobile) {
     display: none;
   }
