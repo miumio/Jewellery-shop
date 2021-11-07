@@ -1,9 +1,10 @@
 (function () {
   const link = document.querySelector('.catalog__filter-link');
   const filter = document.querySelector('.catalog__filter');
-  const form = document.querySelector('form');
+  const form = filter.querySelector('form');
+  const checkbox = form.querySelectorAll('input');
   const closeButton = filter.querySelector('.filter__button');
-  const resetButton = document.querySelector('button[type=reset]');
+  const resetButton = form.querySelector('button[type=reset]');
 
   if (!link) return;
 
@@ -17,16 +18,12 @@
     }
   });
 
-  closeButton.addEventListener(
-    'click',
-    function () {
-      filter.classList.remove('catalog__filter--show');
-    },
-    { once: true }
-  );
+  closeButton.addEventListener('click', function () {
+    filter.classList.remove('catalog__filter--show');
+  });
 
   resetButton.addEventListener('click', (evt) => {
     evt.preventDefault();
-    form.reset();
+    checkbox.forEach((el) => el.checked = false);
   });
 })();

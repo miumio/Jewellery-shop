@@ -87,11 +87,14 @@
   border-bottom: 1px solid $white;
 }
 
-.page-footer__sign-up input {
+.page-footer__sign-up label {
   display: flex;
   flex: 1 1 auto;
+}
 
+.page-footer__sign-up input {
   padding: 10px 0;
+  width: 100%;
 
   font: inherit;
   color: $white;
@@ -141,7 +144,7 @@
   font: inherit;
   color: inherit;
 
-  padding: 0;
+  padding: 0 20px;
   min-width: 100px;
 
   border: none;

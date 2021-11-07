@@ -1853,14 +1853,17 @@ button.swiper-pagination-bullet {
   margin-bottom: 15px;
   border-bottom: 1px solid #ffffff; }
 
-.page-footer__sign-up input {
+.page-footer__sign-up label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+          flex: 1 1 auto; }
+
+.page-footer__sign-up input {
   padding: 10px 0;
+  width: 100%;
   font: inherit;
   color: #ffffff;
   font-size: 14px;
@@ -1919,7 +1922,7 @@ button.swiper-pagination-bullet {
           align-items: center;
   font: inherit;
   color: inherit;
-  padding: 0;
+  padding: 0 20px;
   min-width: 100px;
   border: none;
   background-color: transparent; }
