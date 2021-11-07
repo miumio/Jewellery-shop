@@ -127,6 +127,11 @@
 
   border: 0;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    outline: 1px solid $gold;
+  }
 }
 
 .login__sign-link {
