@@ -5,14 +5,21 @@
   margin: 0;
   height: 100vh;
 
+  font-size: 14px;
+  line-height: 21px;
   color: $grey;
 }
 
 .login h2 {
   @include title;
 
-  margin-bottom: 45px;
+  margin-bottom: 25px;
   color: $basic-black;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 17px;
+    font-size: 24px;
+  }
 }
 
 .login p {
@@ -21,7 +28,11 @@
 }
 
 .login__img-wrapper {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 37px;
+  }
 }
 
 .login__form {
@@ -39,6 +50,7 @@
   }
 
   @media (max-width: $mobile) {
+    padding-bottom: 40px;
     width: calc(100vw - 50px);
     min-width: 270px;
   }
@@ -48,9 +60,18 @@
   display: flex;
   flex-direction: column;
 
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   padding: 0 45px;
-  min-height: 300px;
+  min-height: 240px;
+
+  @media (max-width: $tablet) {
+    padding: 0 50px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 0 15px;
+    min-height: 226px;
+  }
 }
 
 .login label {
@@ -59,18 +80,20 @@
 }
 
 .login label:not(:last-of-type) {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .login form a {
-  color: inherit;
+  font-size: 12px;
+  line-height: 28px;
   text-decoration: none;
   text-align: right;
+  color: inherit;
 }
 
 .login form button {
   margin-top: auto;
-  padding: 28px;
+  padding: 25px;
 
   font-family: inherit;
   font-size: 16px;
@@ -121,13 +144,26 @@
 
     display: block;
 
-    padding: 10px;
-    width: 34px;
-    height: 34px;
+    padding: 18px;
+    width: 52px;
+    height: 52px;
 
     border: 0;
     background-color: transparent;
 
     cursor: pointer;
+
+    @media (max-width: $tablet) {
+      transform-origin: 64% 35%;
+      transform: scale(150%);
+    }
+
+    @media (max-width: $mobile) {
+      padding: 10px;
+      width: 46px;
+      height: 46px;
+
+      transform: none;
+    }
   }
 }

@@ -1721,6 +1721,8 @@ button.swiper-pagination-bullet {
   place-items: center;
   margin: 0;
   height: 100vh;
+  font-size: 14px;
+  line-height: 21px;
   color: #9b9997; }
 
 .login h2 {
@@ -1729,15 +1731,22 @@ button.swiper-pagination-bullet {
   font-size: 34px;
   line-height: 130%;
   letter-spacing: 0.03em;
-  margin-bottom: 45px;
+  margin-bottom: 25px;
   color: #1d1613; }
+  @media (max-width: 767px) {
+    .login h2 {
+      margin-bottom: 17px;
+      font-size: 24px; } }
 
 .login p {
   margin: 0;
   text-align: center; }
 
 .login__img-wrapper {
-  margin-bottom: 60px; }
+  margin-bottom: 50px; }
+  @media (max-width: 767px) {
+    .login__img-wrapper {
+      margin-bottom: 37px; } }
 
 .login__form {
   position: relative;
@@ -1751,6 +1760,7 @@ button.swiper-pagination-bullet {
       width: 442px; } }
   @media (max-width: 767px) {
     .login__form {
+      padding-bottom: 40px;
       width: calc(100vw - 50px);
       min-width: 270px; } }
 
@@ -1762,25 +1772,34 @@ button.swiper-pagination-bullet {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   padding: 0 45px;
-  min-height: 300px; }
+  min-height: 240px; }
+  @media (max-width: 1023px) {
+    .login form {
+      padding: 0 50px; } }
+  @media (max-width: 767px) {
+    .login form {
+      padding: 0 15px;
+      min-height: 226px; } }
 
 .login label {
   display: block;
   border-bottom: 1px solid #1d1613; }
 
 .login label:not(:last-of-type) {
-  margin-bottom: 40px; }
+  margin-bottom: 25px; }
 
 .login form a {
-  color: inherit;
+  font-size: 12px;
+  line-height: 28px;
   text-decoration: none;
-  text-align: right; }
+  text-align: right;
+  color: inherit; }
 
 .login form button {
   margin-top: auto;
-  padding: 28px;
+  padding: 25px;
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
@@ -1817,12 +1836,25 @@ button.swiper-pagination-bullet {
     top: 0;
     right: 0;
     display: block;
-    padding: 10px;
-    width: 34px;
-    height: 34px;
+    padding: 18px;
+    width: 52px;
+    height: 52px;
     border: 0;
     background-color: transparent;
     cursor: pointer; }
+    @media (max-width: 1023px) {
+      .login__close-button--show {
+        -webkit-transform-origin: 64% 35%;
+                transform-origin: 64% 35%;
+        -webkit-transform: scale(150%);
+                transform: scale(150%); } }
+    @media (max-width: 767px) {
+      .login__close-button--show {
+        padding: 10px;
+        width: 46px;
+        height: 46px;
+        -webkit-transform: none;
+                transform: none; } }
 
 .modal {
   display: none; }
