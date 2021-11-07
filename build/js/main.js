@@ -25,7 +25,9 @@
 (function () {
   const link = document.querySelector('.catalog__filter-link');
   const filter = document.querySelector('.catalog__filter');
-  const closeButton = document.querySelector('.filter__button');
+  const form = document.querySelector('form');
+  const closeButton = filter.querySelector('.filter__button');
+  const resetButton = document.querySelector('button[type=reset]');
 
   if (!link) return;
 
@@ -44,8 +46,13 @@
     function () {
       filter.classList.remove('catalog__filter--show');
     },
-    { once: true },
+    { once: true }
   );
+
+  resetButton.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    form.reset();
+  });
 })();
 
 (function () {

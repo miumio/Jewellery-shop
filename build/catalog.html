@@ -463,8 +463,8 @@
           </li>
         </ul>
         <div class="catalog__pagination pagination">
-          <button class="catalog__button catalog__button--prev button">Previous</button>
-          <button class="catalog__button catalog__button--next button">Next</button>
+          <button class="catalog__button catalog__button--prev button" type="button">Previous</button>
+          <button class="catalog__button catalog__button--next button" type="button">Next</button>
           <ul class="pagination__list">
             <li class="pagination__item">
               <a href="#" class="pagination__link pagination__link--active">1</a>
@@ -494,7 +494,7 @@
       <form action="https://echo.htmlacademy.ru" method="post">
         <div class="page-footer__field">
           <input type="email" id="email" name="email" required="" placeholder="Your E-mail">
-          <button type="button"><span>Sign Up</span><span>&#10230;</span></button>
+          <button type="submit"><span>Sign Up</span><span>&#10230;</span></button>
         </div>
       </form>
     </section>
@@ -594,10 +594,10 @@
       <input type="password" name="password" id="password-data" placeholder="password">
     </label>
     <a href="#">Forgot your password?</a>
-    <button>log In</button>
+    <button type="submit">log In</button>
   </form>
   <p>Don't have an account? <a href="#" class="login__sign-link">Sign up</a></p>
-  <button class="login__close-button" aria-label="Close">
+  <button class="login__close-button" aria-label="Close" type="button">
     <svg width="14" height="14">
       <use xlink:href="img/sprite_auto.svg#icon-close"></use>
     </svg>
