@@ -15,7 +15,8 @@
   transition: color $easy;
 
   @media (max-width: $mobile) {
-    margin-top: 11px;
+    margin-top: 12px;
+    line-height: 25px;
   }
 }
 

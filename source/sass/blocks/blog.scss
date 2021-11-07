@@ -111,6 +111,10 @@
   @media (max-width: $tablet) {
     padding: 84px 37px 51px;
   }
+
+  @media (max-width: $mobile) {
+    padding: 62px 37px 29px;
+  }
 }
 
 @media (min-width: 1024px) {

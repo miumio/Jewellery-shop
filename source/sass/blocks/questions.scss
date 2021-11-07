@@ -6,7 +6,7 @@
   }
 
   @media (max-width: $mobile) {
-    margin-bottom: 55px;
+    margin-bottom: 57px;
   }
 }
 
@@ -22,6 +22,10 @@
   @media (max-width: $tablet) {
     margin: 48px 0 0;
   }
+
+  @media (max-width: $mobile) {
+    margin: 27px 0 0;
+  }
 }
 
 .questions__item {
@@ -33,7 +37,7 @@
   }
 
   @media (max-width: $mobile) {
-    padding: 16px 18px 16px 23px;
+    padding: 16px 18px 20px 23px;
   }
 }
 
@@ -44,7 +48,7 @@
   font-size: 18px;
 
   @media (max-width: $mobile) {
-    padding-right: 46px;
+    padding-right: 37px;
 
     font-size: 16px;
     line-height: 140%;

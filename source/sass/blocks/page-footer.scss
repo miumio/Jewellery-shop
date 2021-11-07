@@ -40,7 +40,7 @@
   font-weight: 400;
 
   @media (max-width: $mobile) {
-    padding-right: 50px;
+    padding-right: 42px;
   }
 }
 
@@ -76,7 +76,8 @@
   }
 
   @media (max-width: $mobile) {
-    min-height: 231px;
+    margin-right: 0;
+    min-height: 235px;
     min-width: auto;
   }
 }
@@ -119,14 +120,14 @@
 
   @media (max-width: $tablet) {
     justify-content: space-between;
-    margin: 0 0 50px;
+    margin: 0;
   }
 
   @media (max-width: $mobile) {
-    margin: 0 0 33px;
+    margin: 0 0 40px;
     flex-direction: column;
 
-    min-height: 354px;
+    min-height: 350px;
     max-width: none;
   }
 }
@@ -153,6 +154,11 @@
 
   border: none;
   background-color: transparent;
+
+  @media (max-width: $mobile) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .page-footer button span:first-of-type {
@@ -167,6 +173,7 @@
   }
 
   @media (max-width: $mobile) {
+    margin: 0;
     padding: 8px 0;
   }
 }

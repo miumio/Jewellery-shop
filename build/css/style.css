@@ -584,8 +584,10 @@ nav {
   padding: 6px 0 12px; }
   @media (max-width: 1023px) {
     .social__list {
-      display: block;
       padding: 6px; } }
+  @media (max-width: 767px) {
+    .social__list {
+      padding: 0; } }
 
 @media (max-width: 1023px) {
   .social__item {
@@ -711,7 +713,7 @@ nav {
       margin-bottom: 64px; } }
   @media (max-width: 767px) {
     .news {
-      margin-bottom: 52px; } }
+      margin-bottom: 58px; } }
 
 .news__swiper {
   position: relative;
@@ -732,7 +734,8 @@ nav {
   transition: color 0.3s ease-out; }
   @media (max-width: 767px) {
     .product-card h3 {
-      margin-top: 11px; } }
+      margin-top: 12px;
+      line-height: 25px; } }
 
 .product-card span {
   font-size: 14px;
@@ -898,6 +901,9 @@ nav {
   @media (max-width: 1023px) {
     .blog__item--big .blog__txt {
       padding: 84px 37px 51px; } }
+  @media (max-width: 767px) {
+    .blog__item--big .blog__txt {
+      padding: 62px 37px 29px; } }
 
 @media (min-width: 1024px) {
   .blog__item--big .blog__txt {
@@ -914,7 +920,7 @@ nav {
       margin-bottom: 73px; } }
   @media (max-width: 767px) {
     .questions {
-      margin-bottom: 55px; } }
+      margin-bottom: 57px; } }
 
 .questions__list {
   margin: 0;
@@ -927,6 +933,9 @@ nav {
   @media (max-width: 1023px) {
     .questions__list {
       margin: 48px 0 0; } }
+  @media (max-width: 767px) {
+    .questions__list {
+      margin: 27px 0 0; } }
 
 .questions__item {
   padding: 38px 44px 43px;
@@ -936,7 +945,7 @@ nav {
       padding: 40px 45px 43px 50px; } }
   @media (max-width: 767px) {
     .questions__item {
-      padding: 16px 18px 16px 23px; } }
+      padding: 16px 18px 20px 23px; } }
 
 .questions h3 {
   margin: 0;
@@ -944,7 +953,7 @@ nav {
   font-size: 18px; }
   @media (max-width: 767px) {
     .questions h3 {
-      padding-right: 46px;
+      padding-right: 37px;
       font-size: 16px;
       line-height: 140%; } }
 
@@ -1835,7 +1844,7 @@ button.swiper-pagination-bullet {
   font-weight: 400; }
   @media (max-width: 767px) {
     .page-footer p {
-      padding-right: 50px; } }
+      padding-right: 42px; } }
 
 .page-footer__wrapper {
   display: -webkit-box;
@@ -1878,7 +1887,8 @@ button.swiper-pagination-bullet {
       min-height: 165px; } }
   @media (max-width: 767px) {
     .page-footer__sign-up {
-      min-height: 231px;
+      margin-right: 0;
+      min-height: 235px;
       min-width: auto; } }
 
 .page-footer__sign-up form {
@@ -1936,15 +1946,15 @@ button.swiper-pagination-bullet {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      margin: 0 0 50px; } }
+      margin: 0; } }
   @media (max-width: 767px) {
     .page-footer__nav {
-      margin: 0 0 33px;
+      margin: 0 0 40px;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      min-height: 354px;
+      min-height: 350px;
       max-width: none; } }
 
 .page-footer__social {
@@ -1974,6 +1984,10 @@ button.swiper-pagination-bullet {
   min-width: 100px;
   border: none;
   background-color: transparent; }
+  @media (max-width: 767px) {
+    .page-footer button {
+      margin: 0;
+      padding: 0; } }
 
 .page-footer button span:first-of-type {
   margin-right: 17px; }
@@ -1985,4 +1999,5 @@ button.swiper-pagination-bullet {
       margin-left: -15px; } }
   @media (max-width: 767px) {
     .page-footer__link {
+      margin: 0;
       padding: 8px 0; } }
