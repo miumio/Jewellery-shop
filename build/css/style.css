@@ -620,23 +620,45 @@ nav {
             flex-flow: row wrap; } }
 
 .intro {
-  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 50px 0;
+  min-height: 463px;
   font-family: "Cormorant Garamond", "Times New Roman", "Times", serif;
   color: #ffffff;
   font-size: 38px;
   line-height: 130%;
-  font-weight: 400; }
+  font-weight: 400;
+  background-image: url("../img/intro-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #a87b62; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+    .intro {
+      background-image: url("../img/intro-desktop@2x.jpg"); } }
+  @media (max-width: 1023px) {
+    .intro {
+      background-image: url("../img/intro-tablet@1x.jpg"); } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    .intro {
+      background-image: url("../img/intro-tablet@2x.jpg"); } }
+  .intro--catalog {
+    min-height: 261px;
+    font-size: 22px;
+    background-image: url("../img/catalog-intro-desktop@1x.jpg"); }
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+      .intro--catalog {
+        background-image: url("../img/catalog-intro-desktop@2x.jpg"); } }
+    @media (max-width: 1023px) {
+      .intro--catalog {
+        background-image: url("../img/catalog-intro-tablet@1x.jpg"); } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    .intro--catalog {
+      background-image: url("../img/catalog-intro-tablet@2x.jpg"); } }
   @media (max-width: 767px) {
     .intro {
       font-size: 34px; } }
-  .intro--catalog {
-    font-size: 22px; }
-
-.intro img {
-  height: 463px; }
-
-.intro--catalog img {
-  height: 261px; }
 
 .intro h2 {
   margin: 0;
@@ -657,27 +679,21 @@ nav {
   margin: 0;
   font-style: italic; }
 
-.intro__img-wrapper img {
-  -o-object-fit: cover;
-     object-fit: cover; }
-
 .intro__txt {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 463px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0 50px; }
+          justify-content: center; }
 
 .news {
   margin-bottom: 112px; }
