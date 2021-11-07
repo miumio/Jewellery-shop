@@ -235,6 +235,7 @@ nav {
 
 @media (max-width: 767px) {
   .nav__search {
+    margin: 10px 13px 0;
     min-width: 280px; } }
 
 .nav__logo {
@@ -550,6 +551,9 @@ nav {
           -ms-flex-direction: column;
               flex-direction: column;
       margin-top: 35px; } }
+  @media (max-width: 767px) {
+    .menu__list {
+      margin-top: 25px; } }
 
 .menu__about {
   display: none; }
@@ -562,10 +566,17 @@ nav {
       font-size: 18px;
       line-height: 22px;
       opacity: 0.75; } }
+  @media (max-width: 767px) {
+    .menu__about {
+      margin-top: 5px; } }
 
 @media (max-width: 1023px) {
   .menu__link {
     padding: 11px 30px; } }
+
+@media (max-width: 767px) {
+  .menu__link {
+    padding: 11px 15px; } }
 
 .social__list {
   margin: 0;
