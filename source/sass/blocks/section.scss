@@ -15,3 +15,11 @@
 
   margin-bottom: 20px;
 }
+
+.section__list {
+  @include list-style-reset;
+}
+
+.section__link {
+  color: $gold;
+}

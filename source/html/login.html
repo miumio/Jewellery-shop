@@ -15,20 +15,21 @@
 </head>
 
 <body>
+  <header class="page-header">
+    <nav class="page-header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item nav__logo logo">
+          <a href="index.html" class="nav__link">
+            <svg width="66" height="66">
+              <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
   <main>
-    <header class="page-header">
-      <nav class="page-header__nav nav">
-        <ul class="nav__list">
-          <li class="nav__item nav__logo logo">
-            <a href="index.html" class="nav__link">
-              <svg width="66" height="66">
-                <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
     <section class="login section">
       <include src="source/html/components/login.html"></include>
     </section>
