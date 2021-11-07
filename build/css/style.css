@@ -1159,6 +1159,8 @@ nav {
 .filter label {
   padding: 0 5px;
   cursor: pointer; }
+  .filter label:hover, .filter label:focus {
+    color: #a87b62; }
 
 .filter form {
   position: relative;
@@ -1827,6 +1829,8 @@ button.swiper-pagination-bullet {
   color: #9b9997;
   border: 0;
   background-color: transparent; }
+  .login input:hover, .login input:focus {
+    outline: 1px solid #a87b62; }
 
 .login__sign-link {
   color: #1d1613;
@@ -1981,6 +1985,8 @@ button.swiper-pagination-bullet {
   font-size: 14px;
   border: 0;
   background-color: transparent; }
+  .page-footer__sign-up input:hover, .page-footer__sign-up input:focus {
+    outline: 1px solid #a87b62; }
 
 .page-footer__sign-up input::-webkit-input-placeholder {
   font-size: 14px; }

@@ -103,6 +103,11 @@
 
   border: 0;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    outline: 1px solid $gold;
+  }
 }
 
 .page-footer__sign-up input::placeholder {

@@ -58,6 +58,11 @@
 .filter label {
   padding: 0 5px;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $gold;
+  }
 }
 
 .filter form {
