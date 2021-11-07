@@ -1,3 +1,23 @@
+.instagram {
+  margin-bottom: 130px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 79px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 71px;
+  }
+}
+
+.instagram h2 {
+  margin-bottom: 28px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 19px;
+  }
+}
+
 .instagram span {
   font-size: 42px;
 }
@@ -5,15 +25,21 @@
 .instagram__list {
   @include list-style-reset;
 
-  margin-top: 70px;
   display: grid;
   grid-template-columns: 20% 34% 20% 20%;
   column-gap: 2%;
   row-gap: 27px;
 
+  margin-top: 60px;
+
+  @media (max-width: $tablet) {
+    row-gap: 15px;
+  }
+
   @media (max-width: $mobile) {
     margin-top: 50px;
     grid-template-columns: 1fr 1fr;
+    gap: 22px;
   }
 }
 

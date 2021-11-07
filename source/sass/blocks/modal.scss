@@ -1,0 +1,25 @@
+.modal {
+  display: none;
+
+  &--show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    display: grid;
+    place-items: center;
+
+    background-color: $white;
+    z-index: 10000;
+  }
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

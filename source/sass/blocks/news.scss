@@ -1,5 +1,16 @@
-.news__swiper {
-  margin-top: 60px;
+.news {
+  margin-bottom: 112px;
 
+  @media (max-width: $tablet) {
+    margin-bottom: 64px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 58px;
+  }
+}
+
+.news__swiper {
   position: relative;
+  margin-top: 60px;
 }

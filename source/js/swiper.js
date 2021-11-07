@@ -14,8 +14,9 @@
     };
   }
 
-  var swiper = new Swiper('.mySwiper', {
+  const swiper = new Swiper('.mySwiper', {
     slidesPerView: 2,
+    slidesPerGroup: 2,
     spaceBetween: 30,
     loop: true,
     navigation: {
@@ -30,7 +31,8 @@
     breakpoints: {
       1024: {
         slidesPerView: 4,
-        spaceBetween: 50,
+        slidesPerGroup: 4,
+        spaceBetween: 30,
       },
     },
   });

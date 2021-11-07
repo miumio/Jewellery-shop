@@ -1,28 +1,33 @@
 .catalog {
-  margin-bottom: 80px;
-
   display: grid;
   grid-template-columns: 250px 1fr;
   gap: 50px;
 
+  margin-bottom: 73px;
+
   @media (max-width: $tablet) {
     display: block;
+    margin-bottom: 68px;
   }
 
   @media (max-width: $mobile) {
-    margin-bottom: 70px;
+    margin-bottom: 60px;
   }
 }
 
 .catalog__filter-link {
-  padding: 28px 0;
-  margin-bottom: 50px;
-
   display: none;
+
+  padding: 22px 0;
+  margin-bottom: 50px;
 
   color: $white;
   text-decoration: none;
   background-color: $gold;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 38px;
+  }
 
   &--show {
     @media (max-width: $tablet) {
@@ -31,48 +36,21 @@
   }
 }
 
-.catalog__filter {
-  min-width: 210px;
-
-  @media (max-width: $tablet) {
-    max-height: 0;
-    opacity: 0;
-    transform: translateX(-200%);
-    transition: opacity $easy;
-  }
-
-  &--show {
-    @media (max-width: $tablet) {
-      position: fixed;
-      top: 27px;
-      left: -19px;
-      bottom: 89px;
-      right: 60%;
-
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-
-      max-height: none;
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-}
-
 .catalog__list {
   @include list-style-reset;
-
-  margin-bottom: 70px;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 30px;
   row-gap: 36px;
 
+  margin-bottom: 70px;
+
   @media (max-width: $mobile) {
-    margin-bottom: 50px;
     grid-template-columns: 1fr 1fr;
+    row-gap: 27px;
+
+    margin-bottom: 37px;
   }
 }
 

@@ -7,28 +7,50 @@
   svg {
     fill: currentColor;
   }
+
+  @media (max-width: $tablet) {
+    padding: 51px 0;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 51px 0 58px;
+  }
 }
 
 .page-footer h2 {
-  margin: 0;
+  margin: 0 0 9px;
   font-family: $garamond;
   font-size: 34px;
   letter-spacing: 0.02em;
   line-height: 130%;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 7px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 10px;
+    padding-right: 50px;
+  }
 }
 
 .page-footer p {
   margin: 0;
   color: $grey;
   font-weight: 400;
+
+  @media (max-width: $mobile) {
+    padding-right: 42px;
+  }
 }
 
 .page-footer__wrapper {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 
   @media (max-width: $tablet) {
-    padding-right: 7%;
+    padding-right: 13%;
     justify-content: space-between;
   }
 
@@ -41,51 +63,73 @@
 .page-footer__sign-up {
   display: flex;
   flex-direction: column;
-  flex: 3 1 0;
-  max-width: 525px;
-  margin-right: auto;
+  flex: 1 1 0;
+
+  margin-right: 20px;
+  max-width: 500px;
 
   @media (max-width: $tablet) {
-    margin-bottom: 65px;
-    min-width: 616px;
+    margin-bottom: 21px;
+    min-width: 506px;
     max-width: none;
-    min-height: 150px;
+    min-height: 165px;
   }
 
   @media (max-width: $mobile) {
+    margin-right: 0;
+    min-height: 235px;
     min-width: auto;
-  }
-}
-
-.page-footer__nav {
-  display: flex;
-  justify-content: space-evenly;
-  flex: 1 1 auto;
-  margin-right: 40px;
-
-  @media (max-width: $tablet) {
-    justify-content: space-between;
-    max-width: 500px;
-  }
-
-  @media (max-width: $mobile) {
-    margin: 0 0 50px;
-    flex-direction: column;
-    max-width: none;
   }
 }
 
 .page-footer__sign-up form {
   margin-top: auto;
+  margin-bottom: 15px;
   border-bottom: 1px solid $white;
 }
 
-.page-footer__sign-up input {
+.page-footer__sign-up label {
   display: flex;
   flex: 1 1 auto;
+}
+
+.page-footer__sign-up input {
+  padding: 10px 0;
+  width: 100%;
+
+  font: inherit;
+  color: $white;
   font-size: 14px;
+
   border: 0;
   background-color: transparent;
+}
+
+.page-footer__sign-up input::placeholder {
+  font-size: 14px;
+}
+
+.page-footer__nav {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1 0;
+
+  margin-left: -15px;
+  margin-right: 10px;
+  max-width: 390px;
+
+  @media (max-width: $tablet) {
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  @media (max-width: $mobile) {
+    margin: 0 0 40px;
+    flex-direction: column;
+
+    min-height: 350px;
+    max-width: none;
+  }
 }
 
 .page-footer__social {
@@ -94,4 +138,42 @@
 
 .page-footer__field {
   display: flex;
+}
+
+.page-footer button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font: inherit;
+  color: inherit;
+
+  margin-right: -20px;
+  padding: 0 20px;
+  min-width: 100px;
+
+  border: none;
+  background-color: transparent;
+
+  @media (max-width: $mobile) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.page-footer button span:first-of-type {
+  margin-right: 17px;
+}
+
+.page-footer__link {
+  padding: 6px 16px 11px;
+
+  @media (max-width: $tablet) {
+    margin-left: -15px;
+  }
+
+  @media (max-width: $mobile) {
+    margin: 0;
+    padding: 8px 0;
+  }
 }

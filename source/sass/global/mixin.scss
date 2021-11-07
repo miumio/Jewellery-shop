@@ -16,7 +16,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 0;
     width: 12px;
     height: 12px;
@@ -24,5 +24,10 @@
     border-top: 1px solid $gold;
     transform-origin: 0 0;
     transform: rotate(45deg);
+
+    @media (max-width: $tablet) {
+      width: 16px;
+      height: 16px;
+    }
   }
 }

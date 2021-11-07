@@ -4,11 +4,28 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  padding: 6px 0 12px;
+
+  @media (max-width: $tablet) {
+    padding: 6px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 0;
+  }
+}
+
+.social__item {
+  @media (max-width: $tablet) {
+    margin-bottom: 18px;
+  }
 }
 
 .social__link {
   display: flex;
   align-items: center;
+
   color: inherit;
   text-decoration: none;
   transition: color $easy;
@@ -34,7 +51,7 @@
 
 @media (max-width: $mobile) {
   .social__item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 35px;
   }
 
   .social__link span {

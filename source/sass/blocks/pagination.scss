@@ -1,9 +1,10 @@
 .pagination__list {
   @include list-style-reset;
-  margin: 0 100px;
 
   display: flex;
   justify-content: center;
+
+  margin: 0 100px;
 }
 
 .pagination__link {
@@ -12,6 +13,10 @@
   color: $grey;
   text-decoration: none;
   transition: color $easy;
+
+  @media (max-width: $mobile) {
+    padding: 6px 11px;
+  }
 
   &--active {
     color: inherit;

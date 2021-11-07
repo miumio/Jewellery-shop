@@ -9,16 +9,26 @@
 
   &--catalog {
     margin-bottom: 80px;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: $mobile) {
+      margin-bottom: 40px;
+    }
   }
 }
 
 .page-header__wrapper {
   position: relative;
-  margin-bottom: 30px;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: row-reverse;
+
+  margin-bottom: 30px;
 }
 
 .page-header svg {

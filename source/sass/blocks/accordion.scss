@@ -3,6 +3,8 @@
 
   position: relative;
 
+  cursor: pointer;
+
   &--close::after {
     transform-origin: 20% 50%;
     transform: rotate(225deg);
