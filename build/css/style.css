@@ -1068,8 +1068,8 @@ nav {
     .filter {
       display: none;
       background-color: #ffffff;
-      -webkit-box-shadow: 0px 5px 32px rgba(155, 153, 151, 0.24);
-              box-shadow: 0px 5px 32px rgba(155, 153, 151, 0.24); }
+      -webkit-box-shadow: 0 5px 32px rgba(155, 153, 151, 0.24);
+              box-shadow: 0 5px 32px rgba(155, 153, 151, 0.24); }
       .filter--show {
         display: block;
         overflow-y: scroll; } }

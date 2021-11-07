@@ -92,7 +92,7 @@
           closeButton.focus();
         }
       },
-      true
+      true,
     );
   };
 

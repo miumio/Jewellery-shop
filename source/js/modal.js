@@ -21,7 +21,7 @@
           closeButton.focus();
         }
       },
-      true
+      true,
     );
   };
 
