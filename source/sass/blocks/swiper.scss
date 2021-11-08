@@ -12,7 +12,13 @@
   color: $grey;
 
   opacity: 1;
-  background: $white;
+  background-color: $white;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $gold;
+  }
 }
 
 .swiper-pagination-bullet-active {

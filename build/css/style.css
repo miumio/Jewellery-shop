@@ -175,9 +175,23 @@ body {
 .page-header svg {
   fill: currentColor; }
 
-nav {
+.nav {
   font-size: 14px;
   line-height: 21px; }
+  @media (max-width: 1023px) {
+    .nav--nojs {
+      color: #ffffff;
+      background-color: #a87b62; } }
+  @media (max-width: 1023px) {
+    .nav--opened {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      color: #ffffff;
+      background-color: #a87b62;
+      z-index: 10; } }
 
 @media (max-width: 1023px) {
   .nav__wrapper {
@@ -280,7 +294,7 @@ nav {
   -webkit-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out; }
   .nav__link:hover, .nav__link:focus, .nav__link:active {
-    opacity: 0.5; }
+    color: #a87b62; }
   .nav__link--shop {
     margin-right: -18px; }
     .nav__link--shop span:first-child {
@@ -327,7 +341,7 @@ nav {
   display: block;
   width: 24px;
   height: 2px;
-  background: #1d1613; }
+  background-color: #1d1613; }
 
 @media (max-width: 1023px) {
   .nav__button--show {
@@ -352,18 +366,11 @@ nav {
     height: 44px; } }
 
 @media (max-width: 1023px) {
-  .nav--nojs {
+  .nav--opened .nav__link:hover,
+  .nav--opened .nav__link:active,
+  .nav--opened .nav__link:focus {
     color: #ffffff;
-    background-color: #a87b62; }
-  .nav--opened {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    color: #ffffff;
-    background-color: #a87b62;
-    z-index: 10; }
+    opacity: 0.7; }
   .nav--opened .nav__logo {
     color: #ffffff; }
   .nav--opened .nav__button-lines {
@@ -544,6 +551,8 @@ nav {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
@@ -972,7 +981,11 @@ nav {
 .questions h3 {
   margin: 0;
   font-weight: 500;
-  font-size: 18px; }
+  font-size: 18px;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out; }
+  .questions h3:hover, .questions h3:active, .questions h3:focus {
+    color: #a87b62; }
   @media (max-width: 767px) {
     .questions h3 {
       padding-right: 37px;
@@ -1294,7 +1307,7 @@ nav {
 
 .filter__price-wrapper {
   margin: 0 0 35px 0;
-  padding: 20px 19px 14px 24px;
+  padding: 20px 19px 21px 24px;
   border: 1px solid #a87b62; }
   @media (max-width: 1023px) {
     .filter__price-wrapper {
@@ -1384,7 +1397,9 @@ nav {
   line-height: 20px;
   color: #9b9997;
   opacity: 1;
-  background: #ffffff; }
+  background-color: #ffffff; }
+  .swiper-pagination-bullet:hover, .swiper-pagination-bullet:active, .swiper-pagination-bullet:focus {
+    color: #a87b62; }
 
 .swiper-pagination-bullet-active {
   color: #000000; }
@@ -1826,7 +1841,7 @@ button.swiper-pagination-bullet {
   font-weight: 500;
   font-size: 14px;
   line-height: 35px;
-  color: #9b9997;
+  color: #a87b62;
   border: 0;
   background-color: transparent; }
   .login input:hover, .login input:focus {
@@ -2058,7 +2073,8 @@ button.swiper-pagination-bullet {
   padding: 0 20px;
   min-width: 100px;
   border: none;
-  background-color: transparent; }
+  background-color: transparent;
+  cursor: pointer; }
   @media (max-width: 767px) {
     .page-footer button {
       margin: 0;
