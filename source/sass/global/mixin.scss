@@ -16,12 +16,14 @@
   &::after {
     content: "";
     position: absolute;
-    top: 10px;
-    right: 0;
+    top: 40%;
+    right: 20px;
+
     width: 12px;
     height: 12px;
     border-left: 1px solid $gold;
     border-top: 1px solid $gold;
+
     transform-origin: 0 0;
     transform: rotate(45deg);
 

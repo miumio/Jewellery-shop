@@ -1,12 +1,28 @@
+
 .accordion__title {
+  margin: 0;
+  padding: 20px 25px;
+  width: 100%;
+
+  font-size: inherit;
+  font-weight: 500;
+  text-align: left;
+
+  @media (max-width: $tablet) {
+    font-size: 18px;
+  }
+}
+
+
+.accordion__title--active {
   @include corner;
 
   position: relative;
-
-  cursor: pointer;
 
   &--close::after {
     transform-origin: 20% 50%;
     transform: rotate(225deg);
   }
 }
+
+
