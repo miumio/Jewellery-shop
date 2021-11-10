@@ -3,12 +3,13 @@
 
   if (!container) return;
 
-  const acc = container.querySelectorAll('h3');
+  const acc = container.querySelectorAll('.accordion__title');
 
   acc.forEach((el) => {
-    el.classList.add('accordion__title');
+    el.classList.add('accordion__title--active');
 
-    el.addEventListener('click', function() {
+    el.addEventListener('click', function(evt) {
+      evt.preventDefault;
 
       let panel = this.nextElementSibling;
       if (panel.style.display === 'none') {

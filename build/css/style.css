@@ -452,6 +452,7 @@ body {
 .search input {
   padding: 5px;
   min-width: 170px;
+  height: 30px;
   font-size: inherit;
   color: inherit;
   font-weight: 500;
@@ -1154,14 +1155,6 @@ body {
     background-color: #ffffff;
     z-index: 100; } }
 
-.filter h3 {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 500; }
-  @media (max-width: 1023px) {
-    .filter h3 {
-      font-size: 18px; } }
-
 .filter label {
   padding: 0 5px;
   cursor: pointer; }
@@ -1248,8 +1241,7 @@ body {
   position: relative;
   display: block;
   margin: 0;
-  padding: 22px 20px 23px 25px;
-  min-height: 68px;
+  padding: 0;
   border: 1px solid #a87b62;
   border-bottom: none; }
   @media (max-width: 1023px) {
@@ -1265,7 +1257,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin: 18px 4px 0;
+  margin: 0 29px 27px;
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease-out;
   transition: max-height 0.3s ease-out; }
@@ -1316,7 +1308,6 @@ body {
 
 .filter__price-wrapper {
   margin: 0 0 35px 0;
-  padding: 20px 19px 21px 24px;
   border: 1px solid #a87b62; }
   @media (max-width: 1023px) {
     .filter__price-wrapper {
@@ -1766,13 +1757,23 @@ button.swiper-pagination-bullet {
   transition: 200ms transform, 200ms right, 200ms -webkit-transform; }
 
 .accordion__title {
-  position: relative;
-  cursor: pointer; }
-  .accordion__title::after {
+  margin: 0;
+  padding: 20px 25px;
+  width: 100%;
+  font-size: inherit;
+  font-weight: 500;
+  text-align: left; }
+  @media (max-width: 1023px) {
+    .accordion__title {
+      font-size: 18px; } }
+
+.accordion__title--active {
+  position: relative; }
+  .accordion__title--active::after {
     content: "";
     position: absolute;
-    top: 10px;
-    right: 0;
+    top: 40%;
+    right: 20px;
     width: 12px;
     height: 12px;
     border-left: 1px solid #a87b62;
@@ -1782,10 +1783,10 @@ button.swiper-pagination-bullet {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg); }
     @media (max-width: 1023px) {
-      .accordion__title::after {
+      .accordion__title--active::after {
         width: 16px;
         height: 16px; } }
-  .accordion__title--close::after {
+  .accordion__title--active--close::after {
     -webkit-transform-origin: 20% 50%;
             transform-origin: 20% 50%;
     -webkit-transform: rotate(225deg);

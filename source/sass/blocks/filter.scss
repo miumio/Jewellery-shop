@@ -52,17 +52,6 @@
   }
 }
 
-.filter h3 {
-  margin: 0;
-
-  font-size: 16px;
-  font-weight: 500;
-
-  @media (max-width: $tablet) {
-    font-size: 18px;
-  }
-}
-
 .filter label {
   padding: 0 5px;
   cursor: pointer;
@@ -176,8 +165,9 @@
   display: block;
 
   margin: 0;
-  padding: 22px 20px 23px 25px;
-  min-height: 68px;
+  padding: 0;
+  // padding: 22px 20px 23px 25px;
+  // min-height: 68px;
 
   border: $gold-line;
   border-bottom: none;
@@ -196,7 +186,7 @@
 .filter ul {
   @include list-style-reset;
 
-  margin: 18px 4px 0;
+  margin: 0 29px 27px;
 
   overflow: hidden;
   transition: max-height $easy;
@@ -258,7 +248,7 @@
 
 .filter__price-wrapper {
   margin: 0 0 35px 0;
-  padding: 20px 19px 21px 24px;
+  // padding: 20px 19px 21px 24px;
   border: $gold-line;
 
   @media (max-width: $tablet) {
