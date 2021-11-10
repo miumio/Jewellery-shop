@@ -1,6 +1,5 @@
 .nav {
-  // font-size: 14px;
-  // line-height: 21px;
+  overflow: hidden;
 
   &--nojs {
     @media (max-width: $tablet) {
@@ -157,6 +156,7 @@
 }
 
 .nav__menu {
+  flex: 1;
   margin: 0 calc(((100vw - 100%) / 2) * -1);
   min-width: 100vw;
 
