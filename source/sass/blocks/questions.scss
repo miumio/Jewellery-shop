@@ -47,6 +47,14 @@
   font-weight: 500;
   font-size: 18px;
 
+  transition: color $easy;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $gold;
+  }
+
   @media (max-width: $mobile) {
     padding-right: 37px;
 

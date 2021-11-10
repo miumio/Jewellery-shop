@@ -1,5 +1,5 @@
 .page-footer {
-  padding: 90px 0;
+  padding: 88px 0;
   color: $white;
   text-align: left;
   background-color: $black;
@@ -35,22 +35,26 @@
 }
 
 .page-footer p {
-  margin: 0;
+  margin: 0 0 30px;
   color: $grey;
   font-weight: 400;
 
   @media (max-width: $mobile) {
+    margin: 0 0 27px;
     padding-right: 42px;
   }
 }
 
 .page-footer__wrapper {
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 114px;
+  // column-gap: 20px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 
   @media (max-width: $tablet) {
-    padding-right: 13%;
+    padding-right: 107px;
     justify-content: space-between;
   }
 
@@ -65,32 +69,30 @@
   flex-direction: column;
   flex: 1 1 0;
 
-  margin-right: 20px;
-  max-width: 500px;
+  padding-right: 20px;
 
   @media (max-width: $tablet) {
     margin-bottom: 21px;
+    padding-right: 10px;
     min-width: 506px;
     max-width: none;
     min-height: 165px;
   }
 
   @media (max-width: $mobile) {
-    margin-right: 0;
-    min-height: 235px;
+    margin: 0 0 37px;
+    padding-right: 0;
     min-width: auto;
   }
 }
 
 .page-footer__sign-up form {
-  margin-top: auto;
-  margin-bottom: 15px;
   border-bottom: 1px solid $white;
 }
 
 .page-footer__sign-up label {
   display: flex;
-  flex: 1 1 auto;
+  flex: 1 1 0;
 }
 
 .page-footer__sign-up input {
@@ -116,16 +118,12 @@
 
 .page-footer__nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex: 1 1 0;
-
-  margin-left: -15px;
-  margin-right: 10px;
-  max-width: 390px;
 
   @media (max-width: $tablet) {
     justify-content: space-between;
-    margin: 0;
+    max-width: 375px;
   }
 
   @media (max-width: $mobile) {
@@ -138,7 +136,13 @@
 }
 
 .page-footer__social {
-  display: flex;
+  flex: 0;
+  padding-top: 5px;
+  padding-left: 35px;
+
+  @media (max-width: $mobile) {
+    padding: 0;
+  }
 }
 
 .page-footer__field {
@@ -150,15 +154,14 @@
   justify-content: space-between;
   align-items: center;
 
+  padding: 0;
+
   font: inherit;
   color: inherit;
 
-  margin-right: -20px;
-  padding: 0 20px;
-  min-width: 100px;
-
   border: none;
   background-color: transparent;
+  cursor: pointer;
 
   @media (max-width: $mobile) {
     margin: 0;
@@ -171,11 +174,11 @@
 }
 
 .page-footer__link {
-  padding: 6px 16px 11px;
+  padding: 6px 3px 11px;
 
-  @media (max-width: $tablet) {
-    margin-left: -15px;
-  }
+  // @media (max-width: $tablet) {
+  //   margin-left: -15px;
+  // }
 
   @media (max-width: $mobile) {
     margin: 0;

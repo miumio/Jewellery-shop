@@ -12,6 +12,7 @@
   <link rel="preload" href="fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="fonts/poppins-500.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="img/favicon.ico">
 </head>
 
 <body>
@@ -508,7 +509,7 @@
           <a href="#" class="nav__link page-footer__link">Terms &amp; Conditions</a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link page-footer__link">Returns &amp;Exchanges</a>
+          <a href="#" class="nav__link page-footer__link">Returns &amp; Exchanges</a>
         </li>
         <li class="nav__item">
           <a href="#" class="nav__link page-footer__link">Delivery</a>
@@ -588,10 +589,12 @@
   <h2>Log In</h2>
   <form action="https://echo.htmlacademy.ru" method="post">
     <label>
+      <span class="visually-hidden">Your E-mail</span>
       <input type="email" name="email" id="email-data" placeholder="Your E-mail" required="">
     </label>
     <label>
-      <input type="password" name="password" id="password-data" placeholder="password">
+      <span class="visually-hidden">Your password</span>
+      <input type="password" name="password" id="password-data" placeholder="password" required="">
     </label>
     <a href="#">Forgot your password?</a>
     <button type="submit">log In</button>

@@ -1,6 +1,28 @@
-nav {
-  font-size: 14px;
-  line-height: 21px;
+.nav {
+  // font-size: 14px;
+  // line-height: 21px;
+
+  &--nojs {
+    @media (max-width: $tablet) {
+      color: $white;
+      background-color: $gold;
+    }
+  }
+
+  &--opened {
+    @media (max-width: $tablet) {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      color: $white;
+      background-color: $gold;
+
+      z-index: 10;
+    }
+  }
 }
 
 .nav__wrapper {
@@ -28,7 +50,6 @@ nav {
 .nav__item {
   display: flex;
   flex: 1;
-
 
   @media (max-width: $tablet) {
     align-items: center;
@@ -96,7 +117,7 @@ nav {
   &:hover,
   &:focus,
   &:active {
-    opacity: 0.5;
+    color: $gold;
   }
 
   &--shop {
@@ -154,7 +175,7 @@ nav {
   display: block;
   width: 24px;
   height: 2px;
-  background: $basic-black;
+  background-color: $basic-black;
 }
 
 .nav__button {
@@ -178,22 +199,11 @@ nav {
 }
 
 @media (max-width: $tablet) {
-  .nav--nojs {
+  .nav--opened .nav__link:hover,
+  .nav--opened .nav__link:active,
+  .nav--opened .nav__link:focus {
     color: $white;
-    background-color: $gold;
-  }
-
-  .nav--opened {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    color: $white;
-    background-color: $gold;
-
-    z-index: 10;
+    opacity: 0.7;
   }
 
   .nav--opened .nav__logo {
