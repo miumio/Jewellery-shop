@@ -101,9 +101,12 @@
   border: 0;
   background-color: transparent;
 
+  transition: color $easy;
+
   &:hover,
-  &:focus {
-    outline: 1px solid $gold;
+  &:focus,
+  &:active {
+    color: $gold;
   }
 }
 
@@ -162,6 +165,14 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+
+  transition: color $easy;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $gold;
+  }
 
   @media (max-width: $mobile) {
     margin: 0;

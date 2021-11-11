@@ -2064,9 +2064,11 @@ button.swiper-pagination-bullet {
   color: #ffffff;
   font-size: 14px;
   border: 0;
-  background-color: transparent; }
-  .page-footer__sign-up input:hover, .page-footer__sign-up input:focus {
-    outline: 1px solid #a87b62; }
+  background-color: transparent;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out; }
+  .page-footer__sign-up input:hover, .page-footer__sign-up input:focus, .page-footer__sign-up input:active {
+    color: #a87b62; }
 
 .page-footer__sign-up input::-webkit-input-placeholder {
   font-size: 14px; }
@@ -2142,7 +2144,11 @@ button.swiper-pagination-bullet {
   color: inherit;
   border: none;
   background-color: transparent;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out; }
+  .page-footer button:hover, .page-footer button:focus, .page-footer button:active {
+    color: #a87b62; }
   @media (max-width: 767px) {
     .page-footer button {
       margin: 0;
