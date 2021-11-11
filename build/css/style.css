@@ -1863,6 +1863,8 @@ button.swiper-pagination-bullet {
   margin-bottom: 25px; }
 
 .login form a {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   font-size: 12px;
   line-height: 28px;
   text-decoration: none;
