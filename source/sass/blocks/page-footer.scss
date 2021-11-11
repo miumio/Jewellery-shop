@@ -75,14 +75,11 @@
     margin-bottom: 21px;
     padding-right: 10px;
     min-width: 506px;
-    max-width: none;
-    min-height: 165px;
   }
 
   @media (max-width: $mobile) {
     margin: 0 0 37px;
     padding-right: 0;
-    min-width: auto;
   }
 }
 
@@ -123,6 +120,7 @@
 
   @media (max-width: $tablet) {
     justify-content: space-between;
+    min-width: 200px;
     max-width: 375px;
   }
 
@@ -175,10 +173,6 @@
 
 .page-footer__link {
   padding: 6px 3px 11px;
-
-  // @media (max-width: $tablet) {
-  //   margin-left: -15px;
-  // }
 
   @media (max-width: $mobile) {
     margin: 0;

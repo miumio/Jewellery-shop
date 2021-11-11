@@ -2023,14 +2023,11 @@ button.swiper-pagination-bullet {
     .page-footer__sign-up {
       margin-bottom: 21px;
       padding-right: 10px;
-      min-width: 506px;
-      max-width: none;
-      min-height: 165px; } }
+      min-width: 506px; } }
   @media (max-width: 767px) {
     .page-footer__sign-up {
       margin: 0 0 37px;
-      padding-right: 0;
-      min-width: auto; } }
+      padding-right: 0; } }
 
 .page-footer__sign-up form {
   border-bottom: 1px solid #ffffff; }
@@ -2084,6 +2081,7 @@ button.swiper-pagination-bullet {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
+      min-width: 200px;
       max-width: 375px; } }
   @media (max-width: 767px) {
     .page-footer__nav {
