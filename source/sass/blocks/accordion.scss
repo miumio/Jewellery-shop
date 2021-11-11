@@ -25,6 +25,10 @@
     transform-origin: 20% 50%;
     transform: rotate(225deg);
   }
+
+  @media (max-width: $mobile) {
+    padding: 21px;
+  }
 }
 
 .accordion__button--close ~ .accordion__block {

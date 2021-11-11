@@ -1184,6 +1184,10 @@ body {
     @media (max-width: 1023px) {
       .filter form > button:first-of-type {
         margin-top: 40px; } }
+    @media (max-width: 767px) {
+      .filter form > button:first-of-type {
+        margin-top: 30px;
+        margin-bottom: 19px; } }
   .filter form > button:last-of-type {
     color: #1d1613;
     background-color: #ffffff;
@@ -1211,8 +1215,7 @@ body {
       border-bottom: 1px solid #a87b62; } }
   @media (max-width: 767px) {
     .filter fieldset {
-      padding: 0;
-      padding-right: 15px; } }
+      padding: 0; } }
 
 .filter ul {
   margin: 0;
@@ -1228,6 +1231,9 @@ body {
       margin-bottom: 16px;
       font-size: 16px;
       line-height: 21px; } }
+  @media (max-width: 767px) {
+    .filter ul {
+      margin: 0 25px 30px; } }
 
 .filter li:not(:last-child) {
   margin-bottom: 9px; }
@@ -1283,11 +1289,13 @@ body {
       border-top: 0; } }
   @media (max-width: 767px) {
     .filter__price-wrapper {
-      padding: 0;
-      padding-right: 15px; } }
+      padding: 0; } }
 
 .filter__range {
   padding: 0 25px 12px; }
+  @media (max-width: 767px) {
+    .filter__range {
+      padding-bottom: 19px; } }
 
 .filter__controls {
   position: relative;
@@ -1297,7 +1305,7 @@ body {
       padding: 8px 0; } }
   @media (max-width: 767px) {
     .filter__controls {
-      margin-top: 20px; } }
+      margin-top: 3px; } }
 
 .filter__controls button {
   position: absolute;
@@ -1326,7 +1334,7 @@ body {
         left: 64%; } }
     @media (max-width: 767px) {
       .filter__controls button:last-of-type {
-        right: 21%; } }
+        left: 80%; } }
   .filter__controls button:hover {
     -webkit-transform: scale(110%);
             transform: scale(110%); }
@@ -1351,7 +1359,7 @@ body {
       right: 35%; } }
   @media (max-width: 767px) {
     .filter__bar {
-      right: 27%; } }
+      right: 18%; } }
 
 .filter__price-inputs {
   position: relative;
@@ -1379,7 +1387,7 @@ body {
         left: 58%; } }
     @media (max-width: 767px) {
       .filter__price-inputs label:last-child {
-        left: 53%; } }
+        left: 68%; } }
   .filter__price-inputs input {
     width: 40px;
     height: 24px;
@@ -1763,12 +1771,15 @@ button.swiper-pagination-bullet {
           height: 16px; } }
       @media (max-width: 767px) {
         .accordion__button--active::after {
-          right: 0; } }
+          right: 15px; } }
   .accordion__button--close::after {
     -webkit-transform-origin: 20% 50%;
             transform-origin: 20% 50%;
     -webkit-transform: rotate(225deg);
             transform: rotate(225deg); }
+  @media (max-width: 767px) {
+    .accordion__button {
+      padding: 21px; } }
 
 .accordion__button--close ~ .accordion__block {
   display: none; }
@@ -1804,7 +1815,7 @@ button.swiper-pagination-bullet {
   border-bottom: 1px solid #a87b62; }
   @media (max-width: 767px) {
     .questions__item {
-      padding: 0 20px 0 25px; } }
+      padding: 0; } }
 
 .questions__title {
   padding: 14px 25px 8px; }
@@ -1813,7 +1824,7 @@ button.swiper-pagination-bullet {
       padding: 14px 66px 8px 30px; } }
   @media (max-width: 767px) {
     .questions__title {
-      padding: 12px 55px 12px 0; } }
+      padding: 12px 55px 12px 25px; } }
 
 .questions__text {
   margin: 0 41% 3px 29px;
@@ -1826,7 +1837,7 @@ button.swiper-pagination-bullet {
       width: 91%; } }
   @media (max-width: 767px) {
     .questions__text {
-      margin: 0 0 20px;
+      margin: 0 0 20px 25px;
       padding-right: 37px;
       width: auto;
       font-size: 14px;
