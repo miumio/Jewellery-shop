@@ -30,7 +30,8 @@
   }
 
   @media (max-width: $mobile) {
-    width: 100%;
+    width: calc(100vw - 5%);
+    max-width: none;
   }
 }
 
@@ -86,7 +87,7 @@
 
   @media (max-width: $mobile) {
     margin: 10px 13px 0;
-    min-width: 280px;
+    min-width: calc(100vw - 100px);
   }
 }
 

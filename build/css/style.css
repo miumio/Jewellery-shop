@@ -198,7 +198,8 @@ body {
 
 @media (max-width: 767px) {
   .nav__wrapper {
-    width: 100%; } }
+    width: calc(100vw - 5%);
+    max-width: none; } }
 
 .nav__list {
   margin: 0;
@@ -258,7 +259,7 @@ body {
 @media (max-width: 767px) {
   .nav__search {
     margin: 10px 13px 0;
-    min-width: 280px; } }
+    min-width: calc(100vw - 100px); } }
 
 .nav__logo {
   -webkit-box-pack: center;
