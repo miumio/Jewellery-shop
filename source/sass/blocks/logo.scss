@@ -1,4 +1,7 @@
 .logo {
+  color: $gold;
+  transition: transform $easy;
+
   &:hover,
   &:focus,
   &:active {
