@@ -1,6 +1,8 @@
 .questions {
   margin-bottom: 109px;
 
+  font-size: 18px;
+
   @media (max-width: $tablet) {
     margin-bottom: 73px;
   }
@@ -29,44 +31,20 @@
 }
 
 .questions__item {
-  padding: 38px 44px 43px;
+  padding: 28px 25px 35px 20px;
   border-bottom: $gold-line;
-
-  @media (max-width: $tablet) {
-    padding: 40px 45px 43px 50px;
-  }
-
-  @media (max-width: $mobile) {
-    padding: 16px 18px 20px 23px;
-  }
 }
 
-.questions h3 {
-  margin: 0;
-
-  font-weight: 500;
-  font-size: 18px;
-
-  transition: color $easy;
-
-  &:hover,
-  &:active,
-  &:focus {
-    color: $gold;
-  }
-
-  @media (max-width: $mobile) {
-    padding-right: 37px;
-
-    font-size: 16px;
-    line-height: 140%;
-  }
+.questions__title {
+  padding: 14px 25px 8px;
 }
 
-.questions p {
-  margin: 10px 0 5px 5px;
-  width: 58%;
+.questions__text {
+  margin: 0 41% 3px 29px;
+  // margin: -11px 41% 35px 30px;
+  // width: 58%;
 
+  font-size: 16px;
   line-height: 130%;
   font-weight: 400;
 

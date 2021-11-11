@@ -1,5 +1,4 @@
 .filter {
-  font-size: 14px;
   text-align: left;
 
   @media (max-width: $tablet) {
@@ -128,9 +127,10 @@
 .filter form > button {
   display: block;
 
-  margin-bottom: 25px;
-  padding: 24px 20px;
+  margin: 0 0 25px;
+  padding: 21px 20px;
 
+  font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   color: $white;
@@ -141,6 +141,10 @@
 
   &:hover {
     opacity: 0.7;
+  }
+
+  &:first-of-type {
+    margin: 35px 0 25px;
   }
 
   &:last-of-type {
@@ -166,8 +170,6 @@
 
   margin: 0;
   padding: 0;
-  // padding: 22px 20px 23px 25px;
-  // min-height: 68px;
 
   border: $gold-line;
   border-bottom: none;
@@ -187,6 +189,8 @@
   @include list-style-reset;
 
   margin: 0 29px 27px;
+
+  font-size: 14px;
 
   overflow: hidden;
   transition: max-height $easy;
@@ -247,13 +251,10 @@
 }
 
 .filter__price-wrapper {
-  margin: 0 0 35px 0;
-  // padding: 20px 19px 21px 24px;
   border: $gold-line;
 
   @media (max-width: $tablet) {
     padding: 33px 35px;
-    margin: 0 0 41px 0;
 
     border-left: 0;
     border-right: 0;
@@ -261,15 +262,17 @@
   }
 
   @media (max-width: $mobile) {
-    margin-bottom: 31px;
     padding: 23px 14px 22px 21px;
   }
+}
+
+.filter__range {
+  padding: 0 25px 12px;
 }
 
 .filter__controls {
   position: relative;
 
-  margin-top: 16px;
   padding: 6px 0;
 
   @media (max-width: $tablet) {
@@ -309,7 +312,7 @@
   }
 
   &:last-of-type {
-    right: 19%;
+    left: 75%;
 
     @media (max-width: $tablet) {
       right: 32%;
@@ -356,6 +359,8 @@
 
 .filter__price-inputs {
   position: relative;
+
+  margin-top: 3px;
   height: 29px;
 
   @media (max-width: $tablet) {
@@ -394,8 +399,7 @@
   }
 
   input {
-    margin-left: 3px;
-    width: 45px;
+    width: 40px;
     height: 24px;
 
     border: none;

@@ -1,5 +1,4 @@
-
-.accordion__title {
+.accordion__button {
   margin: 0;
   padding: 20px 25px;
   width: 100%;
@@ -8,21 +7,30 @@
   font-weight: 500;
   text-align: left;
 
-  @media (max-width: $tablet) {
-    font-size: 18px;
+  transition: color $easy;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $gold;
   }
-}
 
+  &--active {
+    @include corner;
 
-.accordion__title--active {
-  @include corner;
-
-  position: relative;
+    position: relative;
+  }
 
   &--close::after {
     transform-origin: 20% 50%;
     transform: rotate(225deg);
   }
+
+  @media (max-width: $tablet) {
+    font-size: 18px;
+  }
 }
 
-
+.accordion__button--close ~ .accordion__block {
+  display: none;
+}

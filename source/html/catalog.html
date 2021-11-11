@@ -30,7 +30,7 @@
     <section class="catalog">
       <h2 class="visually-hidden">Catalog</h2>
       <a href="#" class="catalog__filter-link">Filter</a>
-      <section class="catalog__filter filter accordion">
+      <section class="catalog__filter filter accordion accordion--catalog">
         <h2 class="visually-hidden">Filter</h2>
         <button class="filter__close-button button" type="button" aria-label="Close">
           <span></span>
@@ -38,8 +38,8 @@
         <div class="filter__form">
           <form action="http://echo.htmlacademy.ru" method="get">
             <fieldset>
-              <button type="button" class="accordion__title button">Product</button>
-              <ul>
+              <button type="button" class="accordion__button button">Product</button>
+              <ul class="accordion__block">
                 <li>
                   <label>
                     <input type="checkbox" name="necklaces" checked>
@@ -71,8 +71,8 @@
               </ul>
             </fieldset>
             <fieldset>
-              <button type="button" class="accordion__title button">Material</button>
-              <ul>
+              <button type="button" class="accordion__button button">Material</button>
+              <ul class="accordion__block">
                 <li>
                   <label>
                     <input type="checkbox" name="material1" checked>
@@ -90,8 +90,8 @@
               </ul>
             </fieldset>
             <fieldset>
-              <button type="button" class="accordion__title button">Collection</button>
-              <ul>
+              <button type="button" class="accordion__button button">Collection</button>
+              <ul class="accordion__block">
                 <li>
                   <label>
                     <input type="checkbox" name="collection1" checked>
@@ -109,8 +109,8 @@
               </ul>
             </fieldset>
             <div class="filter__price-wrapper">
-              <button type="button" class="accordion__title button">Price</button>
-              <div class="filter__range">
+              <button type="button" class="accordion__button button">Price</button>
+              <div class="filter__range accordion__block">
                 <div class="filter__controls">
                   <div class="filter__scale">
                     <div class="filter__bar"></div>
