@@ -25,10 +25,6 @@
     transform-origin: 20% 50%;
     transform: rotate(225deg);
   }
-
-  @media (max-width: $tablet) {
-    font-size: 18px;
-  }
 }
 
 .accordion__button--close ~ .accordion__block {

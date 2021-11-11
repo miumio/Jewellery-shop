@@ -228,6 +228,10 @@
   bottom: 0;
   left: 0;
   width: 100%;
+
+  @media (max-width: $mobile) {
+    bottom: -3px;
+  }
 }
 
 /* Bullets */

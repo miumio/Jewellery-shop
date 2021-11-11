@@ -31,5 +31,9 @@
       width: 16px;
       height: 16px;
     }
+
+    @media (max-width: $mobile) {
+      right: 0;
+    }
   }
 }

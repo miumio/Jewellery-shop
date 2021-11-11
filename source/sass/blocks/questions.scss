@@ -4,10 +4,11 @@
   font-size: 18px;
 
   @media (max-width: $tablet) {
-    margin-bottom: 73px;
+    margin-bottom: 69px;
   }
 
   @media (max-width: $mobile) {
+    font-size: 16px;
     margin-bottom: 57px;
   }
 }
@@ -33,10 +34,22 @@
 .questions__item {
   padding: 28px 25px 35px 20px;
   border-bottom: $gold-line;
+
+  @media (max-width: $mobile) {
+    padding: 0 20px 0 25px;
+  }
 }
 
 .questions__title {
   padding: 14px 25px 8px;
+
+  @media (max-width: $tablet) {
+    padding: 14px 66px 8px 30px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 12px 55px 12px 0;
+  }
 }
 
 .questions__text {
@@ -47,13 +60,14 @@
   font-weight: 400;
 
   @media (max-width: $tablet) {
-    margin: 26px 0 0;
+    margin: 15px 0 8px 30px;
     width: 91%;
   }
 
   @media (max-width: $mobile) {
-    margin: 15px 0 0;
-    width: 84%;
+    margin: 0 0 20px;
+    padding-right: 37px;
+    width: auto;
 
     font-size: 14px;
     line-height: 145%;
