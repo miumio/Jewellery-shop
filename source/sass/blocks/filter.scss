@@ -186,7 +186,8 @@
   }
 
   @media (max-width: $mobile) {
-    padding: 23px 14px 22px 21px;
+    padding: 0;
+    padding-right: 15px;
   }
 }
 
@@ -274,7 +275,8 @@
   }
 
   @media (max-width: $mobile) {
-    padding: 23px 14px 22px 21px;
+    padding: 0;
+    padding-right: 15px;
   }
 }
 

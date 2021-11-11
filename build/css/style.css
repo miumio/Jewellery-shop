@@ -1211,7 +1211,8 @@ body {
       border-bottom: 1px solid #a87b62; } }
   @media (max-width: 767px) {
     .filter fieldset {
-      padding: 23px 14px 22px 21px; } }
+      padding: 0;
+      padding-right: 15px; } }
 
 .filter ul {
   margin: 0;
@@ -1282,7 +1283,8 @@ body {
       border-top: 0; } }
   @media (max-width: 767px) {
     .filter__price-wrapper {
-      padding: 23px 14px 22px 21px; } }
+      padding: 0;
+      padding-right: 15px; } }
 
 .filter__range {
   padding: 0 25px 12px; }
