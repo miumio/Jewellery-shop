@@ -35,6 +35,10 @@
   z-index: 1;
 }
 
+.swiper img {
+  aspect-ratio: 270 / 282;
+}
+
 .swiper-vertical > .swiper-wrapper {
   flex-direction: column;
 }
