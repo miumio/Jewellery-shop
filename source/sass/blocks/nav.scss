@@ -46,6 +46,14 @@
   @include list-style-reset;
 }
 
+.nav__footer-list li {
+  margin-bottom: 17px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 0;
+  }
+}
+
 .nav__item {
   display: flex;
   flex: 1;

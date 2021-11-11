@@ -22,6 +22,10 @@
   text-decoration: none;
   transition: color $easy;
 
+  @media (max-width: $mobile) {
+    transform: scale(150%);
+  }
+
   &:hover,
   &:focus,
   &:active {
@@ -48,10 +52,6 @@
 
   .social__link span {
     display: none;
-  }
-
-  .social__link svg {
-    transform: scale(150%);
   }
 
   .social__list {
