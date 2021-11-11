@@ -771,7 +771,7 @@ body {
   transition: color 0.3s ease-out; }
   @media (max-width: 767px) {
     .product-card h3 {
-      margin: 12px 0 5px;
+      margin: 13px 0 5px;
       line-height: 24px; } }
 
 .product-card span {
@@ -1048,8 +1048,8 @@ body {
   @media (max-width: 767px) {
     .catalog__list {
       grid-template-columns: 1fr 1fr;
-      row-gap: 27px;
-      margin-bottom: 37px; } }
+      row-gap: 22px;
+      margin-bottom: 39px; } }
 
 .catalog__pagination {
   position: relative; }
