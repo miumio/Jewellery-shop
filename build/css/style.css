@@ -1071,7 +1071,7 @@ body {
   @media (max-width: 1023px) {
     .filter {
       display: none;
-      font-size: 16px;
+      font-size: 18px;
       background-color: #ffffff;
       -webkit-box-shadow: 0 5px 32px rgba(155, 153, 151, 0.24);
               box-shadow: 0 5px 32px rgba(155, 153, 151, 0.24); }
@@ -1125,6 +1125,7 @@ body {
           flex-direction: column; }
   @media (max-width: 1023px) {
     .filter form {
+      padding-bottom: 15px;
       width: 100%;
       overflow: scroll; } }
 
@@ -1179,7 +1180,10 @@ body {
   .filter form > button:hover {
     opacity: 0.7; }
   .filter form > button:first-of-type {
-    margin: 35px 0 25px; }
+    margin: 35px auto 25px; }
+    @media (max-width: 1023px) {
+      .filter form > button:first-of-type {
+        margin-top: 40px; } }
   .filter form > button:last-of-type {
     color: #1d1613;
     background-color: #ffffff;
@@ -1202,7 +1206,7 @@ body {
   border-bottom: none; }
   @media (max-width: 1023px) {
     .filter fieldset {
-      padding: 32px 35px;
+      padding: 11px 15px 16px 10px;
       border: 0;
       border-bottom: 1px solid #a87b62; } }
   @media (max-width: 767px) {
@@ -1218,12 +1222,17 @@ body {
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease-out;
   transition: max-height 0.3s ease-out; }
+  @media (max-width: 1023px) {
+    .filter ul {
+      margin-bottom: 16px;
+      font-size: 16px;
+      line-height: 21px; } }
 
 .filter li:not(:last-child) {
   margin-bottom: 9px; }
   @media (max-width: 1023px) {
     .filter li:not(:last-child) {
-      margin-bottom: 14px; } }
+      margin-bottom: 18px; } }
 
 .filter input[type="radio"],
 .filter input[type="checkbox"] {
@@ -1267,7 +1276,7 @@ body {
   border: 1px solid #a87b62; }
   @media (max-width: 1023px) {
     .filter__price-wrapper {
-      padding: 33px 35px;
+      padding: 12px 15px 16px 10px;
       border-left: 0;
       border-right: 0;
       border-top: 0; } }
@@ -1283,7 +1292,6 @@ body {
   padding: 6px 0; }
   @media (max-width: 1023px) {
     .filter__controls {
-      margin-top: 23px;
       padding: 8px 0; } }
   @media (max-width: 767px) {
     .filter__controls {
@@ -1313,7 +1321,7 @@ body {
     left: 75%; }
     @media (max-width: 1023px) {
       .filter__controls button:last-of-type {
-        right: 32%; } }
+        left: 64%; } }
     @media (max-width: 767px) {
       .filter__controls button:last-of-type {
         right: 21%; } }
@@ -1349,7 +1357,7 @@ body {
   height: 29px; }
   @media (max-width: 1023px) {
     .filter__price-inputs {
-      font-size: 18px; } }
+      font-size: 16px; } }
   .filter__price-inputs label {
     position: absolute;
     top: 0;

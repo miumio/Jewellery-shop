@@ -4,7 +4,7 @@
   @media (max-width: $tablet) {
     display: none;
 
-    font-size: 16px;
+    font-size: 18px;
 
     background-color: $white;
     box-shadow: 0 5px 32px rgba($grey, 0.24);
@@ -68,6 +68,7 @@
   flex-direction: column;
 
   @media (max-width: $tablet) {
+    padding-bottom: 15px;
     width: 100%;
     overflow: scroll;
   }
@@ -144,7 +145,11 @@
   }
 
   &:first-of-type {
-    margin: 35px 0 25px;
+    margin: 35px auto 25px;
+
+    @media (max-width: $tablet) {
+      margin-top: 40px;
+    }
   }
 
   &:last-of-type {
@@ -175,7 +180,7 @@
   border-bottom: none;
 
   @media (max-width: $tablet) {
-    padding: 32px 35px;
+    padding: 11px 15px 16px 10px;
     border: 0;
     border-bottom: $gold-line;
   }
@@ -194,13 +199,20 @@
 
   overflow: hidden;
   transition: max-height $easy;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 21px;
+  }
 }
 
 .filter li:not(:last-child) {
   margin-bottom: 9px;
 
   @media (max-width: $tablet) {
-    margin-bottom: 14px;
+    margin-bottom: 18px;
   }
 }
 
@@ -254,7 +266,7 @@
   border: $gold-line;
 
   @media (max-width: $tablet) {
-    padding: 33px 35px;
+    padding: 12px 15px 16px 10px;
 
     border-left: 0;
     border-right: 0;
@@ -276,7 +288,6 @@
   padding: 6px 0;
 
   @media (max-width: $tablet) {
-    margin-top: 23px;
     padding: 8px 0;
   }
 
@@ -315,7 +326,7 @@
     left: 75%;
 
     @media (max-width: $tablet) {
-      right: 32%;
+      left: 64%;
     }
 
     @media (max-width: $mobile) {
@@ -364,7 +375,7 @@
   height: 29px;
 
   @media (max-width: $tablet) {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   label {
