@@ -1180,7 +1180,7 @@ body {
   .filter form > button:hover {
     opacity: 0.7; }
   .filter form > button:first-of-type {
-    margin: 35px auto 25px; }
+    margin: 35px 0 25px; }
     @media (max-width: 1023px) {
       .filter form > button:first-of-type {
         margin-top: 40px; } }
