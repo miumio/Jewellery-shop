@@ -1,11 +1,14 @@
 .questions {
   margin-bottom: 109px;
 
+  font-size: 18px;
+
   @media (max-width: $tablet) {
-    margin-bottom: 73px;
+    margin-bottom: 69px;
   }
 
   @media (max-width: $mobile) {
+    font-size: 16px;
     margin-bottom: 57px;
   }
 }
@@ -29,55 +32,42 @@
 }
 
 .questions__item {
-  padding: 38px 44px 43px;
+  padding: 28px 25px 35px 20px;
   border-bottom: $gold-line;
 
+  @media (max-width: $mobile) {
+    padding: 0;
+  }
+}
+
+.questions__title {
+  padding: 14px 25px 8px;
+
   @media (max-width: $tablet) {
-    padding: 40px 45px 43px 50px;
+    padding: 14px 66px 8px 30px;
   }
 
   @media (max-width: $mobile) {
-    padding: 16px 18px 20px 23px;
+    padding: 12px 55px 12px 25px;
   }
 }
 
-.questions h3 {
-  margin: 0;
+.questions__text {
+  margin: 0 41% 3px 29px;
 
-  font-weight: 500;
-  font-size: 18px;
-
-  transition: color $easy;
-
-  &:hover,
-  &:active,
-  &:focus {
-    color: $gold;
-  }
-
-  @media (max-width: $mobile) {
-    padding-right: 37px;
-
-    font-size: 16px;
-    line-height: 140%;
-  }
-}
-
-.questions p {
-  margin: 10px 0 5px 5px;
-  width: 58%;
-
+  font-size: 16px;
   line-height: 130%;
   font-weight: 400;
 
   @media (max-width: $tablet) {
-    margin: 26px 0 0;
+    margin: 15px 0 8px 30px;
     width: 91%;
   }
 
   @media (max-width: $mobile) {
-    margin: 15px 0 0;
-    width: 84%;
+    margin: 0 0 20px 25px;
+    padding-right: 37px;
+    width: auto;
 
     font-size: 14px;
     line-height: 145%;

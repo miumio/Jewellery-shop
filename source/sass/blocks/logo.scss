@@ -1,7 +1,16 @@
 .logo {
+  color: $gold;
+  transition: transform $easy;
+
   &:hover,
   &:focus,
   &:active {
     transform: scale(110%);
+  }
+}
+
+.logo svg {
+  @media (max-width: $mobile) {
+    transform: scale(80%);
   }
 }

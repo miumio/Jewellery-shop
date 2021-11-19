@@ -35,6 +35,10 @@
   z-index: 1;
 }
 
+.swiper img {
+  aspect-ratio: 270 / 282;
+}
+
 .swiper-vertical > .swiper-wrapper {
   flex-direction: column;
 }
@@ -224,6 +228,10 @@
   bottom: 0;
   left: 0;
   width: 100%;
+
+  @media (max-width: $mobile) {
+    bottom: -3px;
+  }
 }
 
 /* Bullets */

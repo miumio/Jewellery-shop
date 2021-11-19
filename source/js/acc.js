@@ -3,22 +3,28 @@
 
   if (!container) return;
 
-  const acc = container.querySelectorAll('.accordion__title');
+  const acc = container.querySelectorAll('.accordion__button');
+  const price = document.querySelector('.accordion--catalog');
+  const arr = Array.from(acc);
 
   acc.forEach((el) => {
-    el.classList.add('accordion__title--active');
+    el.classList.add('accordion__button--active');
+  });
 
-    el.addEventListener('click', function(evt) {
+  if (price) {
+    arr.slice(1, -1).forEach((el) => {
+      el.classList.add('accordion__button--close');
+    });
+  } else
+    arr.slice(1).forEach((el) => {
+      el.classList.add('accordion__button--close');
+    });
+
+  acc.forEach((el) => {
+    el.addEventListener('click', function (evt) {
       evt.preventDefault;
 
-      let panel = this.nextElementSibling;
-      if (panel.style.display === 'none') {
-        panel.style.display = 'block';
-        el.classList.remove('accordion__title--close');
-      } else {
-        panel.style.display = 'none';
-        el.classList.add('accordion__title--close');
-      }
+      el.classList.toggle('accordion__button--close');
     });
   });
 })();

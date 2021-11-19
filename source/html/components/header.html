@@ -21,11 +21,7 @@
           </form>
         </li>
         <li class="nav__item nav__logo logo">
-          <a href="main.html" class="nav__link" tabindex="2">
-            <svg width="66" height="66">
-              <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
-            </svg>
-          </a>
+          <include src="{{ src }}"></include>
         </li>
         <li class="nav__item nav__links">
           <a href="login.html" class="nav__link nav__link--login" target="blank">
@@ -60,8 +56,8 @@
             <li class="menu__item">
               <a href="catalog.html" class="nav__link menu__link">Earrings</a>
             </li>
-            <li class="menu__item">
-              <ul class="menu__list menu__about">
+            <li class="menu__item menu__about">
+              <ul class="menu__list">
                 <li class="menu__item">
                   <a href="#" class="nav__link menu__link">About CH</a>
                 </li>

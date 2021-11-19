@@ -90,6 +90,7 @@ gulp.task("copy", function () {
     "source/fonts/**/*.{woff,woff2}",
     "source/**/*.ico",
     "source/js/vendor.js",
+    "source/js/vendor.js.map"
   ], {
     base: "source"
   })
@@ -101,7 +102,7 @@ gulp.task("clean", function () {
 });
 
 gulp.task("scripts", function () {
-  return gulp.src(["source/js/*.js", "!source/js/vendor.js"])
+  return gulp.src(["source/js/*.js", "!source/js/vendor.js", "!source/js/vendor.js.map"])
     .pipe(concat("main.js"))
     .pipe(gulp.dest("build/js/"));
 });
